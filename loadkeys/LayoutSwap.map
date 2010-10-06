@@ -1,0 +1,265 @@
+## HaaTa's loadkeys Layout Switcher
+# The idea here is to define the keys F1 as ShiftL, F2 as ShiftR, F3, as CtrlL, and F4 as CtrlR locks when a special CtrlR Shift is used as the modifier
+# This allows for quick Locks for 4 different layouts, and the ablity to combine locks to max out at 15 additional layouts (including the default)
+
+# If anyone is aware of a fast way of undoing multiple locks (or setting) with a single keystroke, please let me know at haata@users.sf.net
+# Public domain.
+
+# All of the layouts I build purposely verbose, for documentation (and to make up for the fact that the current documentation is not so good...)
+
+
+## Layout Config Table
+# 15 Keymaps are reserved per layout (Shift, AltGr, Control, Alt, and all of their combinations)
+
+# Layout | Modifiers                 | Range      | #
+# ----------------------------------------------------
+#    0   |                           |   0 ->  15 | 0
+# ----------------------------------------------------
+#    1   | ShiftL                    |  16 ->  31 | 1
+#    2   |        ShiftR             |  32 ->  47 | 1
+#    3   |               CtrlL       |  64 ->  79 | 1
+#    4   |                     CtrlR | 128 -> 143 | 1
+# ----------------------------------------------------
+#    5   | ShiftL ShiftR             |  48 ->  63 | 2
+#    6   | ShiftL        CtrlL       |  80 ->  95 | 2
+#    7   |        ShiftR CtrlL       |  96 -> 111 | 2
+#    8   | ShiftL              CtrlR | 144 -> 159 | 2
+#    9   |        ShiftR       CtrlR | 160 -> 175 | 2
+#   10   |               CtrlL CtrlR | 192 -> 207 | 2
+# ----------------------------------------------------
+#   11   | ShiftL ShiftR CtrlL       | 112 -> 127 | 3
+#   12   | ShiftL ShiftR       CtrlR | 176 -> 191 | 3
+#   13   | ShiftL        CtrlL CtrlR | 208 -> 223 | 3
+#   14   |        ShiftR CtrlL CtrlR | 224 -> 239 | 3
+# ----------------------------------------------------
+#   15   | ShiftL ShiftR CtrlL CtrlR | 240 -> 255 | 4
+
+
+
+# Only CtrlR is required to be a seperate key, the extra Modifiers are just for convenience on Japanese layout keyboards
+# Right Alt, may be another good alternative for CtrlR; however, I use that for AltGr...Right Ctrl perhaps?
+
+## Modifiers
+# ShiftL      - Keycode  94 (Japanese Muhenkan)
+# ShiftR      - Keycode  92 (Japanese   Henkan)
+# CtrlL       - Keycode  93 (Japanese KANA)
+# CtrlR       - Keycode  89 (Japanese \, the key right shift is split into)
+# CtrlR       - Keycode 127 (Menu Key, Right Click Key in Windows)
+
+## Locks
+# ShiftL_Lock - CtrlR + F1
+# ShiftR_Lock - CtrlR + F2
+# CtrlL_Lock  - CtrlR + F3
+# CtrlR_Lock  - CtrlR + F4
+
+
+## Keymaps
+keymaps 0-15,32,48,64,80,96,112,128,144,160,176,192,208,224,240
+
+
+
+#####################
+##### Modifiers #####
+#####################
+
+# Full Keycode definitions are given, modifiers that do other things with other modifier combos aren't recommended...
+
+
+# Keycode  89 - NOT_SPECIFIED (On a Japanese Keyboard this is \ to the left of Right Shift)
+plain                   keycode  89 = CtrlR
+shift                   keycode  89 = CtrlR
+      altgr             keycode  89 = VoidSymbol
+shift altgr             keycode  89 = VoidSymbol
+            control     keycode  89 = VoidSymbol
+shift       control     keycode  89 = VoidSymbol
+      altgr control     keycode  89 = VoidSymbol
+shift altgr control     keycode  89 = VoidSymbol
+                    alt keycode  89 = VoidSymbol
+shift               alt keycode  89 = VoidSymbol
+      altgr         alt keycode  89 = VoidSymbol
+            control alt keycode  89 = VoidSymbol
+shift altgr         alt keycode  89 = VoidSymbol
+      altgr control alt keycode  89 = VoidSymbol
+shift       control alt keycode  89 = VoidSymbol
+shift altgr control alt keycode  89 = VoidSymbol
+
+shiftl                    keycode  89 = CtrlR
+       shiftr             keycode  89 = CtrlR
+              ctrll       keycode  89 = CtrlR
+                    ctrlr keycode  89 = CtrlR
+shiftl shiftr             keycode  89 = CtrlR
+shiftl        ctrll       keycode  89 = CtrlR
+shiftl              ctrlr keycode  89 = CtrlR
+       shiftr ctrll       keycode  89 = CtrlR
+       shiftr       ctrlr keycode  89 = CtrlR
+              ctrll ctrlr keycode  89 = CtrlR
+shiftl shiftr ctrll       keycode  89 = CtrlR
+shiftl shiftr       ctrlr keycode  89 = CtrlR
+shiftl        ctrll ctrlr keycode  89 = CtrlR
+       shiftr ctrll ctrlr keycode  89 = CtrlR
+shiftl shiftr ctrll ctrlr keycode  89 = CtrlR
+
+
+# Keycode  92 - NOT_SPECIFIED (Japanese Keyboard, Henkan, which is to the right of the spacebar)
+plain                   keycode  92 = ShiftR
+shift                   keycode  92 = ShiftR
+      altgr             keycode  92 = VoidSymbol
+shift altgr             keycode  92 = VoidSymbol
+            control     keycode  92 = VoidSymbol
+shift       control     keycode  92 = VoidSymbol
+      altgr control     keycode  92 = VoidSymbol
+shift altgr control     keycode  92 = VoidSymbol
+                    alt keycode  92 = VoidSymbol
+shift               alt keycode  92 = VoidSymbol
+      altgr         alt keycode  92 = VoidSymbol
+            control alt keycode  92 = VoidSymbol
+shift altgr         alt keycode  92 = VoidSymbol
+      altgr control alt keycode  92 = VoidSymbol
+shift       control alt keycode  92 = VoidSymbol
+shift altgr control alt keycode  92 = VoidSymbol
+
+shiftl                    keycode  92 = ShiftR
+       shiftr             keycode  92 = ShiftR
+              ctrll       keycode  92 = ShiftR
+                    ctrlr keycode  92 = ShiftR
+shiftl shiftr             keycode  92 = ShiftR
+shiftl        ctrll       keycode  92 = ShiftR
+shiftl              ctrlr keycode  92 = ShiftR
+       shiftr ctrll       keycode  92 = ShiftR
+       shiftr       ctrlr keycode  92 = ShiftR
+              ctrll ctrlr keycode  92 = ShiftR
+shiftl shiftr ctrll       keycode  92 = ShiftR
+shiftl shiftr       ctrlr keycode  92 = ShiftR
+shiftl        ctrll ctrlr keycode  92 = ShiftR
+       shiftr ctrll ctrlr keycode  92 = ShiftR
+shiftl shiftr ctrll ctrlr keycode  92 = ShiftR
+
+
+# Keycode  93 - NOT_SPECIFIED (Japanese keyboard key, KANA, between Henkan and right Alt)
+plain                   keycode  93 = CtrlL
+shift                   keycode  93 = CtrlL
+      altgr             keycode  93 = VoidSymbol
+shift altgr             keycode  93 = VoidSymbol
+            control     keycode  93 = VoidSymbol
+shift       control     keycode  93 = VoidSymbol
+      altgr control     keycode  93 = VoidSymbol
+shift altgr control     keycode  93 = VoidSymbol
+                    alt keycode  93 = VoidSymbol
+shift               alt keycode  93 = VoidSymbol
+      altgr         alt keycode  93 = VoidSymbol
+            control alt keycode  93 = VoidSymbol
+shift altgr         alt keycode  93 = VoidSymbol
+      altgr control alt keycode  93 = VoidSymbol
+shift       control alt keycode  93 = VoidSymbol
+shift altgr control alt keycode  93 = VoidSymbol
+
+shiftl                    keycode  93 = CtrlL
+       shiftr             keycode  93 = CtrlL
+              ctrll       keycode  93 = CtrlL
+                    ctrlr keycode  93 = CtrlL
+shiftl shiftr             keycode  93 = CtrlL
+shiftl        ctrll       keycode  93 = CtrlL
+shiftl              ctrlr keycode  93 = CtrlL
+       shiftr ctrll       keycode  93 = CtrlL
+       shiftr       ctrlr keycode  93 = CtrlL
+              ctrll ctrlr keycode  93 = CtrlL
+shiftl shiftr ctrll       keycode  93 = CtrlL
+shiftl shiftr       ctrlr keycode  93 = CtrlL
+shiftl        ctrll ctrlr keycode  93 = CtrlL
+       shiftr ctrll ctrlr keycode  93 = CtrlL
+shiftl shiftr ctrll ctrlr keycode  93 = CtrlL
+
+
+# Keycode  94 - NOT_SPECIFIED (Japanese Keyboard, Muhenkan, which is to the left of the spacebar)
+plain                   keycode  94 = ShiftL
+shift                   keycode  94 = ShiftL
+      altgr             keycode  94 = VoidSymbol
+shift altgr             keycode  94 = VoidSymbol
+            control     keycode  94 = VoidSymbol
+shift       control     keycode  94 = VoidSymbol
+      altgr control     keycode  94 = VoidSymbol
+shift altgr control     keycode  94 = VoidSymbol
+                    alt keycode  94 = VoidSymbol
+shift               alt keycode  94 = VoidSymbol
+      altgr         alt keycode  94 = VoidSymbol
+            control alt keycode  94 = VoidSymbol
+shift altgr         alt keycode  94 = VoidSymbol
+      altgr control alt keycode  94 = VoidSymbol
+shift       control alt keycode  94 = VoidSymbol
+shift altgr control alt keycode  94 = VoidSymbol
+
+shiftl                    keycode  94 = ShiftL
+       shiftr             keycode  94 = ShiftL
+              ctrll       keycode  94 = ShiftL
+                    ctrlr keycode  94 = ShiftL
+shiftl shiftr             keycode  94 = ShiftL
+shiftl        ctrll       keycode  94 = ShiftL
+shiftl              ctrlr keycode  94 = ShiftL
+       shiftr ctrll       keycode  94 = ShiftL
+       shiftr       ctrlr keycode  94 = ShiftL
+              ctrll ctrlr keycode  94 = ShiftL
+shiftl shiftr ctrll       keycode  94 = ShiftL
+shiftl shiftr       ctrlr keycode  94 = ShiftL
+shiftl        ctrll ctrlr keycode  94 = ShiftL
+       shiftr ctrll ctrlr keycode  94 = ShiftL
+shiftl shiftr ctrll ctrlr keycode  94 = ShiftL
+
+
+# Keycode 127 - Compose (Menu Key, used for non-Japanese layouts)
+plain                   keycode 127 = CtrlR
+shift                   keycode 127 = CtrlR
+      altgr             keycode 127 = VoidSymbol
+shift altgr             keycode 127 = VoidSymbol
+            control     keycode 127 = VoidSymbol
+shift       control     keycode 127 = VoidSymbol
+      altgr control     keycode 127 = VoidSymbol
+shift altgr control     keycode 127 = VoidSymbol
+                    alt keycode 127 = VoidSymbol
+shift               alt keycode 127 = VoidSymbol
+      altgr         alt keycode 127 = VoidSymbol
+            control alt keycode 127 = VoidSymbol
+shift altgr         alt keycode 127 = VoidSymbol
+      altgr control alt keycode 127 = VoidSymbol
+shift       control alt keycode 127 = VoidSymbol
+shift altgr control alt keycode 127 = VoidSymbol
+
+shiftl                    keycode 127 = CtrlR
+       shiftr             keycode 127 = CtrlR
+              ctrll       keycode 127 = CtrlR
+                    ctrlr keycode 127 = CtrlR
+shiftl shiftr             keycode 127 = CtrlR
+shiftl        ctrll       keycode 127 = CtrlR
+shiftl              ctrlr keycode 127 = CtrlR
+       shiftr ctrll       keycode 127 = CtrlR
+       shiftr       ctrlr keycode 127 = CtrlR
+              ctrll ctrlr keycode 127 = CtrlR
+shiftl shiftr ctrll       keycode 127 = CtrlR
+shiftl shiftr       ctrlr keycode 127 = CtrlR
+shiftl        ctrll ctrlr keycode 127 = CtrlR
+       shiftr ctrll ctrlr keycode 127 = CtrlR
+shiftl shiftr ctrll ctrlr keycode 127 = CtrlR
+
+
+
+#####################
+####### Locks #######
+#####################
+
+# Since the F1 - F4 keys could have various functions already defined, they are not blanked
+
+
+# Keycode  59 - F1 (ShiftL_Lock)
+ctrlr                   keycode  59 = ShiftL_Lock
+
+
+# Keycode  60 - F2 (ShiftR_Lock)
+ctrlr                   keycode  60 = ShiftR_Lock
+
+
+# Keycode  61 - F3 (CtrlL_Lock)
+ctrlr                   keycode  61 = CtrlL_Lock
+
+
+# Keycode  62 - F4 (CtrlR_Lock)
+ctrlr                   keycode  62 = CtrlR_Lock
+

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if (( $# <= 0 )); then
+	echo "Please specify an XModMap to set."
+	exit 0
+fi
+
+
+# The most complicated standard layout that comes with XKB
+setxkbmap ca -variant multix
+
+xmodmap $1
+
+exit 0
+

@@ -1,0 +1,1283 @@
+## HaaTa's QWERTY ANSI (en_US) using ShiftL layer
+# TODO: AltGr Keys are not standard Linux ANSI
+# Public domain.
+
+# One of the purposes of this particular layout is to be an exhaustive document of key combinations
+
+# Keymaps 16-31 are reserved for this layout
+# Thus Shift, AltGr, Control, and Alt are reserved for this layout
+
+## Layouts Used (Keymaps)
+# 1. QWERTY  (16-31)  [shiftl]
+
+## In this version the following keymaps are free:
+#   0-15  [plain]
+#  16-31  [shiftl]
+#  32-63  [shiftr]
+#  64-127 [ctrll]
+# 128-255 [ctrlr]
+# 256     [capsshift]
+
+keymaps 16-31
+
+
+#####################
+###### QWERTY #######
+#####################
+
+## Note: Only defining the keys that are used
+
+# Keycode   2 - one
+shiftl                         keycode   2 = one
+shiftl shift                   keycode   2 = exclam
+shiftl       altgr             keycode   2 = exclamdown
+shiftl shift altgr             keycode   2 = onesuperior
+shiftl             control     keycode   2 = VoidSymbol
+shiftl shift       control     keycode   2 = VoidSymbol
+shiftl       altgr control     keycode   2 = VoidSymbol
+shiftl shift altgr control     keycode   2 = VoidSymbol
+shiftl                     alt keycode   2 = Meta_one
+shiftl shift               alt keycode   2 = Meta_exclam
+shiftl       altgr         alt keycode   2 = VoidSymbol
+shiftl             control alt keycode   2 = VoidSymbol
+shiftl shift altgr         alt keycode   2 = VoidSymbol
+shiftl       altgr control alt keycode   2 = VoidSymbol
+shiftl shift       control alt keycode   2 = VoidSymbol
+shiftl shift altgr control alt keycode   2 = VoidSymbol
+
+
+# Keycode   3 - two
+shiftl                         keycode   3 = two
+shiftl shift                   keycode   3 = at
+shiftl       altgr             keycode   3 = masculine
+shiftl shift altgr             keycode   3 = twosuperior
+shiftl             control     keycode   3 = nul
+shiftl shift       control     keycode   3 = nul
+shiftl       altgr control     keycode   3 = VoidSymbol
+shiftl shift altgr control     keycode   3 = VoidSymbol
+shiftl                     alt keycode   3 = Meta_two
+shiftl shift               alt keycode   3 = Meta_at
+shiftl       altgr         alt keycode   3 = VoidSymbol
+shiftl             control alt keycode   3 = Meta_nul
+shiftl shift altgr         alt keycode   3 = VoidSymbol
+shiftl       altgr control alt keycode   3 = VoidSymbol
+shiftl shift       control alt keycode   3 = VoidSymbol
+shiftl shift altgr control alt keycode   3 = VoidSymbol
+
+
+# Keycode   4 - three
+shiftl                         keycode   4 = three
+shiftl shift                   keycode   4 = numbersign
+shiftl       altgr             keycode   4 = ordfeminine
+shiftl shift altgr             keycode   4 = threesuperior
+shiftl             control     keycode   4 = Escape
+shiftl shift       control     keycode   4 = VoidSymbol
+shiftl       altgr control     keycode   4 = VoidSymbol
+shiftl shift altgr control     keycode   4 = VoidSymbol
+shiftl                     alt keycode   4 = Meta_three
+shiftl shift               alt keycode   4 = Meta_numbersign
+shiftl       altgr         alt keycode   4 = VoidSymbol
+shiftl             control alt keycode   4 = Meta_Escape
+shiftl shift altgr         alt keycode   4 = VoidSymbol
+shiftl       altgr control alt keycode   4 = VoidSymbol
+shiftl shift       control alt keycode   4 = VoidSymbol
+shiftl shift altgr control alt keycode   4 = VoidSymbol
+
+
+# Keycode   5 - four
+shiftl                         keycode   5 = four
+shiftl shift                   keycode   5 = dollar
+shiftl       altgr             keycode   5 = cent
+shiftl shift altgr             keycode   5 = sterling
+shiftl             control     keycode   5 = Control_backslash
+shiftl shift       control     keycode   5 = VoidSymbol
+shiftl       altgr control     keycode   5 = VoidSymbol
+shiftl shift altgr control     keycode   5 = VoidSymbol
+shiftl                     alt keycode   5 = Meta_four
+shiftl shift               alt keycode   5 = Meta_dollar
+shiftl       altgr         alt keycode   5 = VoidSymbol
+shiftl             control alt keycode   5 = Meta_Control_backslash
+shiftl shift altgr         alt keycode   5 = VoidSymbol
+shiftl       altgr control alt keycode   5 = VoidSymbol
+shiftl shift       control alt keycode   5 = VoidSymbol
+shiftl shift altgr control alt keycode   5 = VoidSymbol
+
+
+# Keycode   6 - five
+shiftl                         keycode   6 = five
+shiftl shift                   keycode   6 = percent
+shiftl       altgr             keycode   6 = euro
+shiftl shift altgr             keycode   6 = yen
+shiftl             control     keycode   6 = Control_bracketright
+shiftl shift       control     keycode   6 = VoidSymbol
+shiftl       altgr control     keycode   6 = VoidSymbol
+shiftl shift altgr control     keycode   6 = VoidSymbol
+shiftl                     alt keycode   6 = Meta_five
+shiftl shift               alt keycode   6 = Meta_percent
+shiftl       altgr         alt keycode   6 = VoidSymbol
+shiftl             control alt keycode   6 = Meta_Control_bracketright
+shiftl shift altgr         alt keycode   6 = VoidSymbol
+shiftl       altgr control alt keycode   6 = VoidSymbol
+shiftl shift       control alt keycode   6 = VoidSymbol
+shiftl shift altgr control alt keycode   6 = VoidSymbol
+
+
+# Keycode   7 - six
+shiftl                         keycode   7 = six
+shiftl shift                   keycode   7 = asciicircum
+shiftl       altgr             keycode   7 = asciitilde
+shiftl shift altgr             keycode   7 = asciitilde
+shiftl             control     keycode   7 = Control_asciicircum
+shiftl shift       control     keycode   7 = VoidSymbol
+shiftl       altgr control     keycode   7 = VoidSymbol
+shiftl shift altgr control     keycode   7 = VoidSymbol
+shiftl                     alt keycode   7 = Meta_six
+shiftl shift               alt keycode   7 = Meta_asciicircum
+shiftl       altgr         alt keycode   7 = Meta_asciitilde
+shiftl             control alt keycode   7 = Meta_Control_asciicircum
+shiftl shift altgr         alt keycode   7 = Meta_asciitilde
+shiftl       altgr control alt keycode   7 = VoidSymbol
+shiftl shift       control alt keycode   7 = VoidSymbol
+shiftl shift altgr control alt keycode   7 = VoidSymbol
+
+
+# Keycode   8 - seven
+shiftl                         keycode   8 = seven
+shiftl shift                   keycode   8 = ampersand
+shiftl       altgr             keycode   8 = eth
+shiftl shift altgr             keycode   8 = ETH
+shiftl             control     keycode   8 = Control_underscore
+shiftl shift       control     keycode   8 = VoidSymbol
+shiftl       altgr control     keycode   8 = VoidSymbol
+shiftl shift altgr control     keycode   8 = VoidSymbol
+shiftl                     alt keycode   8 = Meta_seven
+shiftl shift               alt keycode   8 = Meta_ampersand
+shiftl       altgr         alt keycode   8 = VoidSymbol
+shiftl             control alt keycode   8 = Meta_Control_underscore
+shiftl shift altgr         alt keycode   8 = VoidSymbol
+shiftl       altgr control alt keycode   8 = VoidSymbol
+shiftl shift       control alt keycode   8 = VoidSymbol
+shiftl shift altgr control alt keycode   8 = VoidSymbol
+
+
+# Keycode   9 - eight
+shiftl                         keycode   9 = eight
+shiftl shift                   keycode   9 = asterisk
+shiftl       altgr             keycode   9 = thorn
+shiftl shift altgr             keycode   9 = THORN
+shiftl             control     keycode   9 = Delete
+shiftl shift       control     keycode   9 = VoidSymbol
+shiftl       altgr control     keycode   9 = VoidSymbol
+shiftl shift altgr control     keycode   9 = VoidSymbol
+shiftl                     alt keycode   9 = Meta_eight
+shiftl shift               alt keycode   9 = Meta_asterisk
+shiftl       altgr         alt keycode   9 = VoidSymbol
+shiftl             control alt keycode   9 = Meta_Delete
+shiftl shift altgr         alt keycode   9 = VoidSymbol
+shiftl       altgr control alt keycode   9 = VoidSymbol
+shiftl shift       control alt keycode   9 = VoidSymbol
+shiftl shift altgr control alt keycode   9 = VoidSymbol
+
+
+# Keycode  10 - nine
+shiftl                         keycode  10 = nine
+shiftl shift                   keycode  10 = parenleft
+shiftl       altgr             keycode  10 = bracketright
+shiftl shift altgr             keycode  10 = VoidSymbol
+shiftl             control     keycode  10 = VoidSymbol
+shiftl shift       control     keycode  10 = VoidSymbol
+shiftl       altgr control     keycode  10 = VoidSymbol
+shiftl shift altgr control     keycode  10 = VoidSymbol
+shiftl                     alt keycode  10 = Meta_nine
+shiftl shift               alt keycode  10 = Meta_parenright
+shiftl       altgr         alt keycode  10 = Meta_asciitilde
+shiftl             control alt keycode  10 = VoidSymbol
+shiftl shift altgr         alt keycode  10 = Meta_asciitilde
+shiftl       altgr control alt keycode  10 = VoidSymbol
+shiftl shift       control alt keycode  10 = VoidSymbol
+shiftl shift altgr control alt keycode  10 = VoidSymbol
+
+
+# Keycode  11 - zero
+shiftl                         keycode  11 = zero
+shiftl shift                   keycode  11 = parenright
+shiftl       altgr             keycode  11 = braceright
+shiftl shift altgr             keycode  11 = VoidSymbol
+shiftl             control     keycode  11 = VoidSymbol
+shiftl shift       control     keycode  11 = VoidSymbol
+shiftl       altgr control     keycode  11 = VoidSymbol
+shiftl shift altgr control     keycode  11 = VoidSymbol
+shiftl                     alt keycode  11 = Meta_zero
+shiftl shift               alt keycode  11 = Meta_parenright
+shiftl       altgr         alt keycode  11 = VoidSymbol
+shiftl             control alt keycode  11 = VoidSymbol
+shiftl shift altgr         alt keycode  11 = VoidSymbol
+shiftl       altgr control alt keycode  11 = VoidSymbol
+shiftl shift       control alt keycode  11 = VoidSymbol
+shiftl shift altgr control alt keycode  11 = VoidSymbol
+
+
+# Keycode  12 - minus
+shiftl                         keycode  12 = minus
+shiftl shift                   keycode  12 = underscore
+shiftl       altgr             keycode  12 = backslash
+shiftl shift altgr             keycode  12 = VoidSymbol
+shiftl             control     keycode  12 = Control_underscore
+shiftl shift       control     keycode  12 = Control_underscore
+shiftl       altgr control     keycode  12 = VoidSymbol
+shiftl shift altgr control     keycode  12 = VoidSymbol
+shiftl                     alt keycode  12 = Meta_minus
+shiftl shift               alt keycode  12 = Meta_underscore
+shiftl       altgr         alt keycode  12 = VoidSymbol
+shiftl             control alt keycode  12 = Meta_Control_underscore
+shiftl shift altgr         alt keycode  12 = VoidSymbol
+shiftl       altgr control alt keycode  12 = VoidSymbol
+shiftl shift       control alt keycode  12 = VoidSymbol
+shiftl shift altgr control alt keycode  12 = VoidSymbol
+
+
+# Keycode  13 - equal
+shiftl                         keycode  13 = equal
+shiftl shift                   keycode  13 = plus
+shiftl       altgr             keycode  13 = multiply
+shiftl shift altgr             keycode  13 = division
+shiftl             control     keycode  13 = VoidSymbol
+shiftl shift       control     keycode  13 = VoidSymbol
+shiftl       altgr control     keycode  13 = VoidSymbol
+shiftl shift altgr control     keycode  13 = VoidSymbol
+shiftl                     alt keycode  13 = Meta_equal
+shiftl shift               alt keycode  13 = Meta_plus
+shiftl       altgr         alt keycode  13 = VoidSymbol
+shiftl             control alt keycode  13 = VoidSymbol
+shiftl shift altgr         alt keycode  13 = VoidSymbol
+shiftl       altgr control alt keycode  13 = VoidSymbol
+shiftl shift       control alt keycode  13 = VoidSymbol
+shiftl shift altgr control alt keycode  13 = VoidSymbol
+
+
+# Keycode  16 - q
+shiftl                         keycode  16 = q
+shiftl shift                   keycode  16 = Q
+shiftl       altgr             keycode  16 = adiaeresis
+shiftl shift altgr             keycode  16 = Adiaeresis
+shiftl             control     keycode  16 = Control_q
+shiftl shift       control     keycode  16 = VoidSymbol
+shiftl       altgr control     keycode  16 = VoidSymbol
+shiftl shift altgr control     keycode  16 = VoidSymbol
+shiftl                     alt keycode  16 = Meta_q
+shiftl shift               alt keycode  16 = Meta_Q
+shiftl       altgr         alt keycode  16 = VoidSymbol
+shiftl             control alt keycode  16 = Meta_Control_q
+shiftl shift altgr         alt keycode  16 = VoidSymbol
+shiftl       altgr control alt keycode  16 = VoidSymbol
+shiftl shift       control alt keycode  16 = VoidSymbol
+shiftl shift altgr control alt keycode  16 = VoidSymbol
+
+
+# Keycode  17 - w
+shiftl                         keycode  17 = w
+shiftl shift                   keycode  17 = W
+shiftl       altgr             keycode  17 = aring
+shiftl shift altgr             keycode  17 = Aring
+shiftl             control     keycode  17 = Control_w
+shiftl shift       control     keycode  17 = VoidSymbol
+shiftl       altgr control     keycode  17 = VoidSymbol
+shiftl shift altgr control     keycode  17 = VoidSymbol
+shiftl                     alt keycode  17 = Meta_w
+shiftl shift               alt keycode  17 = Meta_W
+shiftl       altgr         alt keycode  17 = VoidSymbol
+shiftl             control alt keycode  17 = Meta_Control_w
+shiftl shift altgr         alt keycode  17 = VoidSymbol
+shiftl       altgr control alt keycode  17 = VoidSymbol
+shiftl shift       control alt keycode  17 = VoidSymbol
+shiftl shift altgr control alt keycode  17 = VoidSymbol
+
+
+# Keycode  18 - e
+shiftl                         keycode  18 = e
+shiftl shift                   keycode  18 = E
+shiftl       altgr             keycode  18 = atilde
+shiftl shift altgr             keycode  18 = Atilde
+shiftl             control     keycode  18 = Control_e
+shiftl shift       control     keycode  18 = VoidSymbol
+shiftl       altgr control     keycode  18 = VoidSymbol
+shiftl shift altgr control     keycode  18 = VoidSymbol
+shiftl                     alt keycode  18 = Meta_e
+shiftl shift               alt keycode  18 = Meta_E
+shiftl       altgr         alt keycode  18 = VoidSymbol
+shiftl             control alt keycode  18 = Meta_Control_e
+shiftl shift altgr         alt keycode  18 = VoidSymbol
+shiftl       altgr control alt keycode  18 = VoidSymbol
+shiftl shift       control alt keycode  18 = VoidSymbol
+shiftl shift altgr control alt keycode  18 = VoidSymbol
+
+
+# Keycode  19 - r
+shiftl                         keycode  19 = r
+shiftl shift                   keycode  19 = R
+shiftl       altgr             keycode  19 = oslash
+shiftl shift altgr             keycode  19 = Oslash
+shiftl             control     keycode  19 = Control_r
+shiftl shift       control     keycode  19 = VoidSymbol
+shiftl       altgr control     keycode  19 = VoidSymbol
+shiftl shift altgr control     keycode  19 = VoidSymbol
+shiftl                     alt keycode  19 = Meta_r
+shiftl shift               alt keycode  19 = Meta_R
+shiftl       altgr         alt keycode  19 = VoidSymbol
+shiftl             control alt keycode  19 = Meta_Control_r
+shiftl shift altgr         alt keycode  19 = VoidSymbol
+shiftl       altgr control alt keycode  19 = VoidSymbol
+shiftl shift       control alt keycode  19 = VoidSymbol
+shiftl shift altgr control alt keycode  19 = VoidSymbol
+
+
+# Keycode  20 - t
+shiftl                         keycode  20 = t
+shiftl shift                   keycode  20 = T
+shiftl       altgr             keycode  20 = VoidSymbol
+shiftl shift altgr             keycode  20 = asciitilde
+shiftl             control     keycode  20 = Control_t
+shiftl shift       control     keycode  20 = VoidSymbol
+shiftl       altgr control     keycode  20 = VoidSymbol
+shiftl shift altgr control     keycode  20 = VoidSymbol
+shiftl                     alt keycode  20 = Meta_t
+shiftl shift               alt keycode  20 = Meta_T
+shiftl       altgr         alt keycode  20 = VoidSymbol
+shiftl             control alt keycode  20 = Meta_Control_t
+shiftl shift altgr         alt keycode  20 = VoidSymbol
+shiftl       altgr control alt keycode  20 = VoidSymbol
+shiftl shift       control alt keycode  20 = VoidSymbol
+shiftl shift altgr control alt keycode  20 = VoidSymbol
+
+
+# Keycode  21 - y
+shiftl                         keycode  21 = y
+shiftl shift                   keycode  21 = Y
+shiftl       altgr             keycode  21 = VoidSymbol
+shiftl shift altgr             keycode  21 = VoidSymbol
+shiftl             control     keycode  21 = Control_y
+shiftl shift       control     keycode  21 = VoidSymbol
+shiftl       altgr control     keycode  21 = VoidSymbol
+shiftl shift altgr control     keycode  21 = VoidSymbol
+shiftl                     alt keycode  21 = Meta_y
+shiftl shift               alt keycode  21 = Meta_Y
+shiftl       altgr         alt keycode  21 = VoidSymbol
+shiftl             control alt keycode  21 = Meta_Control_y
+shiftl shift altgr         alt keycode  21 = VoidSymbol
+shiftl       altgr control alt keycode  21 = VoidSymbol
+shiftl shift       control alt keycode  21 = VoidSymbol
+shiftl shift altgr control alt keycode  21 = VoidSymbol
+
+
+# Keycode  22 - u
+shiftl                         keycode  22 = u
+shiftl shift                   keycode  22 = U
+shiftl       altgr             keycode  22 = VoidSymbol
+shiftl shift altgr             keycode  22 = VoidSymbol
+shiftl             control     keycode  22 = Control_u
+shiftl shift       control     keycode  22 = VoidSymbol
+shiftl       altgr control     keycode  22 = VoidSymbol
+shiftl shift altgr control     keycode  22 = VoidSymbol
+shiftl                     alt keycode  22 = Meta_u
+shiftl shift               alt keycode  22 = Meta_U
+shiftl       altgr         alt keycode  22 = VoidSymbol
+shiftl             control alt keycode  22 = Meta_Control_u
+shiftl shift altgr         alt keycode  22 = VoidSymbol
+shiftl       altgr control alt keycode  22 = VoidSymbol
+shiftl shift       control alt keycode  22 = VoidSymbol
+shiftl shift altgr control alt keycode  22 = VoidSymbol
+
+
+# Keycode  23 - i
+shiftl                         keycode  23 = i
+shiftl shift                   keycode  23 = I
+shiftl       altgr             keycode  23 = uacute
+shiftl shift altgr             keycode  23 = Uacute
+shiftl             control     keycode  23 = Control_i
+shiftl shift       control     keycode  23 = VoidSymbol
+shiftl       altgr control     keycode  23 = VoidSymbol
+shiftl shift altgr control     keycode  23 = VoidSymbol
+shiftl                     alt keycode  23 = Meta_i
+shiftl shift               alt keycode  23 = Meta_I
+shiftl       altgr         alt keycode  23 = VoidSymbol
+shiftl             control alt keycode  23 = Meta_Control_i
+shiftl shift altgr         alt keycode  23 = VoidSymbol
+shiftl       altgr control alt keycode  23 = VoidSymbol
+shiftl shift       control alt keycode  23 = VoidSymbol
+shiftl shift altgr control alt keycode  23 = VoidSymbol
+
+
+# Keycode  24 - o
+shiftl                         keycode  24 = o
+shiftl shift                   keycode  24 = O
+shiftl       altgr             keycode  24 = udiaeresis
+shiftl shift altgr             keycode  24 = Udiaeresis
+shiftl             control     keycode  24 = Control_o
+shiftl shift       control     keycode  24 = VoidSymbol
+shiftl       altgr control     keycode  24 = VoidSymbol
+shiftl shift altgr control     keycode  24 = VoidSymbol
+shiftl                     alt keycode  24 = Meta_o
+shiftl shift               alt keycode  24 = Meta_O
+shiftl       altgr         alt keycode  24 = VoidSymbol
+shiftl             control alt keycode  24 = Meta_Control_o
+shiftl shift altgr         alt keycode  24 = VoidSymbol
+shiftl       altgr control alt keycode  24 = VoidSymbol
+shiftl shift       control alt keycode  24 = VoidSymbol
+shiftl shift altgr control alt keycode  24 = VoidSymbol
+
+
+# Keycode  25 - p
+shiftl                         keycode  25 = p
+shiftl shift                   keycode  25 = P
+shiftl       altgr             keycode  25 = odiaeresis
+shiftl shift altgr             keycode  25 = Odiaeresis
+shiftl             control     keycode  25 = Control_p
+shiftl shift       control     keycode  25 = VoidSymbol
+shiftl       altgr control     keycode  25 = VoidSymbol
+shiftl shift altgr control     keycode  25 = VoidSymbol
+shiftl                     alt keycode  25 = Meta_p
+shiftl shift               alt keycode  25 = Meta_P
+shiftl       altgr         alt keycode  25 = VoidSymbol
+shiftl             control alt keycode  25 = Meta_Control_p
+shiftl shift altgr         alt keycode  25 = VoidSymbol
+shiftl       altgr control alt keycode  25 = VoidSymbol
+shiftl shift       control alt keycode  25 = VoidSymbol
+shiftl shift altgr control alt keycode  25 = VoidSymbol
+
+
+# Keycode  26 - bracketleft
+shiftl                         keycode  26 = bracketleft
+shiftl shift                   keycode  26 = braceleft
+shiftl       altgr             keycode  26 = guillemotleft
+shiftl shift altgr             keycode  26 = VoidSymbol
+shiftl             control     keycode  26 = Escape
+shiftl shift       control     keycode  26 = VoidSymbol
+shiftl       altgr control     keycode  26 = VoidSymbol
+shiftl shift altgr control     keycode  26 = VoidSymbol
+shiftl                     alt keycode  26 = Meta_bracketleft
+shiftl shift               alt keycode  26 = Meta_braceleft
+shiftl       altgr         alt keycode  26 = VoidSymbol
+shiftl             control alt keycode  26 = Meta_Escape
+shiftl shift altgr         alt keycode  26 = Meta_asciitilde
+shiftl       altgr control alt keycode  26 = VoidSymbol
+shiftl shift       control alt keycode  26 = VoidSymbol
+shiftl shift altgr control alt keycode  26 = VoidSymbol
+
+
+# Keycode  27 - bracketright
+shiftl                         keycode  27 = bracketright
+shiftl shift                   keycode  27 = braceright
+shiftl       altgr             keycode  27 = guillemotright
+shiftl shift altgr             keycode  27 = VoidSymbol
+shiftl             control     keycode  27 = Control_bracketright
+shiftl shift       control     keycode  27 = VoidSymbol
+shiftl       altgr control     keycode  27 = VoidSymbol
+shiftl shift altgr control     keycode  27 = VoidSymbol
+shiftl                     alt keycode  27 = Meta_bracketright
+shiftl shift               alt keycode  27 = Meta_braceright
+shiftl       altgr         alt keycode  27 = VoidSymbol
+shiftl             control alt keycode  27 = Meta_Control_bracketright
+shiftl shift altgr         alt keycode  27 = Meta_asciitilde
+shiftl       altgr control alt keycode  27 = VoidSymbol
+shiftl shift       control alt keycode  27 = VoidSymbol
+shiftl shift altgr control alt keycode  27 = VoidSymbol
+
+
+# Keycode  30 - a
+shiftl                         keycode  30 = a
+shiftl shift                   keycode  30 = A
+shiftl       altgr             keycode  30 = aacute
+shiftl shift altgr             keycode  30 = Aacute
+shiftl             control     keycode  30 = Control_a
+shiftl shift       control     keycode  30 = VoidSymbol
+shiftl       altgr control     keycode  30 = VoidSymbol
+shiftl shift altgr control     keycode  30 = VoidSymbol
+shiftl                     alt keycode  30 = Meta_a
+shiftl shift               alt keycode  30 = Meta_A
+shiftl       altgr         alt keycode  30 = VoidSymbol
+shiftl             control alt keycode  30 = Meta_Control_a
+shiftl shift altgr         alt keycode  30 = VoidSymbol
+shiftl       altgr control alt keycode  30 = VoidSymbol
+shiftl shift       control alt keycode  30 = VoidSymbol
+shiftl shift altgr control alt keycode  30 = VoidSymbol
+
+
+# Keycode  31 - s
+shiftl                         keycode  31 = s
+shiftl shift                   keycode  31 = S
+shiftl       altgr             keycode  31 = dead_grave
+shiftl shift altgr             keycode  31 = asciitilde
+shiftl             control     keycode  31 = Control_s
+shiftl shift       control     keycode  31 = VoidSymbol
+shiftl       altgr control     keycode  31 = VoidSymbol
+shiftl shift altgr control     keycode  31 = VoidSymbol
+shiftl                     alt keycode  31 = Meta_s
+shiftl shift               alt keycode  31 = Meta_S
+shiftl       altgr         alt keycode  31 = VoidSymbol
+shiftl             control alt keycode  31 = Meta_Control_s
+shiftl shift altgr         alt keycode  31 = VoidSymbol
+shiftl       altgr control alt keycode  31 = VoidSymbol
+shiftl shift       control alt keycode  31 = VoidSymbol
+shiftl shift altgr control alt keycode  31 = VoidSymbol
+
+
+# Keycode  32 - d
+shiftl                         keycode  32 = d
+shiftl shift                   keycode  32 = D
+shiftl       altgr             keycode  32 = ssharp
+shiftl shift altgr             keycode  32 = asciitilde
+shiftl             control     keycode  32 = Control_d
+shiftl shift       control     keycode  32 = VoidSymbol
+shiftl       altgr control     keycode  32 = VoidSymbol
+shiftl shift altgr control     keycode  32 = VoidSymbol
+shiftl                     alt keycode  32 = Meta_d
+shiftl shift               alt keycode  32 = Meta_D
+shiftl       altgr         alt keycode  32 = VoidSymbol
+shiftl             control alt keycode  32 = Meta_Control_d
+shiftl shift altgr         alt keycode  32 = VoidSymbol
+shiftl       altgr control alt keycode  32 = VoidSymbol
+shiftl shift       control alt keycode  32 = VoidSymbol
+shiftl shift altgr control alt keycode  32 = VoidSymbol
+
+
+# Keycode  33 - f
+shiftl                         keycode  33 = f
+shiftl shift                   keycode  33 = F
+shiftl       altgr             keycode  33 = dead_acute
+shiftl shift altgr             keycode  33 = asciitilde
+shiftl             control     keycode  33 = Control_f
+shiftl shift       control     keycode  33 = VoidSymbol
+shiftl       altgr control     keycode  33 = VoidSymbol
+shiftl shift altgr control     keycode  33 = VoidSymbol
+shiftl                     alt keycode  33 = Meta_f
+shiftl shift               alt keycode  33 = Meta_F
+shiftl       altgr         alt keycode  33 = VoidSymbol
+shiftl             control alt keycode  33 = Meta_Control_f
+shiftl shift altgr         alt keycode  33 = VoidSymbol
+shiftl       altgr control alt keycode  33 = VoidSymbol
+shiftl shift       control alt keycode  33 = VoidSymbol
+shiftl shift altgr control alt keycode  33 = VoidSymbol
+
+
+# Keycode  34 - g
+shiftl                         keycode  34 = g
+shiftl shift                   keycode  34 = G
+shiftl       altgr             keycode  34 = dead_diaeresis
+shiftl shift altgr             keycode  34 = asciitilde
+shiftl             control     keycode  34 = Control_g
+shiftl shift       control     keycode  34 = VoidSymbol
+shiftl       altgr control     keycode  34 = VoidSymbol
+shiftl shift altgr control     keycode  34 = VoidSymbol
+shiftl                     alt keycode  34 = Meta_g
+shiftl shift               alt keycode  34 = Meta_G
+shiftl       altgr         alt keycode  34 = VoidSymbol
+shiftl             control alt keycode  34 = Meta_Control_g
+shiftl shift altgr         alt keycode  34 = VoidSymbol
+shiftl       altgr control alt keycode  34 = VoidSymbol
+shiftl shift       control alt keycode  34 = VoidSymbol
+shiftl shift altgr control alt keycode  34 = VoidSymbol
+
+
+# Keycode  35 - h
+shiftl                         keycode  35 = h
+shiftl shift                   keycode  35 = H
+shiftl       altgr             keycode  35 = VoidSymbol
+shiftl shift altgr             keycode  35 = asciitilde
+shiftl             control     keycode  35 = Control_h
+shiftl shift       control     keycode  35 = VoidSymbol
+shiftl       altgr control     keycode  35 = VoidSymbol
+shiftl shift altgr control     keycode  35 = VoidSymbol
+shiftl                     alt keycode  35 = Meta_h
+shiftl shift               alt keycode  35 = Meta_H
+shiftl       altgr         alt keycode  35 = VoidSymbol
+shiftl             control alt keycode  35 = Meta_Control_h
+shiftl shift altgr         alt keycode  35 = VoidSymbol
+shiftl       altgr control alt keycode  35 = VoidSymbol
+shiftl shift       control alt keycode  35 = VoidSymbol
+shiftl shift altgr control alt keycode  35 = VoidSymbol
+
+
+# Keycode  36 - j
+shiftl                         keycode  36 = j
+shiftl shift                   keycode  36 = J
+shiftl       altgr             keycode  36 = ntilde
+shiftl shift altgr             keycode  36 = Ntilde
+shiftl             control     keycode  36 = Control_j
+shiftl shift       control     keycode  36 = VoidSymbol
+shiftl       altgr control     keycode  36 = VoidSymbol
+shiftl shift altgr control     keycode  36 = VoidSymbol
+shiftl                     alt keycode  36 = Meta_j
+shiftl shift               alt keycode  36 = Meta_J
+shiftl       altgr         alt keycode  36 = VoidSymbol
+shiftl             control alt keycode  36 = Meta_Control_j
+shiftl shift altgr         alt keycode  36 = VoidSymbol
+shiftl       altgr control alt keycode  36 = VoidSymbol
+shiftl shift       control alt keycode  36 = VoidSymbol
+shiftl shift altgr control alt keycode  36 = VoidSymbol
+
+
+# Keycode  37 - k
+shiftl                         keycode  37 = k
+shiftl shift                   keycode  37 = K
+shiftl       altgr             keycode  37 = eacute
+shiftl shift altgr             keycode  37 = Eacute
+shiftl             control     keycode  37 = Control_k
+shiftl shift       control     keycode  37 = VoidSymbol
+shiftl       altgr control     keycode  37 = VoidSymbol
+shiftl shift altgr control     keycode  37 = VoidSymbol
+shiftl                     alt keycode  37 = Meta_k
+shiftl shift               alt keycode  37 = Meta_K
+shiftl       altgr         alt keycode  37 = VoidSymbol
+shiftl             control alt keycode  37 = Meta_Control_k
+shiftl shift altgr         alt keycode  37 = VoidSymbol
+shiftl       altgr control alt keycode  37 = VoidSymbol
+shiftl shift       control alt keycode  37 = VoidSymbol
+shiftl shift altgr control alt keycode  37 = VoidSymbol
+
+
+# Keycode  38 - l
+shiftl                         keycode  38 = l
+shiftl shift                   keycode  38 = L
+shiftl       altgr             keycode  38 = iacute
+shiftl shift altgr             keycode  38 = Iacute
+shiftl             control     keycode  38 = Control_l
+shiftl shift       control     keycode  38 = VoidSymbol
+shiftl       altgr control     keycode  38 = VoidSymbol
+shiftl shift altgr control     keycode  38 = VoidSymbol
+shiftl                     alt keycode  38 = Meta_l
+shiftl shift               alt keycode  38 = Meta_L
+shiftl       altgr         alt keycode  38 = VoidSymbol
+shiftl             control alt keycode  38 = Meta_Control_l
+shiftl shift altgr         alt keycode  38 = VoidSymbol
+shiftl       altgr control alt keycode  38 = VoidSymbol
+shiftl shift       control alt keycode  38 = VoidSymbol
+shiftl shift altgr control alt keycode  38 = VoidSymbol
+
+
+# Keycode  39 - semicolon
+shiftl                         keycode  39 = semicolon
+shiftl shift                   keycode  39 = colon
+shiftl       altgr             keycode  39 = oacute
+shiftl shift altgr             keycode  39 = Oacute
+shiftl             control     keycode  39 = Control_o
+shiftl shift       control     keycode  39 = VoidSymbol
+shiftl       altgr control     keycode  39 = VoidSymbol
+shiftl shift altgr control     keycode  39 = VoidSymbol
+shiftl                     alt keycode  39 = Meta_semicolon
+shiftl shift               alt keycode  39 = Meta_colon
+shiftl       altgr         alt keycode  39 = VoidSymbol
+shiftl             control alt keycode  39 = VoidSymbol
+shiftl shift altgr         alt keycode  39 = VoidSymbol
+shiftl       altgr control alt keycode  39 = VoidSymbol
+shiftl shift       control alt keycode  39 = VoidSymbol
+shiftl shift altgr control alt keycode  39 = VoidSymbol
+
+
+# Keycode  40 - apostrophe
+shiftl                         keycode  40 = apostrophe
+shiftl shift                   keycode  40 = quotedbl
+shiftl       altgr             keycode  40 = otilde
+shiftl shift altgr             keycode  40 = Otilde
+shiftl             control     keycode  40 = Control_g
+shiftl shift       control     keycode  40 = VoidSymbol
+shiftl       altgr control     keycode  40 = VoidSymbol
+shiftl shift altgr control     keycode  40 = VoidSymbol
+shiftl                     alt keycode  40 = Meta_apostrophe
+shiftl shift               alt keycode  40 = Meta_quotedbl
+shiftl       altgr         alt keycode  40 = VoidSymbol
+shiftl             control alt keycode  40 = VoidSymbol
+shiftl shift altgr         alt keycode  40 = VoidSymbol
+shiftl       altgr control alt keycode  40 = VoidSymbol
+shiftl shift       control alt keycode  40 = VoidSymbol
+shiftl shift altgr control alt keycode  40 = VoidSymbol
+
+
+# Keycode  41 - grave
+shiftl                         keycode  41 = grave
+shiftl shift                   keycode  41 = asciitilde
+shiftl       altgr             keycode  41 = VoidSymbol
+shiftl shift altgr             keycode  41 = VoidSymbol
+shiftl             control     keycode  41 = nul
+shiftl shift       control     keycode  41 = VoidSymbol
+shiftl       altgr control     keycode  41 = VoidSymbol
+shiftl shift altgr control     keycode  41 = VoidSymbol
+shiftl                     alt keycode  41 = Meta_grave
+shiftl shift               alt keycode  41 = Meta_asciitilde
+shiftl       altgr         alt keycode  41 = VoidSymbol
+shiftl             control alt keycode  41 = Meta_nul
+shiftl shift altgr         alt keycode  41 = VoidSymbol
+shiftl       altgr control alt keycode  41 = VoidSymbol
+shiftl shift       control alt keycode  41 = VoidSymbol
+shiftl shift altgr control alt keycode  41 = VoidSymbol
+
+
+# Keycode  43 - backslash
+shiftl                         keycode  43 = backslash
+shiftl shift                   keycode  43 = bar
+shiftl       altgr             keycode  43 = asciitilde
+shiftl shift altgr             keycode  43 = asciitilde
+shiftl             control     keycode  43 = Control_backslash
+shiftl shift       control     keycode  43 = VoidSymbol
+shiftl       altgr control     keycode  43 = VoidSymbol
+shiftl shift altgr control     keycode  43 = VoidSymbol
+shiftl                     alt keycode  43 = Meta_backslash
+shiftl shift               alt keycode  43 = Meta_bar
+shiftl       altgr         alt keycode  43 = Meta_asciitilde
+shiftl             control alt keycode  43 = Meta_Control_backslash
+shiftl shift altgr         alt keycode  43 = Meta_asciitilde
+shiftl       altgr control alt keycode  43 = VoidSymbol
+shiftl shift       control alt keycode  43 = VoidSymbol
+shiftl shift altgr control alt keycode  43 = VoidSymbol
+
+
+# Keycode  44 - z
+shiftl                         keycode  44 = z
+shiftl shift                   keycode  44 = Z
+shiftl       altgr             keycode  44 = ae
+shiftl shift altgr             keycode  44 = AE
+shiftl             control     keycode  44 = Control_z
+shiftl shift       control     keycode  44 = VoidSymbol
+shiftl       altgr control     keycode  44 = VoidSymbol
+shiftl shift altgr control     keycode  44 = VoidSymbol
+shiftl                     alt keycode  44 = Meta_z
+shiftl shift               alt keycode  44 = Meta_Z
+shiftl       altgr         alt keycode  44 = VoidSymbol
+shiftl             control alt keycode  44 = Meta_Control_z
+shiftl shift altgr         alt keycode  44 = VoidSymbol
+shiftl       altgr control alt keycode  44 = VoidSymbol
+shiftl shift       control alt keycode  44 = VoidSymbol
+shiftl shift altgr control alt keycode  44 = VoidSymbol
+
+
+# Keycode  45 - x
+shiftl                         keycode  45 = x
+shiftl shift                   keycode  45 = X
+shiftl       altgr             keycode  45 = dead_circumflex
+shiftl shift altgr             keycode  45 = asciitilde
+shiftl             control     keycode  45 = Control_x
+shiftl shift       control     keycode  45 = VoidSymbol
+shiftl       altgr control     keycode  45 = VoidSymbol
+shiftl shift altgr control     keycode  45 = VoidSymbol
+shiftl                     alt keycode  45 = Meta_x
+shiftl shift               alt keycode  45 = Meta_X
+shiftl       altgr         alt keycode  45 = VoidSymbol
+shiftl             control alt keycode  45 = Meta_Control_x
+shiftl shift altgr         alt keycode  45 = VoidSymbol
+shiftl       altgr control alt keycode  45 = VoidSymbol
+shiftl shift       control alt keycode  45 = VoidSymbol
+shiftl shift altgr control alt keycode  45 = VoidSymbol
+
+
+# Keycode  46 - c
+shiftl                         keycode  46 = c
+shiftl shift                   keycode  46 = C
+shiftl       altgr             keycode  46 = ccedilla
+shiftl shift altgr             keycode  46 = Ccedilla
+shiftl             control     keycode  46 = Control_c
+shiftl shift       control     keycode  46 = VoidSymbol
+shiftl       altgr control     keycode  46 = VoidSymbol
+shiftl shift altgr control     keycode  46 = VoidSymbol
+shiftl                     alt keycode  46 = Meta_c
+shiftl shift               alt keycode  46 = Meta_C
+shiftl       altgr         alt keycode  46 = VoidSymbol
+shiftl             control alt keycode  46 = Meta_Control_c
+shiftl shift altgr         alt keycode  46 = VoidSymbol
+shiftl       altgr control alt keycode  46 = VoidSymbol
+shiftl shift       control alt keycode  46 = VoidSymbol
+shiftl shift altgr control alt keycode  46 = VoidSymbol
+
+
+# Keycode  47 - v
+shiftl                         keycode  47 = v
+shiftl shift                   keycode  47 = V
+shiftl       altgr             keycode  47 = oe
+shiftl shift altgr             keycode  47 = OE
+shiftl             control     keycode  47 = Control_v
+shiftl shift       control     keycode  47 = VoidSymbol
+shiftl       altgr control     keycode  47 = VoidSymbol
+shiftl shift altgr control     keycode  47 = VoidSymbol
+shiftl                     alt keycode  47 = Meta_v
+shiftl shift               alt keycode  47 = Meta_V
+shiftl       altgr         alt keycode  47 = VoidSymbol
+shiftl             control alt keycode  47 = Meta_Control_v
+shiftl shift altgr         alt keycode  47 = VoidSymbol
+shiftl       altgr control alt keycode  47 = VoidSymbol
+shiftl shift       control alt keycode  47 = VoidSymbol
+shiftl shift altgr control alt keycode  47 = VoidSymbol
+
+
+# Keycode  48 - b
+shiftl                         keycode  48 = b
+shiftl shift                   keycode  48 = B
+shiftl       altgr             keycode  48 = VoidSymbol
+shiftl shift altgr             keycode  48 = asciitilde
+shiftl             control     keycode  48 = Control_b
+shiftl shift       control     keycode  48 = VoidSymbol
+shiftl       altgr control     keycode  48 = VoidSymbol
+shiftl shift altgr control     keycode  48 = VoidSymbol
+shiftl                     alt keycode  48 = Meta_b
+shiftl shift               alt keycode  48 = Meta_B
+shiftl       altgr         alt keycode  48 = VoidSymbol
+shiftl             control alt keycode  48 = Meta_Control_b
+shiftl shift altgr         alt keycode  48 = VoidSymbol
+shiftl       altgr control alt keycode  48 = VoidSymbol
+shiftl shift       control alt keycode  48 = VoidSymbol
+shiftl shift altgr control alt keycode  48 = VoidSymbol
+
+
+# Keycode  49 - n
+shiftl                         keycode  49 = n
+shiftl shift                   keycode  49 = N
+shiftl       altgr             keycode  49 = VoidSymbol
+shiftl shift altgr             keycode  49 = asciitilde
+shiftl             control     keycode  49 = Control_n
+shiftl shift       control     keycode  49 = VoidSymbol
+shiftl       altgr control     keycode  49 = VoidSymbol
+shiftl shift altgr control     keycode  49 = VoidSymbol
+shiftl                     alt keycode  49 = Meta_n
+shiftl shift               alt keycode  49 = Meta_N
+shiftl       altgr         alt keycode  49 = VoidSymbol
+shiftl             control alt keycode  49 = Meta_Control_n
+shiftl shift altgr         alt keycode  49 = VoidSymbol
+shiftl       altgr control alt keycode  49 = VoidSymbol
+shiftl shift       control alt keycode  49 = VoidSymbol
+shiftl shift altgr control alt keycode  49 = VoidSymbol
+
+
+# Keycode  50 - m
+shiftl                         keycode  50 = m
+shiftl shift                   keycode  50 = M
+shiftl       altgr             keycode  50 = VoidSymbol
+shiftl shift altgr             keycode  50 = asciitilde
+shiftl             control     keycode  50 = Control_m
+shiftl shift       control     keycode  50 = VoidSymbol
+shiftl       altgr control     keycode  50 = VoidSymbol
+shiftl shift altgr control     keycode  50 = VoidSymbol
+shiftl                     alt keycode  50 = Meta_m
+shiftl shift               alt keycode  50 = Meta_M
+shiftl       altgr         alt keycode  50 = VoidSymbol
+shiftl             control alt keycode  50 = Meta_Control_m
+shiftl shift altgr         alt keycode  50 = VoidSymbol
+shiftl       altgr control alt keycode  50 = VoidSymbol
+shiftl shift       control alt keycode  50 = VoidSymbol
+shiftl shift altgr control alt keycode  50 = VoidSymbol
+
+
+# Keycode  51 - comma
+shiftl                         keycode  51 = comma
+shiftl shift                   keycode  51 = less
+shiftl       altgr             keycode  51 = dead_cedilla
+shiftl shift altgr             keycode  51 = asciitilde
+shiftl             control     keycode  51 = VoidSymbol
+shiftl shift       control     keycode  51 = VoidSymbol
+shiftl       altgr control     keycode  51 = VoidSymbol
+shiftl shift altgr control     keycode  51 = VoidSymbol
+shiftl                     alt keycode  51 = Meta_comma
+shiftl shift               alt keycode  51 = Meta_less
+shiftl       altgr         alt keycode  51 = VoidSymbol
+shiftl             control alt keycode  51 = VoidSymbol
+shiftl shift altgr         alt keycode  51 = Meta_asciitilde
+shiftl       altgr control alt keycode  51 = VoidSymbol
+shiftl shift       control alt keycode  51 = VoidSymbol
+shiftl shift altgr control alt keycode  51 = VoidSymbol
+
+
+# Keycode  52 - period
+shiftl                         keycode  52 = period
+shiftl shift                   keycode  52 = greater
+shiftl       altgr             keycode  52 = VoidSymbol
+shiftl shift altgr             keycode  52 = VoidSymbol
+shiftl             control     keycode  52 = Compose
+shiftl shift       control     keycode  52 = VoidSymbol
+shiftl       altgr control     keycode  52 = VoidSymbol
+shiftl shift altgr control     keycode  52 = VoidSymbol
+shiftl                     alt keycode  52 = Meta_period
+shiftl shift               alt keycode  52 = Meta_greater
+shiftl       altgr         alt keycode  52 = Meta_asciitilde
+shiftl             control alt keycode  52 = VoidSymbol
+shiftl shift altgr         alt keycode  52 = Meta_asciitilde
+shiftl       altgr control alt keycode  52 = VoidSymbol
+shiftl shift       control alt keycode  52 = VoidSymbol
+shiftl shift altgr control alt keycode  52 = VoidSymbol
+
+
+# Keycode  53 - slash
+shiftl                         keycode  53 = slash
+shiftl shift                   keycode  53 = question
+shiftl       altgr             keycode  53 = questiondown
+shiftl shift altgr             keycode  53 = asciitilde
+shiftl             control     keycode  53 = Delete
+shiftl shift       control     keycode  53 = Delete
+shiftl       altgr control     keycode  53 = VoidSymbol
+shiftl shift altgr control     keycode  53 = VoidSymbol
+shiftl                     alt keycode  53 = Meta_slash
+shiftl shift               alt keycode  53 = Meta_question
+shiftl       altgr         alt keycode  53 = VoidSymbol
+shiftl             control alt keycode  53 = Meta_Delete
+shiftl shift altgr         alt keycode  53 = Meta_asciitilde
+shiftl       altgr control alt keycode  53 = VoidSymbol
+shiftl shift       control alt keycode  53 = VoidSymbol
+shiftl shift altgr control alt keycode  53 = VoidSymbol
+
+
+# Keycode  55 - KP_Multiply
+shiftl                         keycode  55 = KP_Multiply
+shiftl shift                   keycode  55 = VoidSymbol
+shiftl       altgr             keycode  55 = Hex_C
+shiftl shift altgr             keycode  55 = VoidSymbol
+shiftl             control     keycode  55 = VoidSymbol
+shiftl shift       control     keycode  55 = VoidSymbol
+shiftl       altgr control     keycode  55 = VoidSymbol
+shiftl shift altgr control     keycode  55 = VoidSymbol
+shiftl                     alt keycode  55 = VoidSymbol
+shiftl shift               alt keycode  55 = VoidSymbol
+shiftl       altgr         alt keycode  55 = VoidSymbol
+shiftl             control alt keycode  55 = VoidSymbol
+shiftl shift altgr         alt keycode  55 = VoidSymbol
+shiftl       altgr control alt keycode  55 = VoidSymbol
+shiftl shift       control alt keycode  55 = VoidSymbol
+shiftl shift altgr control alt keycode  55 = VoidSymbol
+
+
+# Keycode  57 - space
+shiftl                         keycode  57 = space
+shiftl shift                   keycode  57 = space
+shiftl       altgr             keycode  57 = space
+shiftl shift altgr             keycode  57 = nobreakspace
+shiftl             control     keycode  57 = nul
+shiftl shift       control     keycode  57 = VoidSymbol
+shiftl       altgr control     keycode  57 = VoidSymbol
+shiftl shift altgr control     keycode  57 = VoidSymbol
+shiftl                     alt keycode  57 = Meta_space
+shiftl shift               alt keycode  57 = Meta_space
+shiftl       altgr         alt keycode  57 = Meta_space
+shiftl             control alt keycode  57 = Meta_nul
+shiftl shift altgr         alt keycode  57 = VoidSymbol
+shiftl       altgr control alt keycode  57 = VoidSymbol
+shiftl shift       control alt keycode  57 = VoidSymbol
+shiftl shift altgr control alt keycode  57 = VoidSymbol
+
+
+# Keycode  58 - CapsLock
+shiftl                         keycode  58 = Caps_Lock
+shiftl shift                   keycode  58 = VoidSymbol
+shiftl       altgr             keycode  58 = VoidSymbol
+shiftl shift altgr             keycode  58 = VoidSymbol
+shiftl             control     keycode  58 = VoidSymbol
+shiftl shift       control     keycode  58 = VoidSymbol
+shiftl       altgr control     keycode  58 = VoidSymbol
+shiftl shift altgr control     keycode  58 = VoidSymbol
+shiftl                     alt keycode  58 = VoidSymbol
+shiftl shift               alt keycode  58 = VoidSymbol
+shiftl       altgr         alt keycode  58 = VoidSymbol
+shiftl             control alt keycode  58 = VoidSymbol
+shiftl shift altgr         alt keycode  58 = VoidSymbol
+shiftl       altgr control alt keycode  58 = VoidSymbol
+shiftl shift       control alt keycode  58 = VoidSymbol
+shiftl shift altgr control alt keycode  58 = VoidSymbol
+
+
+# Keycode  71 - KP_7
+shiftl                         keycode  71 = KP_7
+shiftl shift                   keycode  71 = VoidSymbol
+shiftl       altgr             keycode  71 = Hex_7
+shiftl shift altgr             keycode  71 = VoidSymbol
+shiftl             control     keycode  71 = VoidSymbol
+shiftl shift       control     keycode  71 = VoidSymbol
+shiftl       altgr control     keycode  71 = VoidSymbol
+shiftl shift altgr control     keycode  71 = VoidSymbol
+shiftl                     alt keycode  71 = Ascii_7
+shiftl shift               alt keycode  71 = VoidSymbol
+shiftl       altgr         alt keycode  71 = VoidSymbol
+shiftl             control alt keycode  71 = VoidSymbol
+shiftl shift altgr         alt keycode  71 = VoidSymbol
+shiftl       altgr control alt keycode  71 = VoidSymbol
+shiftl shift       control alt keycode  71 = VoidSymbol
+shiftl shift altgr control alt keycode  71 = VoidSymbol
+
+
+# Keycode  72 - KP_8
+shiftl                         keycode  72 = KP_8
+shiftl shift                   keycode  72 = VoidSymbol
+shiftl       altgr             keycode  72 = Hex_8
+shiftl shift altgr             keycode  72 = VoidSymbol
+shiftl             control     keycode  72 = VoidSymbol
+shiftl shift       control     keycode  72 = VoidSymbol
+shiftl       altgr control     keycode  72 = VoidSymbol
+shiftl shift altgr control     keycode  72 = VoidSymbol
+shiftl                     alt keycode  72 = Ascii_8
+shiftl shift               alt keycode  72 = VoidSymbol
+shiftl       altgr         alt keycode  72 = VoidSymbol
+shiftl             control alt keycode  72 = VoidSymbol
+shiftl shift altgr         alt keycode  72 = VoidSymbol
+shiftl       altgr control alt keycode  72 = VoidSymbol
+shiftl shift       control alt keycode  72 = VoidSymbol
+shiftl shift altgr control alt keycode  72 = VoidSymbol
+
+
+# Keycode  73 - KP_9
+shiftl                         keycode  73 = KP_9
+shiftl shift                   keycode  73 = VoidSymbol
+shiftl       altgr             keycode  73 = Hex_9
+shiftl shift altgr             keycode  73 = VoidSymbol
+shiftl             control     keycode  73 = VoidSymbol
+shiftl shift       control     keycode  73 = VoidSymbol
+shiftl       altgr control     keycode  73 = VoidSymbol
+shiftl shift altgr control     keycode  73 = VoidSymbol
+shiftl                     alt keycode  73 = Ascii_9
+shiftl shift               alt keycode  73 = VoidSymbol
+shiftl       altgr         alt keycode  73 = VoidSymbol
+shiftl             control alt keycode  73 = VoidSymbol
+shiftl shift altgr         alt keycode  73 = VoidSymbol
+shiftl       altgr control alt keycode  73 = VoidSymbol
+shiftl shift       control alt keycode  73 = VoidSymbol
+shiftl shift altgr control alt keycode  73 = VoidSymbol
+
+
+# Keycode  74 - KP_Subtract
+shiftl                         keycode  74 = KP_Subtract
+shiftl shift                   keycode  74 = VoidSymbol
+shiftl       altgr             keycode  74 = Hex_D
+shiftl shift altgr             keycode  74 = VoidSymbol
+shiftl             control     keycode  74 = VoidSymbol
+shiftl shift       control     keycode  74 = VoidSymbol
+shiftl       altgr control     keycode  74 = VoidSymbol
+shiftl shift altgr control     keycode  74 = VoidSymbol
+shiftl                     alt keycode  74 = VoidSymbol
+shiftl shift               alt keycode  74 = VoidSymbol
+shiftl       altgr         alt keycode  74 = VoidSymbol
+shiftl             control alt keycode  74 = VoidSymbol
+shiftl shift altgr         alt keycode  74 = VoidSymbol
+shiftl       altgr control alt keycode  74 = VoidSymbol
+shiftl shift       control alt keycode  74 = VoidSymbol
+shiftl shift altgr control alt keycode  74 = VoidSymbol
+
+
+# Keycode  75 - KP_4
+shiftl                         keycode  75 = KP_4
+shiftl shift                   keycode  75 = VoidSymbol
+shiftl       altgr             keycode  75 = Hex_4
+shiftl shift altgr             keycode  75 = VoidSymbol
+shiftl             control     keycode  75 = VoidSymbol
+shiftl shift       control     keycode  75 = VoidSymbol
+shiftl       altgr control     keycode  75 = VoidSymbol
+shiftl shift altgr control     keycode  75 = VoidSymbol
+shiftl                     alt keycode  75 = Ascii_4
+shiftl shift               alt keycode  75 = VoidSymbol
+shiftl       altgr         alt keycode  75 = VoidSymbol
+shiftl             control alt keycode  75 = VoidSymbol
+shiftl shift altgr         alt keycode  75 = VoidSymbol
+shiftl       altgr control alt keycode  75 = VoidSymbol
+shiftl shift       control alt keycode  75 = VoidSymbol
+shiftl shift altgr control alt keycode  75 = VoidSymbol
+
+
+# Keycode  76 - KP_5
+shiftl                         keycode  76 = KP_5
+shiftl shift                   keycode  76 = VoidSymbol
+shiftl       altgr             keycode  76 = Hex_5
+shiftl shift altgr             keycode  76 = VoidSymbol
+shiftl             control     keycode  76 = VoidSymbol
+shiftl shift       control     keycode  76 = VoidSymbol
+shiftl       altgr control     keycode  76 = VoidSymbol
+shiftl shift altgr control     keycode  76 = VoidSymbol
+shiftl                     alt keycode  76 = Ascii_5
+shiftl shift               alt keycode  76 = VoidSymbol
+shiftl       altgr         alt keycode  76 = VoidSymbol
+shiftl             control alt keycode  76 = VoidSymbol
+shiftl shift altgr         alt keycode  76 = VoidSymbol
+shiftl       altgr control alt keycode  76 = VoidSymbol
+shiftl shift       control alt keycode  76 = VoidSymbol
+shiftl shift altgr control alt keycode  76 = VoidSymbol
+
+
+# Keycode  77 - KP_6
+shiftl                         keycode  77 = KP_6
+shiftl shift                   keycode  77 = VoidSymbol
+shiftl       altgr             keycode  77 = Hex_6
+shiftl shift altgr             keycode  77 = VoidSymbol
+shiftl             control     keycode  77 = VoidSymbol
+shiftl shift       control     keycode  77 = VoidSymbol
+shiftl       altgr control     keycode  77 = VoidSymbol
+shiftl shift altgr control     keycode  77 = VoidSymbol
+shiftl                     alt keycode  77 = Ascii_6
+shiftl shift               alt keycode  77 = VoidSymbol
+shiftl       altgr         alt keycode  77 = VoidSymbol
+shiftl             control alt keycode  77 = VoidSymbol
+shiftl shift altgr         alt keycode  77 = VoidSymbol
+shiftl       altgr control alt keycode  77 = VoidSymbol
+shiftl shift       control alt keycode  77 = VoidSymbol
+shiftl shift altgr control alt keycode  77 = VoidSymbol
+
+
+# Keycode  78 - KP_Add
+shiftl                         keycode  78 = KP_Add
+shiftl shift                   keycode  78 = VoidSymbol
+shiftl       altgr             keycode  78 = Hex_E
+shiftl shift altgr             keycode  78 = VoidSymbol
+shiftl             control     keycode  78 = VoidSymbol
+shiftl shift       control     keycode  78 = VoidSymbol
+shiftl       altgr control     keycode  78 = VoidSymbol
+shiftl shift altgr control     keycode  78 = VoidSymbol
+shiftl                     alt keycode  78 = VoidSymbol
+shiftl shift               alt keycode  78 = VoidSymbol
+shiftl       altgr         alt keycode  78 = VoidSymbol
+shiftl             control alt keycode  78 = VoidSymbol
+shiftl shift altgr         alt keycode  78 = VoidSymbol
+shiftl       altgr control alt keycode  78 = VoidSymbol
+shiftl shift       control alt keycode  78 = VoidSymbol
+shiftl shift altgr control alt keycode  78 = VoidSymbol
+
+
+# Keycode  79 - KP_1
+shiftl                         keycode  79 = KP_1
+shiftl shift                   keycode  79 = VoidSymbol
+shiftl       altgr             keycode  79 = Hex_1
+shiftl shift altgr             keycode  79 = VoidSymbol
+shiftl             control     keycode  79 = VoidSymbol
+shiftl shift       control     keycode  79 = VoidSymbol
+shiftl       altgr control     keycode  79 = VoidSymbol
+shiftl shift altgr control     keycode  79 = VoidSymbol
+shiftl                     alt keycode  79 = Ascii_1
+shiftl shift               alt keycode  79 = VoidSymbol
+shiftl       altgr         alt keycode  79 = VoidSymbol
+shiftl             control alt keycode  79 = VoidSymbol
+shiftl shift altgr         alt keycode  79 = VoidSymbol
+shiftl       altgr control alt keycode  79 = VoidSymbol
+shiftl shift       control alt keycode  79 = VoidSymbol
+shiftl shift altgr control alt keycode  79 = VoidSymbol
+
+
+# Keycode  80 - KP_2
+shiftl                         keycode  80 = KP_2
+shiftl shift                   keycode  80 = VoidSymbol
+shiftl       altgr             keycode  80 = Hex_2
+shiftl shift altgr             keycode  80 = VoidSymbol
+shiftl             control     keycode  80 = VoidSymbol
+shiftl shift       control     keycode  80 = VoidSymbol
+shiftl       altgr control     keycode  80 = VoidSymbol
+shiftl shift altgr control     keycode  80 = VoidSymbol
+shiftl                     alt keycode  80 = Ascii_2
+shiftl shift               alt keycode  80 = VoidSymbol
+shiftl       altgr         alt keycode  80 = VoidSymbol
+shiftl             control alt keycode  80 = VoidSymbol
+shiftl shift altgr         alt keycode  80 = VoidSymbol
+shiftl       altgr control alt keycode  80 = VoidSymbol
+shiftl shift       control alt keycode  80 = VoidSymbol
+shiftl shift altgr control alt keycode  80 = VoidSymbol
+
+
+# Keycode  81 - KP_3
+shiftl                         keycode  81 = KP_3
+shiftl shift                   keycode  81 = VoidSymbol
+shiftl       altgr             keycode  81 = Hex_3
+shiftl shift altgr             keycode  81 = VoidSymbol
+shiftl             control     keycode  81 = VoidSymbol
+shiftl shift       control     keycode  81 = VoidSymbol
+shiftl       altgr control     keycode  81 = VoidSymbol
+shiftl shift altgr control     keycode  81 = VoidSymbol
+shiftl                     alt keycode  81 = Ascii_3
+shiftl shift               alt keycode  81 = VoidSymbol
+shiftl       altgr         alt keycode  81 = VoidSymbol
+shiftl             control alt keycode  81 = VoidSymbol
+shiftl shift altgr         alt keycode  81 = VoidSymbol
+shiftl       altgr control alt keycode  81 = VoidSymbol
+shiftl shift       control alt keycode  81 = VoidSymbol
+shiftl shift altgr control alt keycode  81 = VoidSymbol
+
+
+# Keycode  82 - KP_0
+shiftl                         keycode  82 = KP_0
+shiftl shift                   keycode  82 = VoidSymbol
+shiftl       altgr             keycode  82 = Hex_0
+shiftl shift altgr             keycode  82 = VoidSymbol
+shiftl             control     keycode  82 = VoidSymbol
+shiftl shift       control     keycode  82 = VoidSymbol
+shiftl       altgr control     keycode  82 = VoidSymbol
+shiftl shift altgr control     keycode  82 = VoidSymbol
+shiftl                     alt keycode  82 = Ascii_0
+shiftl shift               alt keycode  82 = VoidSymbol
+shiftl       altgr         alt keycode  82 = VoidSymbol
+shiftl             control alt keycode  82 = VoidSymbol
+shiftl shift altgr         alt keycode  82 = VoidSymbol
+shiftl       altgr control alt keycode  82 = VoidSymbol
+shiftl shift       control alt keycode  82 = VoidSymbol
+shiftl shift altgr control alt keycode  82 = VoidSymbol
+
+
+# Keycode  83 - KP_Period
+shiftl                         keycode  83 = KP_Period
+shiftl shift                   keycode  83 = VoidSymbol
+shiftl       altgr             keycode  83 = VoidSymbol
+shiftl shift altgr             keycode  83 = VoidSymbol
+shiftl             control     keycode  83 = VoidSymbol
+shiftl shift       control     keycode  83 = VoidSymbol
+shiftl       altgr control     keycode  83 = Boot
+shiftl shift altgr control     keycode  83 = VoidSymbol
+shiftl                     alt keycode  83 = VoidSymbol
+shiftl shift               alt keycode  83 = VoidSymbol
+shiftl       altgr         alt keycode  83 = VoidSymbol
+shiftl             control alt keycode  83 = Boot
+shiftl shift altgr         alt keycode  83 = VoidSymbol
+shiftl       altgr control alt keycode  83 = VoidSymbol
+shiftl shift       control alt keycode  83 = VoidSymbol
+shiftl shift altgr control alt keycode  83 = VoidSymbol
+
+
+# Keycode  96 - KP_Enter
+shiftl                         keycode  96 = KP_Enter
+shiftl shift                   keycode  96 = VoidSymbol
+shiftl       altgr             keycode  96 = Hex_F
+shiftl shift altgr             keycode  96 = VoidSymbol
+shiftl             control     keycode  96 = VoidSymbol
+shiftl shift       control     keycode  96 = VoidSymbol
+shiftl       altgr control     keycode  96 = VoidSymbol
+shiftl shift altgr control     keycode  96 = VoidSymbol
+shiftl                     alt keycode  96 = VoidSymbol
+shiftl shift               alt keycode  96 = VoidSymbol
+shiftl       altgr         alt keycode  96 = VoidSymbol
+shiftl             control alt keycode  96 = VoidSymbol
+shiftl shift altgr         alt keycode  96 = VoidSymbol
+shiftl       altgr control alt keycode  96 = VoidSymbol
+shiftl shift       control alt keycode  96 = VoidSymbol
+shiftl shift altgr control alt keycode  96 = VoidSymbol
+
+
+# Keycode  98 - KP_Divide
+shiftl                         keycode  98 = KP_Divide
+shiftl shift                   keycode  98 = VoidSymbol
+shiftl       altgr             keycode  98 = Hex_B
+shiftl shift altgr             keycode  98 = VoidSymbol
+shiftl             control     keycode  98 = VoidSymbol
+shiftl shift       control     keycode  98 = VoidSymbol
+shiftl       altgr control     keycode  98 = VoidSymbol
+shiftl shift altgr control     keycode  98 = VoidSymbol
+shiftl                     alt keycode  98 = VoidSymbol
+shiftl shift               alt keycode  98 = VoidSymbol
+shiftl       altgr         alt keycode  98 = VoidSymbol
+shiftl             control alt keycode  98 = VoidSymbol
+shiftl shift altgr         alt keycode  98 = VoidSymbol
+shiftl       altgr control alt keycode  98 = VoidSymbol
+shiftl shift       control alt keycode  98 = VoidSymbol
+shiftl shift altgr control alt keycode  98 = VoidSymbol
+
+
+# Keycode 100 - AltGr
+shiftl                         keycode 100 = AltGr
+shiftl shift                   keycode 100 = VoidSymbol
+shiftl       altgr             keycode 100 = VoidSymbol
+shiftl shift altgr             keycode 100 = VoidSymbol
+shiftl             control     keycode 100 = VoidSymbol
+shiftl shift       control     keycode 100 = VoidSymbol
+shiftl       altgr control     keycode 100 = VoidSymbol
+shiftl shift altgr control     keycode 100 = VoidSymbol
+shiftl                     alt keycode 100 = Compose
+shiftl shift               alt keycode 100 = VoidSymbol
+shiftl       altgr         alt keycode 100 = VoidSymbol
+shiftl             control alt keycode 100 = VoidSymbol
+shiftl shift altgr         alt keycode 100 = VoidSymbol
+shiftl       altgr control alt keycode 100 = VoidSymbol
+shiftl shift       control alt keycode 100 = VoidSymbol
+shiftl shift altgr control alt keycode 100 = VoidSymbol
+
+

@@ -1,0 +1,96 @@
+## MiniTouch variation for HaaTa's keyboard switching method
+# Public domain.
+
+# This layout is designed to be chained with others
+# Thus Shift, AltGr, Control, and Alt are reserved (including all combos of)
+
+# See the LayoutSwap.map comments for the range combinations of ShiftL, ShiftR, CtrlL and CtrlR
+# In the keycode definition you should use the non-caps sym: shiftl, shiftr, ctrll and ctrlr
+
+#| keymaps 0-255 # Reduce this to the necessary keymaps
+
+include "./0-15_Colemak.map"
+include "./16-31_QWERTY-ANSI.map"
+include "./LayoutSwap.map"
+
+
+#####################
+### Modifications ###
+#####################
+
+
+# Keycode  29 - Control (NOTE: MiniTouch Ctrl sucks, but is a good location for the Super/Windows key)
+plain                   keycode  29 = Decr_Console
+shift                   keycode  29 = Last_Console
+      altgr             keycode  29 = Incr_Console
+shift altgr             keycode  29 = Compose
+            control     keycode  29 = VoidSymbol
+shift       control     keycode  29 = VoidSymbol
+      altgr control     keycode  29 = VoidSymbol
+shift altgr control     keycode  29 = VoidSymbol
+                    alt keycode  29 = VoidSymbol
+shift               alt keycode  29 = VoidSymbol
+      altgr         alt keycode  29 = VoidSymbol
+            control alt keycode  29 = VoidSymbol
+shift altgr         alt keycode  29 = VoidSymbol
+      altgr control alt keycode  29 = VoidSymbol
+shift       control alt keycode  29 = VoidSymbol
+shift altgr control alt keycode  29 = VoidSymbol
+
+
+# Keycode  58 - CapsLock (NOTE: Colemak is Backspace, but since MiniTouch control sucks, I make it Control)
+plain                   keycode  58 = Control
+shift                   keycode  58 = VoidSymbol
+      altgr             keycode  58 = VoidSymbol
+shift altgr             keycode  58 = VoidSymbol
+            control     keycode  58 = VoidSymbol
+shift       control     keycode  58 = VoidSymbol
+      altgr control     keycode  58 = VoidSymbol
+shift altgr control     keycode  58 = VoidSymbol
+                    alt keycode  58 = VoidSymbol
+shift               alt keycode  58 = VoidSymbol
+      altgr         alt keycode  58 = VoidSymbol
+            control alt keycode  58 = VoidSymbol
+shift altgr         alt keycode  58 = VoidSymbol
+      altgr control alt keycode  58 = VoidSymbol
+shift       control alt keycode  58 = VoidSymbol
+shift altgr control alt keycode  58 = VoidSymbol
+
+
+# Keycode  86 - less (NOTE: This is the blank key on the SIIG MiniTouch)
+plain                   keycode  86 = Escape
+shift                   keycode  86 = Escape
+      altgr             keycode  86 = VoidSymbol
+shift altgr             keycode  86 = VoidSymbol
+            control     keycode  86 = VoidSymbol
+shift       control     keycode  86 = VoidSymbol
+      altgr control     keycode  86 = VoidSymbol
+shift altgr control     keycode  86 = VoidSymbol
+                    alt keycode  86 = Meta_Escape
+shift               alt keycode  86 = VoidSymbol
+      altgr         alt keycode  86 = VoidSymbol
+            control alt keycode  86 = VoidSymbol
+shift altgr         alt keycode  86 = VoidSymbol
+      altgr control alt keycode  86 = VoidSymbol
+shift       control alt keycode  86 = VoidSymbol
+shift altgr control alt keycode  86 = VoidSymbol
+
+
+# Keycode  97 - Control (NOTE: Right Control is useless, make it CapsShift)
+plain                   keycode  97 = CapsShift
+shift                   keycode  97 = VoidSymbol
+      altgr             keycode  97 = VoidSymbol
+shift altgr             keycode  97 = VoidSymbol
+            control     keycode  97 = VoidSymbol
+shift       control     keycode  97 = VoidSymbol
+      altgr control     keycode  97 = VoidSymbol
+shift altgr control     keycode  97 = VoidSymbol
+                    alt keycode  97 = VoidSymbol
+shift               alt keycode  97 = VoidSymbol
+      altgr         alt keycode  97 = VoidSymbol
+            control alt keycode  97 = VoidSymbol
+shift altgr         alt keycode  97 = VoidSymbol
+      altgr control alt keycode  97 = VoidSymbol
+shift       control alt keycode  97 = VoidSymbol
+shift altgr control alt keycode  97 = VoidSymbol
+

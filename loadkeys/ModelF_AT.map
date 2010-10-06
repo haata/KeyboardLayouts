@@ -1,0 +1,323 @@
+## HaaTa's Colemak for his modified Model F AT
+# Base taken from the default QWERTY layout of Linux and Colemak by Shai Coleman
+# Public domain.
+
+# One of the purposes of this particular layout is to be an exhaustive document of key combinations
+
+# Keymaps 0-15 are reserved for each layout
+# Thus Shift, AltGr, Control, and Alt are reserved for each layout
+
+## Layouts Used (Keymaps)
+# 1. Colemak (0-15)   [plain]
+# 2. QWERTY  (16-31)  [shiftl]
+# 3. Greek   (32-63)  [shiftr]
+# 4. Math    (64-127) [ctrll]
+
+## In this version the following keymaps are free:
+# 128-255 [ctrlr]
+# 256     [capsshift]
+
+#keymaps 0-127
+
+include "./0-15_Colemak.map"
+include "./16-31_QWERTY-ANSI.map"
+include "./LayoutSwap.map"
+
+
+#####################
+###### Colemak ######
+#####################
+
+
+# Keycode  58 - CapsLock (NOTE: Colemak is usually Backspace, but the Model F AT needs an AltGr)
+plain                   keycode  58 = AltGr
+shift                   keycode  58 = VoidSymbol
+      altgr             keycode  58 = VoidSymbol
+shift altgr             keycode  58 = VoidSymbol
+            control     keycode  58 = VoidSymbol
+shift       control     keycode  58 = VoidSymbol
+      altgr control     keycode  58 = VoidSymbol
+shift altgr control     keycode  58 = VoidSymbol
+                    alt keycode  58 = Compose
+shift               alt keycode  58 = VoidSymbol
+      altgr         alt keycode  58 = VoidSymbol
+            control alt keycode  58 = VoidSymbol
+shift altgr         alt keycode  58 = VoidSymbol
+      altgr control alt keycode  58 = VoidSymbol
+shift       control alt keycode  58 = VoidSymbol
+shift altgr control alt keycode  58 = VoidSymbol
+
+
+## Note: The Model F AT only has F1 - F10 (and a hidden F11 on the Numpad), so F1-10 have been adjusted
+
+# Keycode  59 - F1
+plain                   keycode  59 = F1
+shift                   keycode  59 = F11
+      altgr             keycode  59 = Console_11
+shift altgr             keycode  59 = VoidSymbol
+            control     keycode  59 = F21
+shift       control     keycode  59 = F31
+      altgr control     keycode  59 = VoidSymbol
+shift altgr control     keycode  59 = VoidSymbol
+                    alt keycode  59 = Console_1
+shift               alt keycode  59 = VoidSymbol
+      altgr         alt keycode  59 = VoidSymbol
+            control alt keycode  59 = Console_1
+shift altgr         alt keycode  59 = VoidSymbol
+      altgr control alt keycode  59 = VoidSymbol
+shift       control alt keycode  59 = VoidSymbol
+shift altgr control alt keycode  59 = VoidSymbol
+
+
+# Keycode  60 - F2
+plain                   keycode  60 = F2
+shift                   keycode  60 = F12
+      altgr             keycode  60 = Console_12
+shift altgr             keycode  60 = VoidSymbol
+            control     keycode  60 = F22
+shift       control     keycode  60 = F32
+      altgr control     keycode  60 = VoidSymbol
+shift altgr control     keycode  60 = VoidSymbol
+                    alt keycode  60 = Console_2
+shift               alt keycode  60 = VoidSymbol
+      altgr         alt keycode  60 = VoidSymbol
+            control alt keycode  60 = Console_2
+shift altgr         alt keycode  60 = VoidSymbol
+      altgr control alt keycode  60 = VoidSymbol
+shift       control alt keycode  60 = VoidSymbol
+shift altgr control alt keycode  60 = VoidSymbol
+
+
+# Keycode  61 - F3
+plain                   keycode  61 = F3
+shift                   keycode  61 = F13
+      altgr             keycode  61 = Console_13
+shift altgr             keycode  61 = VoidSymbol
+            control     keycode  61 = F23
+shift       control     keycode  61 = F33
+      altgr control     keycode  61 = VoidSymbol
+shift altgr control     keycode  61 = VoidSymbol
+                    alt keycode  61 = Console_3
+shift               alt keycode  61 = VoidSymbol
+      altgr         alt keycode  61 = VoidSymbol
+            control alt keycode  61 = Console_3
+shift altgr         alt keycode  61 = VoidSymbol
+      altgr control alt keycode  61 = VoidSymbol
+shift       control alt keycode  61 = VoidSymbol
+shift altgr control alt keycode  61 = VoidSymbol
+
+
+# Keycode  62 - F4
+plain                   keycode  62 = F4
+shift                   keycode  62 = F14
+      altgr             keycode  62 = Console_14
+shift altgr             keycode  62 = VoidSymbol
+            control     keycode  62 = F24
+shift       control     keycode  62 = F34
+      altgr control     keycode  62 = VoidSymbol
+shift altgr control     keycode  62 = VoidSymbol
+                    alt keycode  62 = Console_4
+shift               alt keycode  62 = VoidSymbol
+      altgr         alt keycode  62 = VoidSymbol
+            control alt keycode  62 = Console_4
+shift altgr         alt keycode  62 = VoidSymbol
+      altgr control alt keycode  62 = VoidSymbol
+shift       control alt keycode  62 = VoidSymbol
+shift altgr control alt keycode  62 = VoidSymbol
+
+
+# Keycode  63 - F5
+plain                   keycode  63 = F5
+shift                   keycode  63 = F15
+      altgr             keycode  63 = Console_15
+shift altgr             keycode  63 = VoidSymbol
+            control     keycode  63 = F25
+shift       control     keycode  63 = F35
+      altgr control     keycode  63 = VoidSymbol
+shift altgr control     keycode  63 = VoidSymbol
+                    alt keycode  63 = Console_5
+shift               alt keycode  63 = VoidSymbol
+      altgr         alt keycode  63 = VoidSymbol
+            control alt keycode  63 = Console_5
+shift altgr         alt keycode  63 = VoidSymbol
+      altgr control alt keycode  63 = VoidSymbol
+shift       control alt keycode  63 = VoidSymbol
+shift altgr control alt keycode  63 = VoidSymbol
+
+
+# Keycode  64 - F6
+plain                   keycode  64 = F6
+shift                   keycode  64 = F16
+      altgr             keycode  64 = Console_16
+shift altgr             keycode  64 = VoidSymbol
+            control     keycode  64 = F26
+shift       control     keycode  64 = F36
+      altgr control     keycode  64 = VoidSymbol
+shift altgr control     keycode  64 = VoidSymbol
+                    alt keycode  64 = Console_6
+shift               alt keycode  64 = VoidSymbol
+      altgr         alt keycode  64 = VoidSymbol
+            control alt keycode  64 = Console_6
+shift altgr         alt keycode  64 = VoidSymbol
+      altgr control alt keycode  64 = VoidSymbol
+shift       control alt keycode  64 = VoidSymbol
+shift altgr control alt keycode  64 = VoidSymbol
+
+
+# Keycode  65 - F7
+plain                   keycode  65 = F7
+shift                   keycode  65 = F17
+      altgr             keycode  65 = Console_17
+shift altgr             keycode  65 = VoidSymbol
+            control     keycode  65 = F27
+shift       control     keycode  65 = F37
+      altgr control     keycode  65 = VoidSymbol
+shift altgr control     keycode  65 = VoidSymbol
+                    alt keycode  65 = Console_7
+shift               alt keycode  65 = VoidSymbol
+      altgr         alt keycode  65 = VoidSymbol
+            control alt keycode  65 = Console_7
+shift altgr         alt keycode  65 = VoidSymbol
+      altgr control alt keycode  65 = VoidSymbol
+shift       control alt keycode  65 = VoidSymbol
+shift altgr control alt keycode  65 = VoidSymbol
+
+
+# Keycode  66 - F8
+plain                   keycode  66 = F8
+shift                   keycode  66 = F18
+      altgr             keycode  66 = Console_17
+shift altgr             keycode  66 = VoidSymbol
+            control     keycode  66 = F28
+shift       control     keycode  66 = F39
+      altgr control     keycode  66 = VoidSymbol
+shift altgr control     keycode  66 = VoidSymbol
+                    alt keycode  66 = Console_8
+shift               alt keycode  66 = VoidSymbol
+      altgr         alt keycode  66 = VoidSymbol
+            control alt keycode  66 = Console_8
+shift altgr         alt keycode  66 = VoidSymbol
+      altgr control alt keycode  66 = VoidSymbol
+shift       control alt keycode  66 = VoidSymbol
+shift altgr control alt keycode  66 = VoidSymbol
+
+
+# Keycode  67 - F9
+plain                   keycode  67 = F9
+shift                   keycode  67 = F19
+      altgr             keycode  67 = Console_19
+shift altgr             keycode  67 = VoidSymbol
+            control     keycode  67 = F29
+shift       control     keycode  67 = F39
+      altgr control     keycode  67 = VoidSymbol
+shift altgr control     keycode  67 = VoidSymbol
+                    alt keycode  67 = Console_9
+shift               alt keycode  67 = VoidSymbol
+      altgr         alt keycode  67 = VoidSymbol
+            control alt keycode  67 = Console_9
+shift altgr         alt keycode  67 = VoidSymbol
+      altgr control alt keycode  67 = VoidSymbol
+shift       control alt keycode  67 = VoidSymbol
+shift altgr control alt keycode  67 = VoidSymbol
+
+
+# Keycode  68 - F10
+plain                   keycode  68 = F10
+shift                   keycode  68 = F20
+      altgr             keycode  68 = Console_20
+shift altgr             keycode  68 = VoidSymbol
+            control     keycode  68 = F30
+shift       control     keycode  68 = F40
+      altgr control     keycode  68 = VoidSymbol
+shift altgr control     keycode  68 = VoidSymbol
+                    alt keycode  68 = Console_10
+shift               alt keycode  68 = VoidSymbol
+      altgr         alt keycode  68 = VoidSymbol
+            control alt keycode  68 = Console_10
+shift altgr         alt keycode  68 = VoidSymbol
+      altgr control alt keycode  68 = VoidSymbol
+shift       control alt keycode  68 = VoidSymbol
+shift altgr control alt keycode  68 = VoidSymbol
+
+
+## Note: The bottom right pad (Numpad) is keycode 87 on the Model F AT
+
+# Keycode  87 - F11
+plain                   keycode  87 = F11
+shift                   keycode  87 = F23
+      altgr             keycode  87 = VoidSymbol
+shift altgr             keycode  87 = VoidSymbol
+            control     keycode  87 = VoidSymbol
+shift       control     keycode  87 = VoidSymbol
+      altgr control     keycode  87 = VoidSymbol
+shift altgr control     keycode  87 = VoidSymbol
+                    alt keycode  87 = VoidSymbol
+shift               alt keycode  87 = VoidSymbol
+      altgr         alt keycode  87 = VoidSymbol
+            control alt keycode  87 = VoidSymbol
+shift altgr         alt keycode  87 = VoidSymbol
+      altgr control alt keycode  87 = VoidSymbol
+shift       control alt keycode  87 = VoidSymbol
+shift altgr control alt keycode  87 = VoidSymbol
+
+
+# Keycode  88 - F12
+plain                   keycode  88 = F12
+shift                   keycode  88 = F24
+      altgr             keycode  88 = Console_24
+shift altgr             keycode  88 = VoidSymbol
+            control     keycode  88 = F36
+shift       control     keycode  88 = F48
+      altgr control     keycode  88 = VoidSymbol
+shift altgr control     keycode  88 = VoidSymbol
+                    alt keycode  88 = Console_12
+shift               alt keycode  88 = VoidSymbol
+      altgr         alt keycode  88 = VoidSymbol
+            control alt keycode  88 = Console_12
+shift altgr         alt keycode  88 = VoidSymbol
+      altgr control alt keycode  88 = VoidSymbol
+shift       control alt keycode  88 = VoidSymbol
+shift altgr control alt keycode  88 = VoidSymbol
+
+
+# Keycode  89 - NOT_SPECIFIED (Used as CapsShift for Layout Select)
+plain                   keycode  89 = CapsShift
+shift                   keycode  89 = VoidSymbol
+      altgr             keycode  89 = VoidSymbol
+shift altgr             keycode  89 = VoidSymbol
+            control     keycode  89 = VoidSymbol
+shift       control     keycode  89 = VoidSymbol
+      altgr control     keycode  89 = VoidSymbol
+shift altgr control     keycode  89 = VoidSymbol
+                    alt keycode  89 = VoidSymbol
+shift               alt keycode  89 = VoidSymbol
+      altgr         alt keycode  89 = VoidSymbol
+            control alt keycode  89 = VoidSymbol
+shift altgr         alt keycode  89 = VoidSymbol
+      altgr control alt keycode  89 = VoidSymbol
+shift       control alt keycode  89 = VoidSymbol
+shift altgr control alt keycode  89 = VoidSymbol
+
+
+# Keycode  93 - NOT_SPECIFIED (Japanese keyboard key, split Left Shift on the Model F AT, so Logo Key)
+plain                   keycode  93 = Decr_Console
+shift                   keycode  93 = Last_Console
+      altgr             keycode  93 = Incr_Console
+shift altgr             keycode  93 = Compose
+            control     keycode  93 = VoidSymbol
+shift       control     keycode  93 = VoidSymbol
+      altgr control     keycode  93 = VoidSymbol
+shift altgr control     keycode  93 = VoidSymbol
+                    alt keycode  93 = VoidSymbol
+shift               alt keycode  93 = VoidSymbol
+      altgr         alt keycode  93 = VoidSymbol
+            control alt keycode  93 = VoidSymbol
+shift altgr         alt keycode  93 = VoidSymbol
+      altgr control alt keycode  93 = VoidSymbol
+shift       control alt keycode  93 = VoidSymbol
+shift altgr control alt keycode  93 = VoidSymbol
+
+
+## Note: keycodes 128-255 are typically undefined, but do exist, and can be used if need be
+
+

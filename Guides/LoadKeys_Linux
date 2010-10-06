@@ -1,0 +1,42 @@
+Copyright HaaTa 2010
+
+This document was a long time coming. It's part 1 of 3 of my Keyboard Mappings Series in Linux (and compatibles).
+After a lot of research and procrastination I've finally done completed it :P.
+
+In Linux there are 3 types of keyboard layout types (each more powerful and complicated than the next...):
+
+* LoadKeys
+* XModMap
+* XKB (2 isn't complete yet, unfortunately)
+
+
+For part 1, we're going to talk about LoadKeys
+
+
+LoadKeys is the keymap used by the Linux kernel before you boot into your X Server.
+Fairly simplistic, but is not very well documented...
+
+If you don't know what the X Server is, this is probably not the correct guide for you (XModMap or XKB is probably what you are looking for).
+
+
+SECTION - Useful Tools
+
+loadkeys - It's how you set your keymap (remember to run as root)
+dumpkeys - Can give you a dump of your current keymap, as well as all of the possible keysyms (doesn't tell you what they do unfortunately)
+showkey - Nice tool for determining keycodes and key outputs. If a key doesn't output anything but it should (e.g. Not an FN key) then read the man page, as you need to specify some kernel boot opitions (See the **Big-Backspace Mod**)
+
+
+
+SECTION - Useful man pages
+
+If you're serious about learning what makes LoadKeys tick, then:
+
+man keymaps
+
+is a good place to start.
+
+
+
+SECTION
+
+

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+sudo setkeycodes 75 43 # Set ANSI style pipe and slash
+sudo setkeycodes 7c 88 # Set Key below Numpad_1 to F12
+
+XModMap/setXModMap XModMap/ModelF_AT_HaaTa_XModMap
+
+exit 0
+

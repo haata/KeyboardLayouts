@@ -1,0 +1,2558 @@
+## Template for HaaTa's keyboard switching method
+# Every comment like "#|" is something that should to be addressed
+# The example layout is an exhaustive Colemak layout
+# Public domain.
+
+# One of the purposes of this particular layout is to be an exhaustive document of key combinations
+
+# This layout is designed to be chained with others
+# Thus Shift, AltGr, Control, and Alt are reserved (including all combos of)
+
+# See the LayoutSwap.map comments for the range combinations of ShiftL, ShiftR, CtrlL and CtrlR
+# In the keycode definition you should use the non-caps sym: shiftl, shiftr, ctrll and ctrlr
+
+# See `dumpkeys --long-info` for all possible keysyms as well as `man keymaps` for more general info
+
+# For fast template filling, use a search and replace on REPLACEME and replaceme.
+# Layouts using modifiers 0-15 should fill "#|replaceme" with "plain", and "#|REPLACME" with ""
+# All other layouts should fill both "#|replacme" and "#|REPLACEME" with a modifier such as "shiftl"
+
+#| keymaps 0-255 # Reduce this to the necessary keymaps
+
+
+#####################
+###### Template #####
+#####################
+
+
+# Keycode   1 - Escape
+#|replaceme                         keycode   1 = Escape
+#|REPLACEME shift                   keycode   1 = Escape
+#|REPLACEME       altgr             keycode   1 = VoidSymbol
+#|REPLACEME shift altgr             keycode   1 = VoidSymbol
+#|REPLACEME             control     keycode   1 = VoidSymbol
+#|REPLACEME shift       control     keycode   1 = VoidSymbol
+#|REPLACEME       altgr control     keycode   1 = VoidSymbol
+#|REPLACEME shift altgr control     keycode   1 = VoidSymbol
+#|REPLACEME                     alt keycode   1 = Meta_Escape
+#|REPLACEME shift               alt keycode   1 = VoidSymbol
+#|REPLACEME       altgr         alt keycode   1 = VoidSymbol
+#|REPLACEME             control alt keycode   1 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode   1 = VoidSymbol
+#|REPLACEME       altgr control alt keycode   1 = VoidSymbol
+#|REPLACEME shift       control alt keycode   1 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode   1 = VoidSymbol
+
+
+# Keycode   2 - one
+#|replaceme                         keycode   2 = one
+#|REPLACEME shift                   keycode   2 = exclam
+#|REPLACEME       altgr             keycode   2 = exclamdown
+#|REPLACEME shift altgr             keycode   2 = onesuperior
+#|REPLACEME             control     keycode   2 = VoidSymbol
+#|REPLACEME shift       control     keycode   2 = VoidSymbol
+#|REPLACEME       altgr control     keycode   2 = VoidSymbol
+#|REPLACEME shift altgr control     keycode   2 = VoidSymbol
+#|REPLACEME                     alt keycode   2 = Meta_one
+#|REPLACEME shift               alt keycode   2 = Meta_exclam
+#|REPLACEME       altgr         alt keycode   2 = VoidSymbol
+#|REPLACEME             control alt keycode   2 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode   2 = VoidSymbol
+#|REPLACEME       altgr control alt keycode   2 = VoidSymbol
+#|REPLACEME shift       control alt keycode   2 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode   2 = VoidSymbol
+
+
+# Keycode   3 - two
+#|replaceme                         keycode   3 = two
+#|REPLACEME shift                   keycode   3 = at
+#|REPLACEME       altgr             keycode   3 = masculine
+#|REPLACEME shift altgr             keycode   3 = twosuperior
+#|REPLACEME             control     keycode   3 = nul
+#|REPLACEME shift       control     keycode   3 = nul
+#|REPLACEME       altgr control     keycode   3 = VoidSymbol
+#|REPLACEME shift altgr control     keycode   3 = VoidSymbol
+#|REPLACEME                     alt keycode   3 = Meta_two
+#|REPLACEME shift               alt keycode   3 = Meta_at
+#|REPLACEME       altgr         alt keycode   3 = VoidSymbol
+#|REPLACEME             control alt keycode   3 = Meta_nul
+#|REPLACEME shift altgr         alt keycode   3 = VoidSymbol
+#|REPLACEME       altgr control alt keycode   3 = VoidSymbol
+#|REPLACEME shift       control alt keycode   3 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode   3 = VoidSymbol
+
+
+# Keycode   4 - three
+#|replaceme                         keycode   4 = three
+#|REPLACEME shift                   keycode   4 = numbersign
+#|REPLACEME       altgr             keycode   4 = ordfeminine
+#|REPLACEME shift altgr             keycode   4 = threesuperior
+#|REPLACEME             control     keycode   4 = Escape
+#|REPLACEME shift       control     keycode   4 = VoidSymbol
+#|REPLACEME       altgr control     keycode   4 = VoidSymbol
+#|REPLACEME shift altgr control     keycode   4 = VoidSymbol
+#|REPLACEME                     alt keycode   4 = Meta_three
+#|REPLACEME shift               alt keycode   4 = Meta_numbersign
+#|REPLACEME       altgr         alt keycode   4 = VoidSymbol
+#|REPLACEME             control alt keycode   4 = Meta_Escape
+#|REPLACEME shift altgr         alt keycode   4 = VoidSymbol
+#|REPLACEME       altgr control alt keycode   4 = VoidSymbol
+#|REPLACEME shift       control alt keycode   4 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode   4 = VoidSymbol
+
+
+# Keycode   5 - four
+#|replaceme                         keycode   5 = four
+#|REPLACEME shift                   keycode   5 = dollar
+#|REPLACEME       altgr             keycode   5 = cent
+#|REPLACEME shift altgr             keycode   5 = sterling
+#|REPLACEME             control     keycode   5 = Control_backslash
+#|REPLACEME shift       control     keycode   5 = VoidSymbol
+#|REPLACEME       altgr control     keycode   5 = VoidSymbol
+#|REPLACEME shift altgr control     keycode   5 = VoidSymbol
+#|REPLACEME                     alt keycode   5 = Meta_four
+#|REPLACEME shift               alt keycode   5 = Meta_dollar
+#|REPLACEME       altgr         alt keycode   5 = VoidSymbol
+#|REPLACEME             control alt keycode   5 = Meta_Control_backslash
+#|REPLACEME shift altgr         alt keycode   5 = VoidSymbol
+#|REPLACEME       altgr control alt keycode   5 = VoidSymbol
+#|REPLACEME shift       control alt keycode   5 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode   5 = VoidSymbol
+
+
+# Keycode   6 - five
+#|replaceme                         keycode   6 = five
+#|REPLACEME shift                   keycode   6 = percent
+#|REPLACEME       altgr             keycode   6 = euro
+#|REPLACEME shift altgr             keycode   6 = yen
+#|REPLACEME             control     keycode   6 = Control_bracketright
+#|REPLACEME shift       control     keycode   6 = VoidSymbol
+#|REPLACEME       altgr control     keycode   6 = VoidSymbol
+#|REPLACEME shift altgr control     keycode   6 = VoidSymbol
+#|REPLACEME                     alt keycode   6 = Meta_five
+#|REPLACEME shift               alt keycode   6 = Meta_percent
+#|REPLACEME       altgr         alt keycode   6 = VoidSymbol
+#|REPLACEME             control alt keycode   6 = Meta_Control_bracketright
+#|REPLACEME shift altgr         alt keycode   6 = VoidSymbol
+#|REPLACEME       altgr control alt keycode   6 = VoidSymbol
+#|REPLACEME shift       control alt keycode   6 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode   6 = VoidSymbol
+
+
+# Keycode   7 - six
+#|replaceme                         keycode   7 = six
+#|REPLACEME shift                   keycode   7 = asciicircum
+#|REPLACEME       altgr             keycode   7 = asciitilde
+#|REPLACEME shift altgr             keycode   7 = asciitilde
+#|REPLACEME             control     keycode   7 = Control_asciicircum
+#|REPLACEME shift       control     keycode   7 = VoidSymbol
+#|REPLACEME       altgr control     keycode   7 = VoidSymbol
+#|REPLACEME shift altgr control     keycode   7 = VoidSymbol
+#|REPLACEME                     alt keycode   7 = Meta_six
+#|REPLACEME shift               alt keycode   7 = Meta_asciicircum
+#|REPLACEME       altgr         alt keycode   7 = Meta_asciitilde
+#|REPLACEME             control alt keycode   7 = Meta_Control_asciicircum
+#|REPLACEME shift altgr         alt keycode   7 = Meta_asciitilde
+#|REPLACEME       altgr control alt keycode   7 = VoidSymbol
+#|REPLACEME shift       control alt keycode   7 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode   7 = VoidSymbol
+
+
+# Keycode   8 - seven
+#|replaceme                         keycode   8 = seven
+#|REPLACEME shift                   keycode   8 = ampersand
+#|REPLACEME       altgr             keycode   8 = eth
+#|REPLACEME shift altgr             keycode   8 = ETH
+#|REPLACEME             control     keycode   8 = Control_underscore
+#|REPLACEME shift       control     keycode   8 = VoidSymbol
+#|REPLACEME       altgr control     keycode   8 = VoidSymbol
+#|REPLACEME shift altgr control     keycode   8 = VoidSymbol
+#|REPLACEME                     alt keycode   8 = Meta_seven
+#|REPLACEME shift               alt keycode   8 = Meta_ampersand
+#|REPLACEME       altgr         alt keycode   8 = VoidSymbol
+#|REPLACEME             control alt keycode   8 = Meta_Control_underscore
+#|REPLACEME shift altgr         alt keycode   8 = VoidSymbol
+#|REPLACEME       altgr control alt keycode   8 = VoidSymbol
+#|REPLACEME shift       control alt keycode   8 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode   8 = VoidSymbol
+
+
+# Keycode   9 - eight
+#|replaceme                         keycode   9 = eight
+#|REPLACEME shift                   keycode   9 = asterisk
+#|REPLACEME       altgr             keycode   9 = thorn
+#|REPLACEME shift altgr             keycode   9 = THORN
+#|REPLACEME             control     keycode   9 = Delete
+#|REPLACEME shift       control     keycode   9 = VoidSymbol
+#|REPLACEME       altgr control     keycode   9 = VoidSymbol
+#|REPLACEME shift altgr control     keycode   9 = VoidSymbol
+#|REPLACEME                     alt keycode   9 = Meta_eight
+#|REPLACEME shift               alt keycode   9 = Meta_asterisk
+#|REPLACEME       altgr         alt keycode   9 = VoidSymbol
+#|REPLACEME             control alt keycode   9 = Meta_Delete
+#|REPLACEME shift altgr         alt keycode   9 = VoidSymbol
+#|REPLACEME       altgr control alt keycode   9 = VoidSymbol
+#|REPLACEME shift       control alt keycode   9 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode   9 = VoidSymbol
+
+
+# Keycode  10 - nine
+#|replaceme                         keycode  10 = nine
+#|REPLACEME shift                   keycode  10 = parenleft
+#|REPLACEME       altgr             keycode  10 = bracketright
+#|REPLACEME shift altgr             keycode  10 = VoidSymbol
+#|REPLACEME             control     keycode  10 = VoidSymbol
+#|REPLACEME shift       control     keycode  10 = VoidSymbol
+#|REPLACEME       altgr control     keycode  10 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  10 = VoidSymbol
+#|REPLACEME                     alt keycode  10 = Meta_nine
+#|REPLACEME shift               alt keycode  10 = Meta_parenright
+#|REPLACEME       altgr         alt keycode  10 = Meta_asciitilde
+#|REPLACEME             control alt keycode  10 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  10 = Meta_asciitilde
+#|REPLACEME       altgr control alt keycode  10 = VoidSymbol
+#|REPLACEME shift       control alt keycode  10 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  10 = VoidSymbol
+
+
+# Keycode  11 - zero
+#|replaceme                         keycode  11 = zero
+#|REPLACEME shift                   keycode  11 = parenright
+#|REPLACEME       altgr             keycode  11 = braceright
+#|REPLACEME shift altgr             keycode  11 = VoidSymbol
+#|REPLACEME             control     keycode  11 = VoidSymbol
+#|REPLACEME shift       control     keycode  11 = VoidSymbol
+#|REPLACEME       altgr control     keycode  11 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  11 = VoidSymbol
+#|REPLACEME                     alt keycode  11 = Meta_zero
+#|REPLACEME shift               alt keycode  11 = Meta_parenright
+#|REPLACEME       altgr         alt keycode  11 = VoidSymbol
+#|REPLACEME             control alt keycode  11 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  11 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  11 = VoidSymbol
+#|REPLACEME shift       control alt keycode  11 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  11 = VoidSymbol
+
+
+# Keycode  12 - minus
+#|replaceme                         keycode  12 = minus
+#|REPLACEME shift                   keycode  12 = underscore
+#|REPLACEME       altgr             keycode  12 = backslash
+#|REPLACEME shift altgr             keycode  12 = VoidSymbol
+#|REPLACEME             control     keycode  12 = Control_underscore
+#|REPLACEME shift       control     keycode  12 = Control_underscore
+#|REPLACEME       altgr control     keycode  12 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  12 = VoidSymbol
+#|REPLACEME                     alt keycode  12 = Meta_minus
+#|REPLACEME shift               alt keycode  12 = Meta_underscore
+#|REPLACEME       altgr         alt keycode  12 = VoidSymbol
+#|REPLACEME             control alt keycode  12 = Meta_Control_underscore
+#|REPLACEME shift altgr         alt keycode  12 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  12 = VoidSymbol
+#|REPLACEME shift       control alt keycode  12 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  12 = VoidSymbol
+
+
+# Keycode  13 - equal
+#|replaceme                         keycode  13 = equal
+#|REPLACEME shift                   keycode  13 = plus
+#|REPLACEME       altgr             keycode  13 = multiply
+#|REPLACEME shift altgr             keycode  13 = division
+#|REPLACEME             control     keycode  13 = VoidSymbol
+#|REPLACEME shift       control     keycode  13 = VoidSymbol
+#|REPLACEME       altgr control     keycode  13 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  13 = VoidSymbol
+#|REPLACEME                     alt keycode  13 = Meta_equal
+#|REPLACEME shift               alt keycode  13 = Meta_plus
+#|REPLACEME       altgr         alt keycode  13 = VoidSymbol
+#|REPLACEME             control alt keycode  13 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  13 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  13 = VoidSymbol
+#|REPLACEME shift       control alt keycode  13 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  13 = VoidSymbol
+
+
+# Keycode  14 - Delete (Actually Backspace/Control_h)
+#|replaceme                         keycode  14 = Delete
+#|REPLACEME shift                   keycode  14 = Delete
+#|REPLACEME       altgr             keycode  14 = VoidSymbol
+#|REPLACEME shift altgr             keycode  14 = VoidSymbol
+#|REPLACEME             control     keycode  14 = Remove
+#|REPLACEME shift       control     keycode  14 = VoidSymbol
+#|REPLACEME       altgr control     keycode  14 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  14 = VoidSymbol
+#|REPLACEME                     alt keycode  14 = Meta_Delete
+#|REPLACEME shift               alt keycode  14 = Meta_Delete
+#|REPLACEME       altgr         alt keycode  14 = Meta_Delete
+#|REPLACEME             control alt keycode  14 = Meta_Delete
+#|REPLACEME shift altgr         alt keycode  14 = Meta_Delete
+#|REPLACEME       altgr control alt keycode  14 = VoidSymbol
+#|REPLACEME shift       control alt keycode  14 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  14 = VoidSymbol
+
+
+# Keycode  15 - Tab
+#|replaceme                         keycode  15 = Tab
+#|REPLACEME shift                   keycode  15 = Meta_Tab
+#|REPLACEME       altgr             keycode  15 = VoidSymbol
+#|REPLACEME shift altgr             keycode  15 = VoidSymbol
+#|REPLACEME             control     keycode  15 = VoidSymbol
+#|REPLACEME shift       control     keycode  15 = VoidSymbol
+#|REPLACEME       altgr control     keycode  15 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  15 = VoidSymbol
+#|REPLACEME                     alt keycode  15 = Meta_Tab
+#|REPLACEME shift               alt keycode  15 = Meta_Tab
+#|REPLACEME       altgr         alt keycode  15 = Meta_Tab
+#|REPLACEME             control alt keycode  15 = Meta_Tab
+#|REPLACEME shift altgr         alt keycode  15 = Meta_Tab
+#|REPLACEME       altgr control alt keycode  15 = VoidSymbol
+#|REPLACEME shift       control alt keycode  15 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  15 = VoidSymbol
+
+
+# Keycode  16 - q
+#|replaceme                         keycode  16 = q
+#|REPLACEME shift                   keycode  16 = Q
+#|REPLACEME       altgr             keycode  16 = adiaeresis
+#|REPLACEME shift altgr             keycode  16 = Adiaeresis
+#|REPLACEME             control     keycode  16 = Control_q
+#|REPLACEME shift       control     keycode  16 = VoidSymbol
+#|REPLACEME       altgr control     keycode  16 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  16 = VoidSymbol
+#|REPLACEME                     alt keycode  16 = Meta_q
+#|REPLACEME shift               alt keycode  16 = Meta_Q
+#|REPLACEME       altgr         alt keycode  16 = VoidSymbol
+#|REPLACEME             control alt keycode  16 = Meta_Control_q
+#|REPLACEME shift altgr         alt keycode  16 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  16 = VoidSymbol
+#|REPLACEME shift       control alt keycode  16 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  16 = VoidSymbol
+
+
+# Keycode  17 - w
+#|replaceme                         keycode  17 = w
+#|REPLACEME shift                   keycode  17 = W
+#|REPLACEME       altgr             keycode  17 = aring
+#|REPLACEME shift altgr             keycode  17 = Aring
+#|REPLACEME             control     keycode  17 = Control_w
+#|REPLACEME shift       control     keycode  17 = VoidSymbol
+#|REPLACEME       altgr control     keycode  17 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  17 = VoidSymbol
+#|REPLACEME                     alt keycode  17 = Meta_w
+#|REPLACEME shift               alt keycode  17 = Meta_W
+#|REPLACEME       altgr         alt keycode  17 = VoidSymbol
+#|REPLACEME             control alt keycode  17 = Meta_Control_w
+#|REPLACEME shift altgr         alt keycode  17 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  17 = VoidSymbol
+#|REPLACEME shift       control alt keycode  17 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  17 = VoidSymbol
+
+
+# Keycode  18 - e
+#|replaceme                         keycode  18 = f
+#|REPLACEME shift                   keycode  18 = F
+#|REPLACEME       altgr             keycode  18 = atilde
+#|REPLACEME shift altgr             keycode  18 = Atilde
+#|REPLACEME             control     keycode  18 = Control_f
+#|REPLACEME shift       control     keycode  18 = VoidSymbol
+#|REPLACEME       altgr control     keycode  18 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  18 = VoidSymbol
+#|REPLACEME                     alt keycode  18 = Meta_f
+#|REPLACEME shift               alt keycode  18 = Meta_F
+#|REPLACEME       altgr         alt keycode  18 = VoidSymbol
+#|REPLACEME             control alt keycode  18 = Meta_Control_f
+#|REPLACEME shift altgr         alt keycode  18 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  18 = VoidSymbol
+#|REPLACEME shift       control alt keycode  18 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  18 = VoidSymbol
+
+
+# Keycode  19 - r
+#|replaceme                         keycode  19 = p
+#|REPLACEME shift                   keycode  19 = P
+#|REPLACEME       altgr             keycode  19 = oslash
+#|REPLACEME shift altgr             keycode  19 = Oslash
+#|REPLACEME             control     keycode  19 = Control_p
+#|REPLACEME shift       control     keycode  19 = VoidSymbol
+#|REPLACEME       altgr control     keycode  19 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  19 = VoidSymbol
+#|REPLACEME                     alt keycode  19 = Meta_p
+#|REPLACEME shift               alt keycode  19 = Meta_P
+#|REPLACEME       altgr         alt keycode  19 = VoidSymbol
+#|REPLACEME             control alt keycode  19 = Meta_Control_p
+#|REPLACEME shift altgr         alt keycode  19 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  19 = VoidSymbol
+#|REPLACEME shift       control alt keycode  19 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  19 = VoidSymbol
+
+
+# Keycode  20 - t
+#|replaceme                         keycode  20 = g
+#|REPLACEME shift                   keycode  20 = G
+#|REPLACEME       altgr             keycode  20 = VoidSymbol
+#|REPLACEME shift altgr             keycode  20 = asciitilde
+#|REPLACEME             control     keycode  20 = Control_g
+#|REPLACEME shift       control     keycode  20 = VoidSymbol
+#|REPLACEME       altgr control     keycode  20 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  20 = VoidSymbol
+#|REPLACEME                     alt keycode  20 = Meta_g
+#|REPLACEME shift               alt keycode  20 = Meta_G
+#|REPLACEME       altgr         alt keycode  20 = VoidSymbol
+#|REPLACEME             control alt keycode  20 = Meta_Control_g
+#|REPLACEME shift altgr         alt keycode  20 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  20 = VoidSymbol
+#|REPLACEME shift       control alt keycode  20 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  20 = VoidSymbol
+
+
+# Keycode  21 - y
+#|replaceme                         keycode  21 = j
+#|REPLACEME shift                   keycode  21 = J
+#|REPLACEME       altgr             keycode  21 = VoidSymbol
+#|REPLACEME shift altgr             keycode  21 = VoidSymbol
+#|REPLACEME             control     keycode  21 = Control_j
+#|REPLACEME shift       control     keycode  21 = VoidSymbol
+#|REPLACEME       altgr control     keycode  21 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  21 = VoidSymbol
+#|REPLACEME                     alt keycode  21 = Meta_j
+#|REPLACEME shift               alt keycode  21 = Meta_J
+#|REPLACEME       altgr         alt keycode  21 = VoidSymbol
+#|REPLACEME             control alt keycode  21 = Meta_Control_j
+#|REPLACEME shift altgr         alt keycode  21 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  21 = VoidSymbol
+#|REPLACEME shift       control alt keycode  21 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  21 = VoidSymbol
+
+
+# Keycode  22 - u
+#|replaceme                         keycode  22 = l
+#|REPLACEME shift                   keycode  22 = L
+#|REPLACEME       altgr             keycode  22 = VoidSymbol
+#|REPLACEME shift altgr             keycode  22 = VoidSymbol
+#|REPLACEME             control     keycode  22 = Control_l
+#|REPLACEME shift       control     keycode  22 = VoidSymbol
+#|REPLACEME       altgr control     keycode  22 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  22 = VoidSymbol
+#|REPLACEME                     alt keycode  22 = Meta_l
+#|REPLACEME shift               alt keycode  22 = Meta_L
+#|REPLACEME       altgr         alt keycode  22 = VoidSymbol
+#|REPLACEME             control alt keycode  22 = Meta_Control_l
+#|REPLACEME shift altgr         alt keycode  22 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  22 = VoidSymbol
+#|REPLACEME shift       control alt keycode  22 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  22 = VoidSymbol
+
+
+# Keycode  23 - i
+#|replaceme                         keycode  23 = u
+#|REPLACEME shift                   keycode  23 = U
+#|REPLACEME       altgr             keycode  23 = uacute
+#|REPLACEME shift altgr             keycode  23 = Uacute
+#|REPLACEME             control     keycode  23 = Control_u
+#|REPLACEME shift       control     keycode  23 = VoidSymbol
+#|REPLACEME       altgr control     keycode  23 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  23 = VoidSymbol
+#|REPLACEME                     alt keycode  23 = Meta_u
+#|REPLACEME shift               alt keycode  23 = Meta_U
+#|REPLACEME       altgr         alt keycode  23 = VoidSymbol
+#|REPLACEME             control alt keycode  23 = Meta_Control_u
+#|REPLACEME shift altgr         alt keycode  23 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  23 = VoidSymbol
+#|REPLACEME shift       control alt keycode  23 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  23 = VoidSymbol
+
+
+# Keycode  24 - o
+#|replaceme                         keycode  24 = y
+#|REPLACEME shift                   keycode  24 = Y
+#|REPLACEME       altgr             keycode  24 = udiaeresis
+#|REPLACEME shift altgr             keycode  24 = Udiaeresis
+#|REPLACEME             control     keycode  24 = Control_y
+#|REPLACEME shift       control     keycode  24 = VoidSymbol
+#|REPLACEME       altgr control     keycode  24 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  24 = VoidSymbol
+#|REPLACEME                     alt keycode  24 = Meta_y
+#|REPLACEME shift               alt keycode  24 = Meta_Y
+#|REPLACEME       altgr         alt keycode  24 = VoidSymbol
+#|REPLACEME             control alt keycode  24 = Meta_Control_y
+#|REPLACEME shift altgr         alt keycode  24 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  24 = VoidSymbol
+#|REPLACEME shift       control alt keycode  24 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  24 = VoidSymbol
+
+
+# Keycode  25 - p
+#|replaceme                         keycode  25 = semicolon
+#|REPLACEME shift                   keycode  25 = colon
+#|REPLACEME       altgr             keycode  25 = odiaeresis
+#|REPLACEME shift altgr             keycode  25 = Odiaeresis
+#|REPLACEME             control     keycode  25 = VoidSymbol
+#|REPLACEME shift       control     keycode  25 = VoidSymbol
+#|REPLACEME       altgr control     keycode  25 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  25 = VoidSymbol
+#|REPLACEME                     alt keycode  25 = Meta_semicolon
+#|REPLACEME shift               alt keycode  25 = Meta_colon
+#|REPLACEME       altgr         alt keycode  25 = VoidSymbol
+#|REPLACEME             control alt keycode  25 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  25 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  25 = VoidSymbol
+#|REPLACEME shift       control alt keycode  25 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  25 = VoidSymbol
+
+
+# Keycode  26 - bracketleft
+#|replaceme                         keycode  26 = bracketleft
+#|REPLACEME shift                   keycode  26 = braceleft
+#|REPLACEME       altgr             keycode  26 = guillemotleft
+#|REPLACEME shift altgr             keycode  26 = VoidSymbol
+#|REPLACEME             control     keycode  26 = Escape
+#|REPLACEME shift       control     keycode  26 = VoidSymbol
+#|REPLACEME       altgr control     keycode  26 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  26 = VoidSymbol
+#|REPLACEME                     alt keycode  26 = Meta_bracketleft
+#|REPLACEME shift               alt keycode  26 = Meta_braceleft
+#|REPLACEME       altgr         alt keycode  26 = VoidSymbol
+#|REPLACEME             control alt keycode  26 = Meta_Escape
+#|REPLACEME shift altgr         alt keycode  26 = Meta_asciitilde
+#|REPLACEME       altgr control alt keycode  26 = VoidSymbol
+#|REPLACEME shift       control alt keycode  26 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  26 = VoidSymbol
+
+
+# Keycode  27 - bracketright
+#|replaceme                         keycode  27 = bracketright
+#|REPLACEME shift                   keycode  27 = braceright
+#|REPLACEME       altgr             keycode  27 = guillemotright
+#|REPLACEME shift altgr             keycode  27 = VoidSymbol
+#|REPLACEME             control     keycode  27 = Control_bracketright
+#|REPLACEME shift       control     keycode  27 = VoidSymbol
+#|REPLACEME       altgr control     keycode  27 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  27 = VoidSymbol
+#|REPLACEME                     alt keycode  27 = Meta_bracketright
+#|REPLACEME shift               alt keycode  27 = Meta_braceright
+#|REPLACEME       altgr         alt keycode  27 = VoidSymbol
+#|REPLACEME             control alt keycode  27 = Meta_Control_bracketright
+#|REPLACEME shift altgr         alt keycode  27 = Meta_asciitilde
+#|REPLACEME       altgr control alt keycode  27 = VoidSymbol
+#|REPLACEME shift       control alt keycode  27 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  27 = VoidSymbol
+
+
+# Keycode  28 - Return
+#|replaceme                         keycode  28 = Return
+#|REPLACEME shift                   keycode  28 = VoidSymbol
+#|REPLACEME       altgr             keycode  28 = VoidSymbol
+#|REPLACEME shift altgr             keycode  28 = VoidSymbol
+#|REPLACEME             control     keycode  28 = VoidSymbol
+#|REPLACEME shift       control     keycode  28 = VoidSymbol
+#|REPLACEME       altgr control     keycode  28 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  28 = VoidSymbol
+#|REPLACEME                     alt keycode  28 = Meta_Control_m
+#|REPLACEME shift               alt keycode  28 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  28 = VoidSymbol
+#|REPLACEME             control alt keycode  28 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  28 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  28 = VoidSymbol
+#|REPLACEME shift       control alt keycode  28 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  28 = VoidSymbol
+
+
+# Keycode  29 - Control
+#|replaceme                         keycode  29 = Control
+#|REPLACEME shift                   keycode  29 = VoidSymbol
+#|REPLACEME       altgr             keycode  29 = VoidSymbol
+#|REPLACEME shift altgr             keycode  29 = VoidSymbol
+#|REPLACEME             control     keycode  29 = VoidSymbol
+#|REPLACEME shift       control     keycode  29 = VoidSymbol
+#|REPLACEME       altgr control     keycode  29 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  29 = VoidSymbol
+#|REPLACEME                     alt keycode  29 = VoidSymbol
+#|REPLACEME shift               alt keycode  29 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  29 = VoidSymbol
+#|REPLACEME             control alt keycode  29 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  29 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  29 = VoidSymbol
+#|REPLACEME shift       control alt keycode  29 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  29 = VoidSymbol
+
+
+# Keycode  30 - a
+#|replaceme                         keycode  30 = a
+#|REPLACEME shift                   keycode  30 = A
+#|REPLACEME       altgr             keycode  30 = aacute
+#|REPLACEME shift altgr             keycode  30 = Aacute
+#|REPLACEME             control     keycode  30 = Control_a
+#|REPLACEME shift       control     keycode  30 = VoidSymbol
+#|REPLACEME       altgr control     keycode  30 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  30 = VoidSymbol
+#|REPLACEME                     alt keycode  30 = Meta_a
+#|REPLACEME shift               alt keycode  30 = Meta_A
+#|REPLACEME       altgr         alt keycode  30 = VoidSymbol
+#|REPLACEME             control alt keycode  30 = Meta_Control_a
+#|REPLACEME shift altgr         alt keycode  30 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  30 = VoidSymbol
+#|REPLACEME shift       control alt keycode  30 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  30 = VoidSymbol
+
+
+# Keycode  31 - s
+#|replaceme                         keycode  31 = r
+#|REPLACEME shift                   keycode  31 = R
+#|REPLACEME       altgr             keycode  31 = dead_grave
+#|REPLACEME shift altgr             keycode  31 = asciitilde
+#|REPLACEME             control     keycode  31 = Control_r
+#|REPLACEME shift       control     keycode  31 = VoidSymbol
+#|REPLACEME       altgr control     keycode  31 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  31 = VoidSymbol
+#|REPLACEME                     alt keycode  31 = Meta_r
+#|REPLACEME shift               alt keycode  31 = Meta_R
+#|REPLACEME       altgr         alt keycode  31 = VoidSymbol
+#|REPLACEME             control alt keycode  31 = Meta_Control_r
+#|REPLACEME shift altgr         alt keycode  31 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  31 = VoidSymbol
+#|REPLACEME shift       control alt keycode  31 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  31 = VoidSymbol
+
+
+# Keycode  32 - d
+#|replaceme                         keycode  32 = s
+#|REPLACEME shift                   keycode  32 = S
+#|REPLACEME       altgr             keycode  32 = ssharp
+#|REPLACEME shift altgr             keycode  32 = asciitilde
+#|REPLACEME             control     keycode  32 = Control_s
+#|REPLACEME shift       control     keycode  32 = VoidSymbol
+#|REPLACEME       altgr control     keycode  32 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  32 = VoidSymbol
+#|REPLACEME                     alt keycode  32 = Meta_s
+#|REPLACEME shift               alt keycode  32 = Meta_S
+#|REPLACEME       altgr         alt keycode  32 = VoidSymbol
+#|REPLACEME             control alt keycode  32 = Meta_Control_s
+#|REPLACEME shift altgr         alt keycode  32 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  32 = VoidSymbol
+#|REPLACEME shift       control alt keycode  32 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  32 = VoidSymbol
+
+
+# Keycode  33 - f
+#|replaceme                         keycode  33 = t
+#|REPLACEME shift                   keycode  33 = T
+#|REPLACEME       altgr             keycode  33 = dead_acute
+#|REPLACEME shift altgr             keycode  33 = asciitilde
+#|REPLACEME             control     keycode  33 = Control_t
+#|REPLACEME shift       control     keycode  33 = VoidSymbol
+#|REPLACEME       altgr control     keycode  33 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  33 = VoidSymbol
+#|REPLACEME                     alt keycode  33 = Meta_t
+#|REPLACEME shift               alt keycode  33 = Meta_T
+#|REPLACEME       altgr         alt keycode  33 = VoidSymbol
+#|REPLACEME             control alt keycode  33 = Meta_Control_t
+#|REPLACEME shift altgr         alt keycode  33 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  33 = VoidSymbol
+#|REPLACEME shift       control alt keycode  33 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  33 = VoidSymbol
+
+
+# Keycode  34 - g
+#|replaceme                         keycode  34 = d
+#|REPLACEME shift                   keycode  34 = D
+#|REPLACEME       altgr             keycode  34 = dead_diaeresis
+#|REPLACEME shift altgr             keycode  34 = asciitilde
+#|REPLACEME             control     keycode  34 = Control_d
+#|REPLACEME shift       control     keycode  34 = VoidSymbol
+#|REPLACEME       altgr control     keycode  34 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  34 = VoidSymbol
+#|REPLACEME                     alt keycode  34 = Meta_d
+#|REPLACEME shift               alt keycode  34 = Meta_D
+#|REPLACEME       altgr         alt keycode  34 = VoidSymbol
+#|REPLACEME             control alt keycode  34 = Meta_Control_d
+#|REPLACEME shift altgr         alt keycode  34 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  34 = VoidSymbol
+#|REPLACEME shift       control alt keycode  34 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  34 = VoidSymbol
+
+
+# Keycode  35 - h
+#|replaceme                         keycode  35 = h
+#|REPLACEME shift                   keycode  35 = H
+#|REPLACEME       altgr             keycode  35 = VoidSymbol
+#|REPLACEME shift altgr             keycode  35 = asciitilde
+#|REPLACEME             control     keycode  35 = Control_h
+#|REPLACEME shift       control     keycode  35 = VoidSymbol
+#|REPLACEME       altgr control     keycode  35 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  35 = VoidSymbol
+#|REPLACEME                     alt keycode  35 = Meta_h
+#|REPLACEME shift               alt keycode  35 = Meta_H
+#|REPLACEME       altgr         alt keycode  35 = VoidSymbol
+#|REPLACEME             control alt keycode  35 = Meta_Control_h
+#|REPLACEME shift altgr         alt keycode  35 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  35 = VoidSymbol
+#|REPLACEME shift       control alt keycode  35 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  35 = VoidSymbol
+
+
+# Keycode  36 - j
+#|replaceme                         keycode  36 = n
+#|REPLACEME shift                   keycode  36 = N
+#|REPLACEME       altgr             keycode  36 = ntilde
+#|REPLACEME shift altgr             keycode  36 = Ntilde
+#|REPLACEME             control     keycode  36 = Control_n
+#|REPLACEME shift       control     keycode  36 = VoidSymbol
+#|REPLACEME       altgr control     keycode  36 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  36 = VoidSymbol
+#|REPLACEME                     alt keycode  36 = Meta_n
+#|REPLACEME shift               alt keycode  36 = Meta_N
+#|REPLACEME       altgr         alt keycode  36 = VoidSymbol
+#|REPLACEME             control alt keycode  36 = Meta_Control_n
+#|REPLACEME shift altgr         alt keycode  36 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  36 = VoidSymbol
+#|REPLACEME shift       control alt keycode  36 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  36 = VoidSymbol
+
+
+# Keycode  37 - k
+#|replaceme                         keycode  37 = e
+#|REPLACEME shift                   keycode  37 = E
+#|REPLACEME       altgr             keycode  37 = eacute
+#|REPLACEME shift altgr             keycode  37 = Eacute
+#|REPLACEME             control     keycode  37 = Control_e
+#|REPLACEME shift       control     keycode  37 = VoidSymbol
+#|REPLACEME       altgr control     keycode  37 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  37 = VoidSymbol
+#|REPLACEME                     alt keycode  37 = Meta_e
+#|REPLACEME shift               alt keycode  37 = Meta_E
+#|REPLACEME       altgr         alt keycode  37 = VoidSymbol
+#|REPLACEME             control alt keycode  37 = Meta_Control_e
+#|REPLACEME shift altgr         alt keycode  37 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  37 = VoidSymbol
+#|REPLACEME shift       control alt keycode  37 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  37 = VoidSymbol
+
+
+# Keycode  38 - l
+#|replaceme                         keycode  38 = i
+#|REPLACEME shift                   keycode  38 = I
+#|REPLACEME       altgr             keycode  38 = iacute
+#|REPLACEME shift altgr             keycode  38 = Iacute
+#|REPLACEME             control     keycode  38 = Control_i
+#|REPLACEME shift       control     keycode  38 = VoidSymbol
+#|REPLACEME       altgr control     keycode  38 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  38 = VoidSymbol
+#|REPLACEME                     alt keycode  38 = Meta_i
+#|REPLACEME shift               alt keycode  38 = Meta_I
+#|REPLACEME       altgr         alt keycode  38 = VoidSymbol
+#|REPLACEME             control alt keycode  38 = Meta_Control_i
+#|REPLACEME shift altgr         alt keycode  38 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  38 = VoidSymbol
+#|REPLACEME shift       control alt keycode  38 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  38 = VoidSymbol
+
+
+# Keycode  39 - semicolon
+#|replaceme                         keycode  39 = o
+#|REPLACEME shift                   keycode  39 = O
+#|REPLACEME       altgr             keycode  39 = oacute
+#|REPLACEME shift altgr             keycode  39 = Oacute
+#|REPLACEME             control     keycode  39 = Control_o
+#|REPLACEME shift       control     keycode  39 = VoidSymbol
+#|REPLACEME       altgr control     keycode  39 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  39 = VoidSymbol
+#|REPLACEME                     alt keycode  39 = Meta_o
+#|REPLACEME shift               alt keycode  39 = Meta_O
+#|REPLACEME       altgr         alt keycode  39 = VoidSymbol
+#|REPLACEME             control alt keycode  39 = Meta_Control_o
+#|REPLACEME shift altgr         alt keycode  39 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  39 = VoidSymbol
+#|REPLACEME shift       control alt keycode  39 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  39 = VoidSymbol
+
+
+# Keycode  40 - apostrophe
+#|replaceme                         keycode  40 = apostrophe
+#|REPLACEME shift                   keycode  40 = quotedbl
+#|REPLACEME       altgr             keycode  40 = otilde
+#|REPLACEME shift altgr             keycode  40 = Otilde
+#|REPLACEME             control     keycode  40 = Control_g
+#|REPLACEME shift       control     keycode  40 = VoidSymbol
+#|REPLACEME       altgr control     keycode  40 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  40 = VoidSymbol
+#|REPLACEME                     alt keycode  40 = Meta_apostrophe
+#|REPLACEME shift               alt keycode  40 = Meta_quotedbl
+#|REPLACEME       altgr         alt keycode  40 = VoidSymbol
+#|REPLACEME             control alt keycode  40 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  40 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  40 = VoidSymbol
+#|REPLACEME shift       control alt keycode  40 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  40 = VoidSymbol
+
+
+# Keycode  41 - grave
+#|replaceme                         keycode  41 = grave
+#|REPLACEME shift                   keycode  41 = asciitilde
+#|REPLACEME       altgr             keycode  41 = VoidSymbol
+#|REPLACEME shift altgr             keycode  41 = VoidSymbol
+#|REPLACEME             control     keycode  41 = nul
+#|REPLACEME shift       control     keycode  41 = VoidSymbol
+#|REPLACEME       altgr control     keycode  41 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  41 = VoidSymbol
+#|REPLACEME                     alt keycode  41 = Meta_grave
+#|REPLACEME shift               alt keycode  41 = Meta_asciitilde
+#|REPLACEME       altgr         alt keycode  41 = VoidSymbol
+#|REPLACEME             control alt keycode  41 = Meta_nul
+#|REPLACEME shift altgr         alt keycode  41 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  41 = VoidSymbol
+#|REPLACEME shift       control alt keycode  41 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  41 = VoidSymbol
+
+
+# Keycode  42 - Shift
+#|replaceme                         keycode  42 = Shift
+#|REPLACEME shift                   keycode  42 = VoidSymbol
+#|REPLACEME       altgr             keycode  42 = VoidSymbol
+#|REPLACEME shift altgr             keycode  42 = VoidSymbol
+#|REPLACEME             control     keycode  42 = VoidSymbol
+#|REPLACEME shift       control     keycode  42 = VoidSymbol
+#|REPLACEME       altgr control     keycode  42 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  42 = VoidSymbol
+#|REPLACEME                     alt keycode  42 = VoidSymbol
+#|REPLACEME shift               alt keycode  42 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  42 = VoidSymbol
+#|REPLACEME             control alt keycode  42 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  42 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  42 = VoidSymbol
+#|REPLACEME shift       control alt keycode  42 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  42 = VoidSymbol
+
+
+# Keycode  43 - backslash
+#|replaceme                         keycode  43 = backslash
+#|REPLACEME shift                   keycode  43 = bar
+#|REPLACEME       altgr             keycode  43 = asciitilde
+#|REPLACEME shift altgr             keycode  43 = asciitilde
+#|REPLACEME             control     keycode  43 = Control_backslash
+#|REPLACEME shift       control     keycode  43 = VoidSymbol
+#|REPLACEME       altgr control     keycode  43 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  43 = VoidSymbol
+#|REPLACEME                     alt keycode  43 = Meta_backslash
+#|REPLACEME shift               alt keycode  43 = Meta_bar
+#|REPLACEME       altgr         alt keycode  43 = Meta_asciitilde
+#|REPLACEME             control alt keycode  43 = Meta_Control_backslash
+#|REPLACEME shift altgr         alt keycode  43 = Meta_asciitilde
+#|REPLACEME       altgr control alt keycode  43 = VoidSymbol
+#|REPLACEME shift       control alt keycode  43 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  43 = VoidSymbol
+
+
+# Keycode  44 - z
+#|replaceme                         keycode  44 = z
+#|REPLACEME shift                   keycode  44 = Z
+#|REPLACEME       altgr             keycode  44 = ae
+#|REPLACEME shift altgr             keycode  44 = AE
+#|REPLACEME             control     keycode  44 = Control_z
+#|REPLACEME shift       control     keycode  44 = VoidSymbol
+#|REPLACEME       altgr control     keycode  44 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  44 = VoidSymbol
+#|REPLACEME                     alt keycode  44 = Meta_z
+#|REPLACEME shift               alt keycode  44 = Meta_Z
+#|REPLACEME       altgr         alt keycode  44 = VoidSymbol
+#|REPLACEME             control alt keycode  44 = Meta_Control_z
+#|REPLACEME shift altgr         alt keycode  44 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  44 = VoidSymbol
+#|REPLACEME shift       control alt keycode  44 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  44 = VoidSymbol
+
+
+# Keycode  45 - x
+#|replaceme                         keycode  45 = x
+#|REPLACEME shift                   keycode  45 = X
+#|REPLACEME       altgr             keycode  45 = dead_circumflex
+#|REPLACEME shift altgr             keycode  45 = asciitilde
+#|REPLACEME             control     keycode  45 = Control_x
+#|REPLACEME shift       control     keycode  45 = VoidSymbol
+#|REPLACEME       altgr control     keycode  45 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  45 = VoidSymbol
+#|REPLACEME                     alt keycode  45 = Meta_x
+#|REPLACEME shift               alt keycode  45 = Meta_X
+#|REPLACEME       altgr         alt keycode  45 = VoidSymbol
+#|REPLACEME             control alt keycode  45 = Meta_Control_x
+#|REPLACEME shift altgr         alt keycode  45 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  45 = VoidSymbol
+#|REPLACEME shift       control alt keycode  45 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  45 = VoidSymbol
+
+
+# Keycode  46 - c
+#|replaceme                         keycode  46 = c
+#|REPLACEME shift                   keycode  46 = C
+#|REPLACEME       altgr             keycode  46 = ccedilla
+#|REPLACEME shift altgr             keycode  46 = Ccedilla
+#|REPLACEME             control     keycode  46 = Control_c
+#|REPLACEME shift       control     keycode  46 = VoidSymbol
+#|REPLACEME       altgr control     keycode  46 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  46 = VoidSymbol
+#|REPLACEME                     alt keycode  46 = Meta_c
+#|REPLACEME shift               alt keycode  46 = Meta_C
+#|REPLACEME       altgr         alt keycode  46 = VoidSymbol
+#|REPLACEME             control alt keycode  46 = Meta_Control_c
+#|REPLACEME shift altgr         alt keycode  46 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  46 = VoidSymbol
+#|REPLACEME shift       control alt keycode  46 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  46 = VoidSymbol
+
+
+# Keycode  47 - v
+#|replaceme                         keycode  47 = v
+#|REPLACEME shift                   keycode  47 = V
+#|REPLACEME       altgr             keycode  47 = oe
+#|REPLACEME shift altgr             keycode  47 = OE
+#|REPLACEME             control     keycode  47 = Control_v
+#|REPLACEME shift       control     keycode  47 = VoidSymbol
+#|REPLACEME       altgr control     keycode  47 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  47 = VoidSymbol
+#|REPLACEME                     alt keycode  47 = Meta_v
+#|REPLACEME shift               alt keycode  47 = Meta_V
+#|REPLACEME       altgr         alt keycode  47 = VoidSymbol
+#|REPLACEME             control alt keycode  47 = Meta_Control_v
+#|REPLACEME shift altgr         alt keycode  47 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  47 = VoidSymbol
+#|REPLACEME shift       control alt keycode  47 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  47 = VoidSymbol
+
+
+# Keycode  48 - b
+#|replaceme                         keycode  48 = b
+#|REPLACEME shift                   keycode  48 = B
+#|REPLACEME       altgr             keycode  48 = VoidSymbol
+#|REPLACEME shift altgr             keycode  48 = asciitilde
+#|REPLACEME             control     keycode  48 = Control_b
+#|REPLACEME shift       control     keycode  48 = VoidSymbol
+#|REPLACEME       altgr control     keycode  48 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  48 = VoidSymbol
+#|REPLACEME                     alt keycode  48 = Meta_b
+#|REPLACEME shift               alt keycode  48 = Meta_B
+#|REPLACEME       altgr         alt keycode  48 = VoidSymbol
+#|REPLACEME             control alt keycode  48 = Meta_Control_b
+#|REPLACEME shift altgr         alt keycode  48 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  48 = VoidSymbol
+#|REPLACEME shift       control alt keycode  48 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  48 = VoidSymbol
+
+
+# Keycode  49 - n
+#|replaceme                         keycode  49 = k
+#|REPLACEME shift                   keycode  49 = K
+#|REPLACEME       altgr             keycode  49 = VoidSymbol
+#|REPLACEME shift altgr             keycode  49 = asciitilde
+#|REPLACEME             control     keycode  49 = Control_k
+#|REPLACEME shift       control     keycode  49 = VoidSymbol
+#|REPLACEME       altgr control     keycode  49 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  49 = VoidSymbol
+#|REPLACEME                     alt keycode  49 = Meta_k
+#|REPLACEME shift               alt keycode  49 = Meta_K
+#|REPLACEME       altgr         alt keycode  49 = VoidSymbol
+#|REPLACEME             control alt keycode  49 = Meta_Control_k
+#|REPLACEME shift altgr         alt keycode  49 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  49 = VoidSymbol
+#|REPLACEME shift       control alt keycode  49 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  49 = VoidSymbol
+
+
+# Keycode  50 - m
+#|replaceme                         keycode  50 = m
+#|REPLACEME shift                   keycode  50 = M
+#|REPLACEME       altgr             keycode  50 = VoidSymbol
+#|REPLACEME shift altgr             keycode  50 = asciitilde
+#|REPLACEME             control     keycode  50 = Control_m
+#|REPLACEME shift       control     keycode  50 = VoidSymbol
+#|REPLACEME       altgr control     keycode  50 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  50 = VoidSymbol
+#|REPLACEME                     alt keycode  50 = Meta_m
+#|REPLACEME shift               alt keycode  50 = Meta_M
+#|REPLACEME       altgr         alt keycode  50 = VoidSymbol
+#|REPLACEME             control alt keycode  50 = Meta_Control_m
+#|REPLACEME shift altgr         alt keycode  50 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  50 = VoidSymbol
+#|REPLACEME shift       control alt keycode  50 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  50 = VoidSymbol
+
+
+# Keycode  51 - comma
+#|replaceme                         keycode  51 = comma
+#|REPLACEME shift                   keycode  51 = less
+#|REPLACEME       altgr             keycode  51 = dead_cedilla
+#|REPLACEME shift altgr             keycode  51 = asciitilde
+#|REPLACEME             control     keycode  51 = VoidSymbol
+#|REPLACEME shift       control     keycode  51 = VoidSymbol
+#|REPLACEME       altgr control     keycode  51 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  51 = VoidSymbol
+#|REPLACEME                     alt keycode  51 = Meta_comma
+#|REPLACEME shift               alt keycode  51 = Meta_less
+#|REPLACEME       altgr         alt keycode  51 = VoidSymbol
+#|REPLACEME             control alt keycode  51 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  51 = Meta_asciitilde
+#|REPLACEME       altgr control alt keycode  51 = VoidSymbol
+#|REPLACEME shift       control alt keycode  51 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  51 = VoidSymbol
+
+
+# Keycode  52 - period
+#|replaceme                         keycode  52 = period
+#|REPLACEME shift                   keycode  52 = greater
+#|REPLACEME       altgr             keycode  52 = VoidSymbol
+#|REPLACEME shift altgr             keycode  52 = VoidSymbol
+#|REPLACEME             control     keycode  52 = Compose
+#|REPLACEME shift       control     keycode  52 = VoidSymbol
+#|REPLACEME       altgr control     keycode  52 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  52 = VoidSymbol
+#|REPLACEME                     alt keycode  52 = Meta_period
+#|REPLACEME shift               alt keycode  52 = Meta_greater
+#|REPLACEME       altgr         alt keycode  52 = Meta_asciitilde
+#|REPLACEME             control alt keycode  52 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  52 = Meta_asciitilde
+#|REPLACEME       altgr control alt keycode  52 = VoidSymbol
+#|REPLACEME shift       control alt keycode  52 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  52 = VoidSymbol
+
+
+# Keycode  53 - slash
+#|replaceme                         keycode  53 = slash
+#|REPLACEME shift                   keycode  53 = question
+#|REPLACEME       altgr             keycode  53 = questiondown
+#|REPLACEME shift altgr             keycode  53 = asciitilde
+#|REPLACEME             control     keycode  53 = Delete
+#|REPLACEME shift       control     keycode  53 = Delete
+#|REPLACEME       altgr control     keycode  53 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  53 = VoidSymbol
+#|REPLACEME                     alt keycode  53 = Meta_slash
+#|REPLACEME shift               alt keycode  53 = Meta_question
+#|REPLACEME       altgr         alt keycode  53 = VoidSymbol
+#|REPLACEME             control alt keycode  53 = Meta_Delete
+#|REPLACEME shift altgr         alt keycode  53 = Meta_asciitilde
+#|REPLACEME       altgr control alt keycode  53 = VoidSymbol
+#|REPLACEME shift       control alt keycode  53 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  53 = VoidSymbol
+
+
+# Keycode  54 - Shift
+#|replaceme                         keycode  54 = Shift
+#|REPLACEME shift                   keycode  54 = VoidSymbol
+#|REPLACEME       altgr             keycode  54 = VoidSymbol
+#|REPLACEME shift altgr             keycode  54 = VoidSymbol
+#|REPLACEME             control     keycode  54 = VoidSymbol
+#|REPLACEME shift       control     keycode  54 = VoidSymbol
+#|REPLACEME       altgr control     keycode  54 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  54 = VoidSymbol
+#|REPLACEME                     alt keycode  54 = VoidSymbol
+#|REPLACEME shift               alt keycode  54 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  54 = VoidSymbol
+#|REPLACEME             control alt keycode  54 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  54 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  54 = VoidSymbol
+#|REPLACEME shift       control alt keycode  54 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  54 = VoidSymbol
+
+
+# Keycode  55 - KP_Multiply
+#|replaceme                         keycode  55 = KP_Multiply
+#|REPLACEME shift                   keycode  55 = VoidSymbol
+#|REPLACEME       altgr             keycode  55 = Hex_C
+#|REPLACEME shift altgr             keycode  55 = VoidSymbol
+#|REPLACEME             control     keycode  55 = VoidSymbol
+#|REPLACEME shift       control     keycode  55 = VoidSymbol
+#|REPLACEME       altgr control     keycode  55 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  55 = VoidSymbol
+#|REPLACEME                     alt keycode  55 = VoidSymbol
+#|REPLACEME shift               alt keycode  55 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  55 = VoidSymbol
+#|REPLACEME             control alt keycode  55 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  55 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  55 = VoidSymbol
+#|REPLACEME shift       control alt keycode  55 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  55 = VoidSymbol
+
+
+# Keycode  56 - Alt
+#|replaceme                         keycode  56 = Alt
+#|REPLACEME shift                   keycode  56 = VoidSymbol
+#|REPLACEME       altgr             keycode  56 = VoidSymbol
+#|REPLACEME shift altgr             keycode  56 = VoidSymbol
+#|REPLACEME             control     keycode  56 = VoidSymbol
+#|REPLACEME shift       control     keycode  56 = VoidSymbol
+#|REPLACEME       altgr control     keycode  56 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  56 = VoidSymbol
+#|REPLACEME                     alt keycode  56 = VoidSymbol
+#|REPLACEME shift               alt keycode  56 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  56 = VoidSymbol
+#|REPLACEME             control alt keycode  56 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  56 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  56 = VoidSymbol
+#|REPLACEME shift       control alt keycode  56 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  56 = VoidSymbol
+
+
+# Keycode  57 - space
+#|replaceme                         keycode  57 = space
+#|REPLACEME shift                   keycode  57 = space
+#|REPLACEME       altgr             keycode  57 = space
+#|REPLACEME shift altgr             keycode  57 = nobreakspace
+#|REPLACEME             control     keycode  57 = nul
+#|REPLACEME shift       control     keycode  57 = VoidSymbol
+#|REPLACEME       altgr control     keycode  57 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  57 = VoidSymbol
+#|REPLACEME                     alt keycode  57 = Meta_space
+#|REPLACEME shift               alt keycode  57 = Meta_space
+#|REPLACEME       altgr         alt keycode  57 = Meta_space
+#|REPLACEME             control alt keycode  57 = Meta_nul
+#|REPLACEME shift altgr         alt keycode  57 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  57 = VoidSymbol
+#|REPLACEME shift       control alt keycode  57 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  57 = VoidSymbol
+
+
+# Keycode  58 - CapsLock (NOTE: Colemak is Backspace, which is Delete in notation :P)
+#|replaceme                         keycode  58 = Control_h
+#|REPLACEME shift                   keycode  58 = Control_h
+#|REPLACEME       altgr             keycode  58 = Control_h
+#|REPLACEME shift altgr             keycode  58 = Control_h
+#|REPLACEME             control     keycode  58 = VoidSymbol
+#|REPLACEME shift       control     keycode  58 = VoidSymbol
+#|REPLACEME       altgr control     keycode  58 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  58 = VoidSymbol
+#|REPLACEME                     alt keycode  58 = VoidSymbol
+#|REPLACEME shift               alt keycode  58 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  58 = VoidSymbol
+#|REPLACEME             control alt keycode  58 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  58 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  58 = VoidSymbol
+#|REPLACEME shift       control alt keycode  58 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  58 = VoidSymbol
+
+
+# Keycode  59 - F1
+#|replaceme                         keycode  59 = F1
+#|REPLACEME shift                   keycode  59 = F13
+#|REPLACEME       altgr             keycode  59 = Console_13
+#|REPLACEME shift altgr             keycode  59 = VoidSymbol
+#|REPLACEME             control     keycode  59 = F25
+#|REPLACEME shift       control     keycode  59 = F37
+#|REPLACEME       altgr control     keycode  59 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  59 = VoidSymbol
+#|REPLACEME                     alt keycode  59 = Console_1
+#|REPLACEME shift               alt keycode  59 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  59 = VoidSymbol
+#|REPLACEME             control alt keycode  59 = Console_1
+#|REPLACEME shift altgr         alt keycode  59 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  59 = VoidSymbol
+#|REPLACEME shift       control alt keycode  59 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  59 = VoidSymbol
+
+
+# Keycode  60 - F2
+#|replaceme                         keycode  60 = F2
+#|REPLACEME shift                   keycode  60 = F14
+#|REPLACEME       altgr             keycode  60 = Console_14
+#|REPLACEME shift altgr             keycode  60 = VoidSymbol
+#|REPLACEME             control     keycode  60 = F26
+#|REPLACEME shift       control     keycode  60 = F38
+#|REPLACEME       altgr control     keycode  60 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  60 = VoidSymbol
+#|REPLACEME                     alt keycode  60 = Console_2
+#|REPLACEME shift               alt keycode  60 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  60 = VoidSymbol
+#|REPLACEME             control alt keycode  60 = Console_2
+#|REPLACEME shift altgr         alt keycode  60 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  60 = VoidSymbol
+#|REPLACEME shift       control alt keycode  60 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  60 = VoidSymbol
+
+
+# Keycode  61 - F3
+#|replaceme                         keycode  61 = F3
+#|REPLACEME shift                   keycode  61 = F15
+#|REPLACEME       altgr             keycode  61 = Console_15
+#|REPLACEME shift altgr             keycode  61 = VoidSymbol
+#|REPLACEME             control     keycode  61 = F27
+#|REPLACEME shift       control     keycode  61 = F39
+#|REPLACEME       altgr control     keycode  61 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  61 = VoidSymbol
+#|REPLACEME                     alt keycode  61 = Console_3
+#|REPLACEME shift               alt keycode  61 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  61 = VoidSymbol
+#|REPLACEME             control alt keycode  61 = Console_3
+#|REPLACEME shift altgr         alt keycode  61 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  61 = VoidSymbol
+#|REPLACEME shift       control alt keycode  61 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  61 = VoidSymbol
+
+
+# Keycode  62 - F4
+#|replaceme                         keycode  62 = F4
+#|REPLACEME shift                   keycode  62 = F16
+#|REPLACEME       altgr             keycode  62 = Console_16
+#|REPLACEME shift altgr             keycode  62 = VoidSymbol
+#|REPLACEME             control     keycode  62 = F28
+#|REPLACEME shift       control     keycode  62 = F40
+#|REPLACEME       altgr control     keycode  62 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  62 = VoidSymbol
+#|REPLACEME                     alt keycode  62 = Console_4
+#|REPLACEME shift               alt keycode  62 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  62 = VoidSymbol
+#|REPLACEME             control alt keycode  62 = Console_4
+#|REPLACEME shift altgr         alt keycode  62 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  62 = VoidSymbol
+#|REPLACEME shift       control alt keycode  62 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  62 = VoidSymbol
+
+
+# Keycode  63 - F5
+#|replaceme                         keycode  63 = F5
+#|REPLACEME shift                   keycode  63 = F17
+#|REPLACEME       altgr             keycode  63 = Console_17
+#|REPLACEME shift altgr             keycode  63 = VoidSymbol
+#|REPLACEME             control     keycode  63 = F29
+#|REPLACEME shift       control     keycode  63 = F41
+#|REPLACEME       altgr control     keycode  63 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  63 = VoidSymbol
+#|REPLACEME                     alt keycode  63 = Console_5
+#|REPLACEME shift               alt keycode  63 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  63 = VoidSymbol
+#|REPLACEME             control alt keycode  63 = Console_5
+#|REPLACEME shift altgr         alt keycode  63 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  63 = VoidSymbol
+#|REPLACEME shift       control alt keycode  63 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  63 = VoidSymbol
+
+
+# Keycode  64 - F6
+#|replaceme                         keycode  64 = F6
+#|REPLACEME shift                   keycode  64 = F18
+#|REPLACEME       altgr             keycode  64 = Console_18
+#|REPLACEME shift altgr             keycode  64 = VoidSymbol
+#|REPLACEME             control     keycode  64 = F30
+#|REPLACEME shift       control     keycode  64 = F42
+#|REPLACEME       altgr control     keycode  64 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  64 = VoidSymbol
+#|REPLACEME                     alt keycode  64 = Console_6
+#|REPLACEME shift               alt keycode  64 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  64 = VoidSymbol
+#|REPLACEME             control alt keycode  64 = Console_6
+#|REPLACEME shift altgr         alt keycode  64 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  64 = VoidSymbol
+#|REPLACEME shift       control alt keycode  64 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  64 = VoidSymbol
+
+
+# Keycode  65 - F7
+#|replaceme                         keycode  65 = F7
+#|REPLACEME shift                   keycode  65 = F19
+#|REPLACEME       altgr             keycode  65 = Console_19
+#|REPLACEME shift altgr             keycode  65 = VoidSymbol
+#|REPLACEME             control     keycode  65 = F31
+#|REPLACEME shift       control     keycode  65 = F43
+#|REPLACEME       altgr control     keycode  65 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  65 = VoidSymbol
+#|REPLACEME                     alt keycode  65 = Console_7
+#|REPLACEME shift               alt keycode  65 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  65 = VoidSymbol
+#|REPLACEME             control alt keycode  65 = Console_7
+#|REPLACEME shift altgr         alt keycode  65 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  65 = VoidSymbol
+#|REPLACEME shift       control alt keycode  65 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  65 = VoidSymbol
+
+
+# Keycode  66 - F8
+#|replaceme                         keycode  66 = F8
+#|REPLACEME shift                   keycode  66 = F20
+#|REPLACEME       altgr             keycode  66 = Console_20
+#|REPLACEME shift altgr             keycode  66 = VoidSymbol
+#|REPLACEME             control     keycode  66 = F32
+#|REPLACEME shift       control     keycode  66 = F44
+#|REPLACEME       altgr control     keycode  66 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  66 = VoidSymbol
+#|REPLACEME                     alt keycode  66 = Console_8
+#|REPLACEME shift               alt keycode  66 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  66 = VoidSymbol
+#|REPLACEME             control alt keycode  66 = Console_8
+#|REPLACEME shift altgr         alt keycode  66 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  66 = VoidSymbol
+#|REPLACEME shift       control alt keycode  66 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  66 = VoidSymbol
+
+
+# Keycode  67 - F9
+#|replaceme                         keycode  67 = F9
+#|REPLACEME shift                   keycode  67 = F21
+#|REPLACEME       altgr             keycode  67 = Console_21
+#|REPLACEME shift altgr             keycode  67 = VoidSymbol
+#|REPLACEME             control     keycode  67 = F33
+#|REPLACEME shift       control     keycode  67 = F45
+#|REPLACEME       altgr control     keycode  67 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  67 = VoidSymbol
+#|REPLACEME                     alt keycode  67 = Console_9
+#|REPLACEME shift               alt keycode  67 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  67 = VoidSymbol
+#|REPLACEME             control alt keycode  67 = Console_9
+#|REPLACEME shift altgr         alt keycode  67 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  67 = VoidSymbol
+#|REPLACEME shift       control alt keycode  67 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  67 = VoidSymbol
+
+
+# Keycode  68 - F10
+#|replaceme                         keycode  68 = F10
+#|REPLACEME shift                   keycode  68 = F22
+#|REPLACEME       altgr             keycode  68 = Console_22
+#|REPLACEME shift altgr             keycode  68 = VoidSymbol
+#|REPLACEME             control     keycode  68 = F34
+#|REPLACEME shift       control     keycode  68 = F46
+#|REPLACEME       altgr control     keycode  68 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  68 = VoidSymbol
+#|REPLACEME                     alt keycode  68 = Console_10
+#|REPLACEME shift               alt keycode  68 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  68 = VoidSymbol
+#|REPLACEME             control alt keycode  68 = Console_10
+#|REPLACEME shift altgr         alt keycode  68 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  68 = VoidSymbol
+#|REPLACEME shift       control alt keycode  68 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  68 = VoidSymbol
+
+
+# Keycode  69 - Num_Lock
+#|replaceme                         keycode  69 = Num_Lock
+#|REPLACEME shift                   keycode  69 = VoidSymbol
+#|REPLACEME       altgr             keycode  69 = VoidSymbol
+#|REPLACEME shift altgr             keycode  69 = VoidSymbol
+#|REPLACEME             control     keycode  69 = VoidSymbol
+#|REPLACEME shift       control     keycode  69 = VoidSymbol
+#|REPLACEME       altgr control     keycode  69 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  69 = VoidSymbol
+#|REPLACEME                     alt keycode  69 = VoidSymbol
+#|REPLACEME shift               alt keycode  69 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  69 = VoidSymbol
+#|REPLACEME             control alt keycode  69 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  69 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  69 = VoidSymbol
+#|REPLACEME shift       control alt keycode  69 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  69 = VoidSymbol
+
+
+# Keycode  70 - Scroll_Lock
+#|replaceme                         keycode  70 = Scroll_Lock
+#|REPLACEME shift                   keycode  70 = Show_Memory
+#|REPLACEME       altgr             keycode  70 = Show_Registers
+#|REPLACEME shift altgr             keycode  70 = VoidSymbol
+#|REPLACEME             control     keycode  70 = Show_State
+#|REPLACEME shift       control     keycode  70 = VoidSymbol
+#|REPLACEME       altgr control     keycode  70 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  70 = VoidSymbol
+#|REPLACEME                     alt keycode  70 = Scroll_Lock
+#|REPLACEME shift               alt keycode  70 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  70 = VoidSymbol
+#|REPLACEME             control alt keycode  70 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  70 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  70 = VoidSymbol
+#|REPLACEME shift       control alt keycode  70 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  70 = VoidSymbol
+
+
+# Keycode  71 - KP_7
+#|replaceme                         keycode  71 = KP_7
+#|REPLACEME shift                   keycode  71 = VoidSymbol
+#|REPLACEME       altgr             keycode  71 = Hex_7
+#|REPLACEME shift altgr             keycode  71 = VoidSymbol
+#|REPLACEME             control     keycode  71 = VoidSymbol
+#|REPLACEME shift       control     keycode  71 = VoidSymbol
+#|REPLACEME       altgr control     keycode  71 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  71 = VoidSymbol
+#|REPLACEME                     alt keycode  71 = Ascii_7
+#|REPLACEME shift               alt keycode  71 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  71 = VoidSymbol
+#|REPLACEME             control alt keycode  71 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  71 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  71 = VoidSymbol
+#|REPLACEME shift       control alt keycode  71 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  71 = VoidSymbol
+
+
+# Keycode  72 - KP_8
+#|replaceme                         keycode  72 = KP_8
+#|REPLACEME shift                   keycode  72 = VoidSymbol
+#|REPLACEME       altgr             keycode  72 = Hex_8
+#|REPLACEME shift altgr             keycode  72 = VoidSymbol
+#|REPLACEME             control     keycode  72 = VoidSymbol
+#|REPLACEME shift       control     keycode  72 = VoidSymbol
+#|REPLACEME       altgr control     keycode  72 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  72 = VoidSymbol
+#|REPLACEME                     alt keycode  72 = Ascii_8
+#|REPLACEME shift               alt keycode  72 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  72 = VoidSymbol
+#|REPLACEME             control alt keycode  72 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  72 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  72 = VoidSymbol
+#|REPLACEME shift       control alt keycode  72 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  72 = VoidSymbol
+
+
+# Keycode  73 - KP_9
+#|replaceme                         keycode  73 = KP_9
+#|REPLACEME shift                   keycode  73 = VoidSymbol
+#|REPLACEME       altgr             keycode  73 = Hex_9
+#|REPLACEME shift altgr             keycode  73 = VoidSymbol
+#|REPLACEME             control     keycode  73 = VoidSymbol
+#|REPLACEME shift       control     keycode  73 = VoidSymbol
+#|REPLACEME       altgr control     keycode  73 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  73 = VoidSymbol
+#|REPLACEME                     alt keycode  73 = Ascii_9
+#|REPLACEME shift               alt keycode  73 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  73 = VoidSymbol
+#|REPLACEME             control alt keycode  73 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  73 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  73 = VoidSymbol
+#|REPLACEME shift       control alt keycode  73 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  73 = VoidSymbol
+
+
+# Keycode  74 - KP_Subtract
+#|replaceme                         keycode  74 = KP_Subtract
+#|REPLACEME shift                   keycode  74 = VoidSymbol
+#|REPLACEME       altgr             keycode  74 = Hex_D
+#|REPLACEME shift altgr             keycode  74 = VoidSymbol
+#|REPLACEME             control     keycode  74 = VoidSymbol
+#|REPLACEME shift       control     keycode  74 = VoidSymbol
+#|REPLACEME       altgr control     keycode  74 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  74 = VoidSymbol
+#|REPLACEME                     alt keycode  74 = VoidSymbol
+#|REPLACEME shift               alt keycode  74 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  74 = VoidSymbol
+#|REPLACEME             control alt keycode  74 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  74 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  74 = VoidSymbol
+#|REPLACEME shift       control alt keycode  74 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  74 = VoidSymbol
+
+
+# Keycode  75 - KP_4
+#|replaceme                         keycode  75 = KP_4
+#|REPLACEME shift                   keycode  75 = VoidSymbol
+#|REPLACEME       altgr             keycode  75 = Hex_4
+#|REPLACEME shift altgr             keycode  75 = VoidSymbol
+#|REPLACEME             control     keycode  75 = VoidSymbol
+#|REPLACEME shift       control     keycode  75 = VoidSymbol
+#|REPLACEME       altgr control     keycode  75 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  75 = VoidSymbol
+#|REPLACEME                     alt keycode  75 = Ascii_4
+#|REPLACEME shift               alt keycode  75 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  75 = VoidSymbol
+#|REPLACEME             control alt keycode  75 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  75 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  75 = VoidSymbol
+#|REPLACEME shift       control alt keycode  75 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  75 = VoidSymbol
+
+
+# Keycode  76 - KP_5
+#|replaceme                         keycode  76 = KP_5
+#|REPLACEME shift                   keycode  76 = VoidSymbol
+#|REPLACEME       altgr             keycode  76 = Hex_5
+#|REPLACEME shift altgr             keycode  76 = VoidSymbol
+#|REPLACEME             control     keycode  76 = VoidSymbol
+#|REPLACEME shift       control     keycode  76 = VoidSymbol
+#|REPLACEME       altgr control     keycode  76 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  76 = VoidSymbol
+#|REPLACEME                     alt keycode  76 = Ascii_5
+#|REPLACEME shift               alt keycode  76 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  76 = VoidSymbol
+#|REPLACEME             control alt keycode  76 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  76 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  76 = VoidSymbol
+#|REPLACEME shift       control alt keycode  76 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  76 = VoidSymbol
+
+
+# Keycode  77 - KP_6
+#|replaceme                         keycode  77 = KP_6
+#|REPLACEME shift                   keycode  77 = VoidSymbol
+#|REPLACEME       altgr             keycode  77 = Hex_6
+#|REPLACEME shift altgr             keycode  77 = VoidSymbol
+#|REPLACEME             control     keycode  77 = VoidSymbol
+#|REPLACEME shift       control     keycode  77 = VoidSymbol
+#|REPLACEME       altgr control     keycode  77 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  77 = VoidSymbol
+#|REPLACEME                     alt keycode  77 = Ascii_6
+#|REPLACEME shift               alt keycode  77 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  77 = VoidSymbol
+#|REPLACEME             control alt keycode  77 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  77 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  77 = VoidSymbol
+#|REPLACEME shift       control alt keycode  77 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  77 = VoidSymbol
+
+
+# Keycode  78 - KP_Add
+#|replaceme                         keycode  78 = KP_Add
+#|REPLACEME shift                   keycode  78 = VoidSymbol
+#|REPLACEME       altgr             keycode  78 = Hex_E
+#|REPLACEME shift altgr             keycode  78 = VoidSymbol
+#|REPLACEME             control     keycode  78 = VoidSymbol
+#|REPLACEME shift       control     keycode  78 = VoidSymbol
+#|REPLACEME       altgr control     keycode  78 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  78 = VoidSymbol
+#|REPLACEME                     alt keycode  78 = VoidSymbol
+#|REPLACEME shift               alt keycode  78 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  78 = VoidSymbol
+#|REPLACEME             control alt keycode  78 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  78 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  78 = VoidSymbol
+#|REPLACEME shift       control alt keycode  78 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  78 = VoidSymbol
+
+
+# Keycode  79 - KP_1
+#|replaceme                         keycode  79 = KP_1
+#|REPLACEME shift                   keycode  79 = VoidSymbol
+#|REPLACEME       altgr             keycode  79 = Hex_1
+#|REPLACEME shift altgr             keycode  79 = VoidSymbol
+#|REPLACEME             control     keycode  79 = VoidSymbol
+#|REPLACEME shift       control     keycode  79 = VoidSymbol
+#|REPLACEME       altgr control     keycode  79 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  79 = VoidSymbol
+#|REPLACEME                     alt keycode  79 = Ascii_1
+#|REPLACEME shift               alt keycode  79 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  79 = VoidSymbol
+#|REPLACEME             control alt keycode  79 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  79 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  79 = VoidSymbol
+#|REPLACEME shift       control alt keycode  79 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  79 = VoidSymbol
+
+
+# Keycode  80 - KP_2
+#|replaceme                         keycode  80 = KP_2
+#|REPLACEME shift                   keycode  80 = VoidSymbol
+#|REPLACEME       altgr             keycode  80 = Hex_2
+#|REPLACEME shift altgr             keycode  80 = VoidSymbol
+#|REPLACEME             control     keycode  80 = VoidSymbol
+#|REPLACEME shift       control     keycode  80 = VoidSymbol
+#|REPLACEME       altgr control     keycode  80 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  80 = VoidSymbol
+#|REPLACEME                     alt keycode  80 = Ascii_2
+#|REPLACEME shift               alt keycode  80 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  80 = VoidSymbol
+#|REPLACEME             control alt keycode  80 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  80 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  80 = VoidSymbol
+#|REPLACEME shift       control alt keycode  80 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  80 = VoidSymbol
+
+
+# Keycode  81 - KP_3
+#|replaceme                         keycode  81 = KP_3
+#|REPLACEME shift                   keycode  81 = VoidSymbol
+#|REPLACEME       altgr             keycode  81 = Hex_3
+#|REPLACEME shift altgr             keycode  81 = VoidSymbol
+#|REPLACEME             control     keycode  81 = VoidSymbol
+#|REPLACEME shift       control     keycode  81 = VoidSymbol
+#|REPLACEME       altgr control     keycode  81 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  81 = VoidSymbol
+#|REPLACEME                     alt keycode  81 = Ascii_3
+#|REPLACEME shift               alt keycode  81 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  81 = VoidSymbol
+#|REPLACEME             control alt keycode  81 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  81 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  81 = VoidSymbol
+#|REPLACEME shift       control alt keycode  81 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  81 = VoidSymbol
+
+
+# Keycode  82 - KP_0
+#|replaceme                         keycode  82 = KP_0
+#|REPLACEME shift                   keycode  82 = VoidSymbol
+#|REPLACEME       altgr             keycode  82 = Hex_0
+#|REPLACEME shift altgr             keycode  82 = VoidSymbol
+#|REPLACEME             control     keycode  82 = VoidSymbol
+#|REPLACEME shift       control     keycode  82 = VoidSymbol
+#|REPLACEME       altgr control     keycode  82 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  82 = VoidSymbol
+#|REPLACEME                     alt keycode  82 = Ascii_0
+#|REPLACEME shift               alt keycode  82 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  82 = VoidSymbol
+#|REPLACEME             control alt keycode  82 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  82 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  82 = VoidSymbol
+#|REPLACEME shift       control alt keycode  82 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  82 = VoidSymbol
+
+
+# Keycode  83 - KP_Period
+#|replaceme                         keycode  83 = KP_Period
+#|REPLACEME shift                   keycode  83 = VoidSymbol
+#|REPLACEME       altgr             keycode  83 = VoidSymbol
+#|REPLACEME shift altgr             keycode  83 = VoidSymbol
+#|REPLACEME             control     keycode  83 = VoidSymbol
+#|REPLACEME shift       control     keycode  83 = VoidSymbol
+#|REPLACEME       altgr control     keycode  83 = Boot
+#|REPLACEME shift altgr control     keycode  83 = VoidSymbol
+#|REPLACEME                     alt keycode  83 = VoidSymbol
+#|REPLACEME shift               alt keycode  83 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  83 = VoidSymbol
+#|REPLACEME             control alt keycode  83 = Boot
+#|REPLACEME shift altgr         alt keycode  83 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  83 = VoidSymbol
+#|REPLACEME shift       control alt keycode  83 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  83 = VoidSymbol
+
+
+# Keycode  84 - Last_Console
+#|replaceme                         keycode  84 = Last_Console
+#|REPLACEME shift                   keycode  84 = VoidSymbol
+#|REPLACEME       altgr             keycode  84 = VoidSymbol
+#|REPLACEME shift altgr             keycode  84 = VoidSymbol
+#|REPLACEME             control     keycode  84 = VoidSymbol
+#|REPLACEME shift       control     keycode  84 = VoidSymbol
+#|REPLACEME       altgr control     keycode  84 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  84 = VoidSymbol
+#|REPLACEME                     alt keycode  84 = VoidSymbol
+#|REPLACEME shift               alt keycode  84 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  84 = VoidSymbol
+#|REPLACEME             control alt keycode  84 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  84 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  84 = VoidSymbol
+#|REPLACEME shift       control alt keycode  84 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  84 = VoidSymbol
+
+
+# Keycode  85 - NOT_SPECIFIED
+#|replaceme                         keycode  85 = VoidSymbol
+#|REPLACEME shift                   keycode  85 = VoidSymbol
+#|REPLACEME       altgr             keycode  85 = VoidSymbol
+#|REPLACEME shift altgr             keycode  85 = VoidSymbol
+#|REPLACEME             control     keycode  85 = VoidSymbol
+#|REPLACEME shift       control     keycode  85 = VoidSymbol
+#|REPLACEME       altgr control     keycode  85 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  85 = VoidSymbol
+#|REPLACEME                     alt keycode  85 = VoidSymbol
+#|REPLACEME shift               alt keycode  85 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  85 = VoidSymbol
+#|REPLACEME             control alt keycode  85 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  85 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  85 = VoidSymbol
+#|REPLACEME shift       control alt keycode  85 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  85 = VoidSymbol
+
+
+# Keycode  86 - less
+#|replaceme                         keycode  86 = minus
+#|REPLACEME shift                   keycode  86 = underscore
+#|REPLACEME       altgr             keycode  86 = VoidSymbol
+#|REPLACEME shift altgr             keycode  86 = VoidSymbol
+#|REPLACEME             control     keycode  86 = Control_underscore
+#|REPLACEME shift       control     keycode  86 = VoidSymbol
+#|REPLACEME       altgr control     keycode  86 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  86 = VoidSymbol
+#|REPLACEME                     alt keycode  86 = Meta_less
+#|REPLACEME shift               alt keycode  86 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  86 = VoidSymbol
+#|REPLACEME             control alt keycode  86 = Meta_Control_underscore
+#|REPLACEME shift altgr         alt keycode  86 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  86 = VoidSymbol
+#|REPLACEME shift       control alt keycode  86 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  86 = VoidSymbol
+
+
+# Keycode  87 - F11
+#|replaceme                         keycode  87 = F11
+#|REPLACEME shift                   keycode  87 = F23
+#|REPLACEME       altgr             keycode  87 = Console_23
+#|REPLACEME shift altgr             keycode  87 = VoidSymbol
+#|REPLACEME             control     keycode  87 = F35
+#|REPLACEME shift       control     keycode  87 = F47
+#|REPLACEME       altgr control     keycode  87 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  87 = VoidSymbol
+#|REPLACEME                     alt keycode  87 = Console_11
+#|REPLACEME shift               alt keycode  87 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  87 = VoidSymbol
+#|REPLACEME             control alt keycode  87 = Console_11
+#|REPLACEME shift altgr         alt keycode  87 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  87 = VoidSymbol
+#|REPLACEME shift       control alt keycode  87 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  87 = VoidSymbol
+
+
+# Keycode  88 - F12
+#|replaceme                         keycode  88 = F12
+#|REPLACEME shift                   keycode  88 = F24
+#|REPLACEME       altgr             keycode  88 = Console_24
+#|REPLACEME shift altgr             keycode  88 = VoidSymbol
+#|REPLACEME             control     keycode  88 = F36
+#|REPLACEME shift       control     keycode  88 = F48
+#|REPLACEME       altgr control     keycode  88 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  88 = VoidSymbol
+#|REPLACEME                     alt keycode  88 = Console_12
+#|REPLACEME shift               alt keycode  88 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  88 = VoidSymbol
+#|REPLACEME             control alt keycode  88 = Console_12
+#|REPLACEME shift altgr         alt keycode  88 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  88 = VoidSymbol
+#|REPLACEME shift       control alt keycode  88 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  88 = VoidSymbol
+
+
+# Keycode  89 - NOT_SPECIFIED (On a Japanese Keyboard this is \ to the left of Right Shift)
+#|replaceme                         keycode  89 = CapsShift
+#|REPLACEME shift                   keycode  89 = VoidSymbol
+#|REPLACEME       altgr             keycode  89 = VoidSymbol
+#|REPLACEME shift altgr             keycode  89 = VoidSymbol
+#|REPLACEME             control     keycode  89 = VoidSymbol
+#|REPLACEME shift       control     keycode  89 = VoidSymbol
+#|REPLACEME       altgr control     keycode  89 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  89 = VoidSymbol
+#|REPLACEME                     alt keycode  89 = VoidSymbol
+#|REPLACEME shift               alt keycode  89 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  89 = VoidSymbol
+#|REPLACEME             control alt keycode  89 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  89 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  89 = VoidSymbol
+#|REPLACEME shift       control alt keycode  89 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  89 = VoidSymbol
+
+
+# Keycode  90 - NOT_SPECIFIED
+#|replaceme                         keycode  90 = VoidSymbol
+#|REPLACEME shift                   keycode  90 = VoidSymbol
+#|REPLACEME       altgr             keycode  90 = VoidSymbol
+#|REPLACEME shift altgr             keycode  90 = VoidSymbol
+#|REPLACEME             control     keycode  90 = VoidSymbol
+#|REPLACEME shift       control     keycode  90 = VoidSymbol
+#|REPLACEME       altgr control     keycode  90 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  90 = VoidSymbol
+#|REPLACEME                     alt keycode  90 = VoidSymbol
+#|REPLACEME shift               alt keycode  90 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  90 = VoidSymbol
+#|REPLACEME             control alt keycode  90 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  90 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  90 = VoidSymbol
+#|REPLACEME shift       control alt keycode  90 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  90 = VoidSymbol
+
+
+# Keycode  91 - NOT_SPECIFIED
+#|replaceme                         keycode  91 = VoidSymbol
+#|REPLACEME shift                   keycode  91 = VoidSymbol
+#|REPLACEME       altgr             keycode  91 = VoidSymbol
+#|REPLACEME shift altgr             keycode  91 = VoidSymbol
+#|REPLACEME             control     keycode  91 = VoidSymbol
+#|REPLACEME shift       control     keycode  91 = VoidSymbol
+#|REPLACEME       altgr control     keycode  91 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  91 = VoidSymbol
+#|REPLACEME                     alt keycode  91 = VoidSymbol
+#|REPLACEME shift               alt keycode  91 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  91 = VoidSymbol
+#|REPLACEME             control alt keycode  91 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  91 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  91 = VoidSymbol
+#|REPLACEME shift       control alt keycode  91 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  91 = VoidSymbol
+
+
+# Keycode  92 - NOT_SPECIFIED (Japanese Keyboard, Henkan, which is to the right of the spacebar)
+#|replaceme                         keycode  92 = VoidSymbol
+#|REPLACEME shift                   keycode  92 = VoidSymbol
+#|REPLACEME       altgr             keycode  92 = VoidSymbol
+#|REPLACEME shift altgr             keycode  92 = VoidSymbol
+#|REPLACEME             control     keycode  92 = VoidSymbol
+#|REPLACEME shift       control     keycode  92 = VoidSymbol
+#|REPLACEME       altgr control     keycode  92 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  92 = VoidSymbol
+#|REPLACEME                     alt keycode  92 = VoidSymbol
+#|REPLACEME shift               alt keycode  92 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  92 = VoidSymbol
+#|REPLACEME             control alt keycode  92 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  92 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  92 = VoidSymbol
+#|REPLACEME shift       control alt keycode  92 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  92 = VoidSymbol
+
+
+# Keycode  93 - NOT_SPECIFIED (Japanese keyboard key, KANA, between Henkan and right Alt)
+#|replaceme                         keycode  93 = Decr_Console
+#|REPLACEME shift                   keycode  93 = Last_Console
+#|REPLACEME       altgr             keycode  93 = Incr_Console
+#|REPLACEME shift altgr             keycode  93 = Compose
+#|REPLACEME             control     keycode  93 = VoidSymbol
+#|REPLACEME shift       control     keycode  93 = VoidSymbol
+#|REPLACEME       altgr control     keycode  93 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  93 = VoidSymbol
+#|REPLACEME                     alt keycode  93 = VoidSymbol
+#|REPLACEME shift               alt keycode  93 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  93 = VoidSymbol
+#|REPLACEME             control alt keycode  93 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  93 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  93 = VoidSymbol
+#|REPLACEME shift       control alt keycode  93 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  93 = VoidSymbol
+
+
+# Keycode  94 - NOT_SPECIFIED (Japanese Keyboard, Muhenkan, which is to the left of the spacebar)
+#|replaceme                         keycode  94 = VoidSymbol
+#|REPLACEME shift                   keycode  94 = VoidSymbol
+#|REPLACEME       altgr             keycode  94 = VoidSymbol
+#|REPLACEME shift altgr             keycode  94 = VoidSymbol
+#|REPLACEME             control     keycode  94 = VoidSymbol
+#|REPLACEME shift       control     keycode  94 = VoidSymbol
+#|REPLACEME       altgr control     keycode  94 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  94 = VoidSymbol
+#|REPLACEME                     alt keycode  94 = VoidSymbol
+#|REPLACEME shift               alt keycode  94 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  94 = VoidSymbol
+#|REPLACEME             control alt keycode  94 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  94 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  94 = VoidSymbol
+#|REPLACEME shift       control alt keycode  94 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  94 = VoidSymbol
+
+
+# Keycode  95 - NOT_SPECIFIED
+#|replaceme                         keycode  95 = VoidSymbol
+#|REPLACEME shift                   keycode  95 = VoidSymbol
+#|REPLACEME       altgr             keycode  95 = VoidSymbol
+#|REPLACEME shift altgr             keycode  95 = VoidSymbol
+#|REPLACEME             control     keycode  95 = VoidSymbol
+#|REPLACEME shift       control     keycode  95 = VoidSymbol
+#|REPLACEME       altgr control     keycode  95 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  95 = VoidSymbol
+#|REPLACEME                     alt keycode  95 = VoidSymbol
+#|REPLACEME shift               alt keycode  95 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  95 = VoidSymbol
+#|REPLACEME             control alt keycode  95 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  95 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  95 = VoidSymbol
+#|REPLACEME shift       control alt keycode  95 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  95 = VoidSymbol
+
+
+# Keycode  96 - KP_Enter
+#|replaceme                         keycode  96 = KP_Enter
+#|REPLACEME shift                   keycode  96 = VoidSymbol
+#|REPLACEME       altgr             keycode  96 = Hex_F
+#|REPLACEME shift altgr             keycode  96 = VoidSymbol
+#|REPLACEME             control     keycode  96 = VoidSymbol
+#|REPLACEME shift       control     keycode  96 = VoidSymbol
+#|REPLACEME       altgr control     keycode  96 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  96 = VoidSymbol
+#|REPLACEME                     alt keycode  96 = VoidSymbol
+#|REPLACEME shift               alt keycode  96 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  96 = VoidSymbol
+#|REPLACEME             control alt keycode  96 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  96 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  96 = VoidSymbol
+#|REPLACEME shift       control alt keycode  96 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  96 = VoidSymbol
+
+
+# Keycode  97 - Control
+#|replaceme                         keycode  97 = Control
+#|REPLACEME shift                   keycode  97 = VoidSymbol
+#|REPLACEME       altgr             keycode  97 = VoidSymbol
+#|REPLACEME shift altgr             keycode  97 = VoidSymbol
+#|REPLACEME             control     keycode  97 = VoidSymbol
+#|REPLACEME shift       control     keycode  97 = VoidSymbol
+#|REPLACEME       altgr control     keycode  97 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  97 = VoidSymbol
+#|REPLACEME                     alt keycode  97 = VoidSymbol
+#|REPLACEME shift               alt keycode  97 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  97 = VoidSymbol
+#|REPLACEME             control alt keycode  97 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  97 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  97 = VoidSymbol
+#|REPLACEME shift       control alt keycode  97 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  97 = VoidSymbol
+
+
+# Keycode  98 - KP_Divide
+#|replaceme                         keycode  98 = KP_Divide
+#|REPLACEME shift                   keycode  98 = VoidSymbol
+#|REPLACEME       altgr             keycode  98 = Hex_B
+#|REPLACEME shift altgr             keycode  98 = VoidSymbol
+#|REPLACEME             control     keycode  98 = VoidSymbol
+#|REPLACEME shift       control     keycode  98 = VoidSymbol
+#|REPLACEME       altgr control     keycode  98 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  98 = VoidSymbol
+#|REPLACEME                     alt keycode  98 = VoidSymbol
+#|REPLACEME shift               alt keycode  98 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  98 = VoidSymbol
+#|REPLACEME             control alt keycode  98 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode  98 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  98 = VoidSymbol
+#|REPLACEME shift       control alt keycode  98 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  98 = VoidSymbol
+
+
+# Keycode  99 - Compose
+#|replaceme                         keycode  99 = VoidSymbol
+#|REPLACEME shift                   keycode  99 = VoidSymbol
+#|REPLACEME       altgr             keycode  99 = VoidSymbol
+#|REPLACEME shift altgr             keycode  99 = VoidSymbol
+#|REPLACEME             control     keycode  99 = Control_backslash
+#|REPLACEME shift       control     keycode  99 = VoidSymbol
+#|REPLACEME       altgr control     keycode  99 = VoidSymbol
+#|REPLACEME shift altgr control     keycode  99 = VoidSymbol
+#|REPLACEME                     alt keycode  99 = Control_backslash
+#|REPLACEME shift               alt keycode  99 = VoidSymbol
+#|REPLACEME       altgr         alt keycode  99 = VoidSymbol
+#|REPLACEME             control alt keycode  99 = Meta_Control_backslash
+#|REPLACEME shift altgr         alt keycode  99 = VoidSymbol
+#|REPLACEME       altgr control alt keycode  99 = VoidSymbol
+#|REPLACEME shift       control alt keycode  99 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode  99 = VoidSymbol
+
+
+# Keycode 100 - AltGr
+#|replaceme                         keycode 100 = AltGr
+#|REPLACEME shift                   keycode 100 = VoidSymbol
+#|REPLACEME       altgr             keycode 100 = VoidSymbol
+#|REPLACEME shift altgr             keycode 100 = VoidSymbol
+#|REPLACEME             control     keycode 100 = VoidSymbol
+#|REPLACEME shift       control     keycode 100 = VoidSymbol
+#|REPLACEME       altgr control     keycode 100 = VoidSymbol
+#|REPLACEME shift altgr control     keycode 100 = VoidSymbol
+#|REPLACEME                     alt keycode 100 = Compose
+#|REPLACEME shift               alt keycode 100 = VoidSymbol
+#|REPLACEME       altgr         alt keycode 100 = VoidSymbol
+#|REPLACEME             control alt keycode 100 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode 100 = VoidSymbol
+#|REPLACEME       altgr control alt keycode 100 = VoidSymbol
+#|REPLACEME shift       control alt keycode 100 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode 100 = VoidSymbol
+
+
+# Keycode 101 - Break
+#|replaceme                         keycode 101 = Break
+#|REPLACEME shift                   keycode 101 = VoidSymbol
+#|REPLACEME       altgr             keycode 101 = VoidSymbol
+#|REPLACEME shift altgr             keycode 101 = VoidSymbol
+#|REPLACEME             control     keycode 101 = VoidSymbol
+#|REPLACEME shift       control     keycode 101 = VoidSymbol
+#|REPLACEME       altgr control     keycode 101 = VoidSymbol
+#|REPLACEME shift altgr control     keycode 101 = VoidSymbol
+#|REPLACEME                     alt keycode 101 = VoidSymbol
+#|REPLACEME shift               alt keycode 101 = VoidSymbol
+#|REPLACEME       altgr         alt keycode 101 = VoidSymbol
+#|REPLACEME             control alt keycode 101 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode 101 = VoidSymbol
+#|REPLACEME       altgr control alt keycode 101 = VoidSymbol
+#|REPLACEME shift       control alt keycode 101 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode 101 = VoidSymbol
+
+
+# Keycode 102 - Find
+#|replaceme                         keycode 102 = Find
+#|REPLACEME shift                   keycode 102 = VoidSymbol
+#|REPLACEME       altgr             keycode 102 = VoidSymbol
+#|REPLACEME shift altgr             keycode 102 = VoidSymbol
+#|REPLACEME             control     keycode 102 = VoidSymbol
+#|REPLACEME shift       control     keycode 102 = VoidSymbol
+#|REPLACEME       altgr control     keycode 102 = VoidSymbol
+#|REPLACEME shift altgr control     keycode 102 = VoidSymbol
+#|REPLACEME                     alt keycode 102 = VoidSymbol
+#|REPLACEME shift               alt keycode 102 = VoidSymbol
+#|REPLACEME       altgr         alt keycode 102 = VoidSymbol
+#|REPLACEME             control alt keycode 102 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode 102 = VoidSymbol
+#|REPLACEME       altgr control alt keycode 102 = VoidSymbol
+#|REPLACEME shift       control alt keycode 102 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode 102 = VoidSymbol
+
+
+# Keycode 103 - Up
+#|replaceme                         keycode 103 = Up
+#|REPLACEME shift                   keycode 103 = VoidSymbol
+#|REPLACEME       altgr             keycode 103 = VoidSymbol
+#|REPLACEME shift altgr             keycode 103 = VoidSymbol
+#|REPLACEME             control     keycode 103 = VoidSymbol
+#|REPLACEME shift       control     keycode 103 = VoidSymbol
+#|REPLACEME       altgr control     keycode 103 = VoidSymbol
+#|REPLACEME shift altgr control     keycode 103 = VoidSymbol
+#|REPLACEME                     alt keycode 103 = KeyboardSignal
+#|REPLACEME shift               alt keycode 103 = VoidSymbol
+#|REPLACEME       altgr         alt keycode 103 = VoidSymbol
+#|REPLACEME             control alt keycode 103 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode 103 = VoidSymbol
+#|REPLACEME       altgr control alt keycode 103 = VoidSymbol
+#|REPLACEME shift       control alt keycode 103 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode 103 = VoidSymbol
+
+
+# Keycode 104 - Prior
+#|replaceme                         keycode 104 = Prior
+#|REPLACEME shift                   keycode 104 = Scroll_Backward
+#|REPLACEME       altgr             keycode 104 = VoidSymbol
+#|REPLACEME shift altgr             keycode 104 = VoidSymbol
+#|REPLACEME             control     keycode 104 = VoidSymbol
+#|REPLACEME shift       control     keycode 104 = VoidSymbol
+#|REPLACEME       altgr control     keycode 104 = VoidSymbol
+#|REPLACEME shift altgr control     keycode 104 = VoidSymbol
+#|REPLACEME                     alt keycode 104 = VoidSymbol
+#|REPLACEME shift               alt keycode 104 = VoidSymbol
+#|REPLACEME       altgr         alt keycode 104 = VoidSymbol
+#|REPLACEME             control alt keycode 104 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode 104 = VoidSymbol
+#|REPLACEME       altgr control alt keycode 104 = VoidSymbol
+#|REPLACEME shift       control alt keycode 104 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode 104 = VoidSymbol
+
+
+# Keycode 105 - Left
+#|replaceme                         keycode 105 = Left
+#|REPLACEME shift                   keycode 105 = VoidSymbol
+#|REPLACEME       altgr             keycode 105 = VoidSymbol
+#|REPLACEME shift altgr             keycode 105 = VoidSymbol
+#|REPLACEME             control     keycode 105 = VoidSymbol
+#|REPLACEME shift       control     keycode 105 = VoidSymbol
+#|REPLACEME       altgr control     keycode 105 = VoidSymbol
+#|REPLACEME shift altgr control     keycode 105 = VoidSymbol
+#|REPLACEME                     alt keycode 105 = Decr_Console
+#|REPLACEME shift               alt keycode 105 = VoidSymbol
+#|REPLACEME       altgr         alt keycode 105 = VoidSymbol
+#|REPLACEME             control alt keycode 105 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode 105 = VoidSymbol
+#|REPLACEME       altgr control alt keycode 105 = VoidSymbol
+#|REPLACEME shift       control alt keycode 105 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode 105 = VoidSymbol
+
+
+# Keycode 106 - Right
+#|replaceme                         keycode 106 = Right
+#|REPLACEME shift                   keycode 106 = VoidSymbol
+#|REPLACEME       altgr             keycode 106 = VoidSymbol
+#|REPLACEME shift altgr             keycode 106 = VoidSymbol
+#|REPLACEME             control     keycode 106 = VoidSymbol
+#|REPLACEME shift       control     keycode 106 = VoidSymbol
+#|REPLACEME       altgr control     keycode 106 = VoidSymbol
+#|REPLACEME shift altgr control     keycode 106 = VoidSymbol
+#|REPLACEME                     alt keycode 106 = Incr_Console
+#|REPLACEME shift               alt keycode 106 = VoidSymbol
+#|REPLACEME       altgr         alt keycode 106 = VoidSymbol
+#|REPLACEME             control alt keycode 106 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode 106 = VoidSymbol
+#|REPLACEME       altgr control alt keycode 106 = VoidSymbol
+#|REPLACEME shift       control alt keycode 106 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode 106 = VoidSymbol
+
+
+# Keycode 107 - Select
+#|replaceme                         keycode 107 = Select
+#|REPLACEME shift                   keycode 107 = VoidSymbol
+#|REPLACEME       altgr             keycode 107 = VoidSymbol
+#|REPLACEME shift altgr             keycode 107 = VoidSymbol
+#|REPLACEME             control     keycode 107 = VoidSymbol
+#|REPLACEME shift       control     keycode 107 = VoidSymbol
+#|REPLACEME       altgr control     keycode 107 = VoidSymbol
+#|REPLACEME shift altgr control     keycode 107 = VoidSymbol
+#|REPLACEME                     alt keycode 107 = VoidSymbol
+#|REPLACEME shift               alt keycode 107 = VoidSymbol
+#|REPLACEME       altgr         alt keycode 107 = VoidSymbol
+#|REPLACEME             control alt keycode 107 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode 107 = VoidSymbol
+#|REPLACEME       altgr control alt keycode 107 = VoidSymbol
+#|REPLACEME shift       control alt keycode 107 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode 107 = VoidSymbol
+
+
+# Keycode 108 - Down
+#|replaceme                         keycode 108 = Down
+#|REPLACEME shift                   keycode 108 = VoidSymbol
+#|REPLACEME       altgr             keycode 108 = VoidSymbol
+#|REPLACEME shift altgr             keycode 108 = VoidSymbol
+#|REPLACEME             control     keycode 108 = VoidSymbol
+#|REPLACEME shift       control     keycode 108 = VoidSymbol
+#|REPLACEME       altgr control     keycode 108 = VoidSymbol
+#|REPLACEME shift altgr control     keycode 108 = VoidSymbol
+#|REPLACEME                     alt keycode 108 = VoidSymbol
+#|REPLACEME shift               alt keycode 108 = VoidSymbol
+#|REPLACEME       altgr         alt keycode 108 = VoidSymbol
+#|REPLACEME             control alt keycode 108 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode 108 = VoidSymbol
+#|REPLACEME       altgr control alt keycode 108 = VoidSymbol
+#|REPLACEME shift       control alt keycode 108 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode 108 = VoidSymbol
+
+
+# Keycode 109 - Next
+#|replaceme                         keycode 109 = Next
+#|REPLACEME shift                   keycode 109 = Scroll_Forward
+#|REPLACEME       altgr             keycode 109 = VoidSymbol
+#|REPLACEME shift altgr             keycode 109 = VoidSymbol
+#|REPLACEME             control     keycode 109 = VoidSymbol
+#|REPLACEME shift       control     keycode 109 = VoidSymbol
+#|REPLACEME       altgr control     keycode 109 = VoidSymbol
+#|REPLACEME shift altgr control     keycode 109 = VoidSymbol
+#|REPLACEME                     alt keycode 109 = VoidSymbol
+#|REPLACEME shift               alt keycode 109 = VoidSymbol
+#|REPLACEME       altgr         alt keycode 109 = VoidSymbol
+#|REPLACEME             control alt keycode 109 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode 109 = VoidSymbol
+#|REPLACEME       altgr control alt keycode 109 = VoidSymbol
+#|REPLACEME shift       control alt keycode 109 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode 109 = VoidSymbol
+
+
+# Keycode 110 - Insert
+#|replaceme                         keycode 110 = Insert
+#|REPLACEME shift                   keycode 110 = VoidSymbol
+#|REPLACEME       altgr             keycode 110 = VoidSymbol
+#|REPLACEME shift altgr             keycode 110 = VoidSymbol
+#|REPLACEME             control     keycode 110 = VoidSymbol
+#|REPLACEME shift       control     keycode 110 = VoidSymbol
+#|REPLACEME       altgr control     keycode 110 = VoidSymbol
+#|REPLACEME shift altgr control     keycode 110 = VoidSymbol
+#|REPLACEME                     alt keycode 110 = VoidSymbol
+#|REPLACEME shift               alt keycode 110 = VoidSymbol
+#|REPLACEME       altgr         alt keycode 110 = VoidSymbol
+#|REPLACEME             control alt keycode 110 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode 110 = VoidSymbol
+#|REPLACEME       altgr control alt keycode 110 = VoidSymbol
+#|REPLACEME shift       control alt keycode 110 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode 110 = VoidSymbol
+
+
+# Keycode 111 - Remove (Actually Delete, dedicated)
+#|replaceme                         keycode 111 = Remove
+#|REPLACEME shift                   keycode 111 = VoidSymbol
+#|REPLACEME       altgr             keycode 111 = VoidSymbol
+#|REPLACEME shift altgr             keycode 111 = VoidSymbol
+#|REPLACEME             control     keycode 111 = VoidSymbol
+#|REPLACEME shift       control     keycode 111 = VoidSymbol
+#|REPLACEME       altgr control     keycode 111 = Boot
+#|REPLACEME shift altgr control     keycode 111 = VoidSymbol
+#|REPLACEME                     alt keycode 111 = VoidSymbol
+#|REPLACEME shift               alt keycode 111 = VoidSymbol
+#|REPLACEME       altgr         alt keycode 111 = VoidSymbol
+#|REPLACEME             control alt keycode 111 = Boot
+#|REPLACEME shift altgr         alt keycode 111 = VoidSymbol
+#|REPLACEME       altgr control alt keycode 111 = VoidSymbol
+#|REPLACEME shift       control alt keycode 111 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode 111 = VoidSymbol
+
+
+# Keycode 112 - Macro
+#|replaceme                         keycode 112 = Macro
+#|REPLACEME shift                   keycode 112 = VoidSymbol
+#|REPLACEME       altgr             keycode 112 = VoidSymbol
+#|REPLACEME shift altgr             keycode 112 = VoidSymbol
+#|REPLACEME             control     keycode 112 = VoidSymbol
+#|REPLACEME shift       control     keycode 112 = VoidSymbol
+#|REPLACEME       altgr control     keycode 112 = VoidSymbol
+#|REPLACEME shift altgr control     keycode 112 = VoidSymbol
+#|REPLACEME                     alt keycode 112 = VoidSymbol
+#|REPLACEME shift               alt keycode 112 = VoidSymbol
+#|REPLACEME       altgr         alt keycode 112 = VoidSymbol
+#|REPLACEME             control alt keycode 112 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode 112 = VoidSymbol
+#|REPLACEME       altgr control alt keycode 112 = VoidSymbol
+#|REPLACEME shift       control alt keycode 112 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode 112 = VoidSymbol
+
+
+# Keycode 113 - F13
+#|replaceme                         keycode 113 = F13
+#|REPLACEME shift                   keycode 113 = VoidSymbol
+#|REPLACEME       altgr             keycode 113 = VoidSymbol
+#|REPLACEME shift altgr             keycode 113 = VoidSymbol
+#|REPLACEME             control     keycode 113 = VoidSymbol
+#|REPLACEME shift       control     keycode 113 = VoidSymbol
+#|REPLACEME       altgr control     keycode 113 = VoidSymbol
+#|REPLACEME shift altgr control     keycode 113 = VoidSymbol
+#|REPLACEME                     alt keycode 113 = VoidSymbol
+#|REPLACEME shift               alt keycode 113 = VoidSymbol
+#|REPLACEME       altgr         alt keycode 113 = VoidSymbol
+#|REPLACEME             control alt keycode 113 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode 113 = VoidSymbol
+#|REPLACEME       altgr control alt keycode 113 = VoidSymbol
+#|REPLACEME shift       control alt keycode 113 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode 113 = VoidSymbol
+
+
+# Keycode 114 - F14
+#|replaceme                         keycode 114 = F14
+#|REPLACEME shift                   keycode 114 = VoidSymbol
+#|REPLACEME       altgr             keycode 114 = VoidSymbol
+#|REPLACEME shift altgr             keycode 114 = VoidSymbol
+#|REPLACEME             control     keycode 114 = VoidSymbol
+#|REPLACEME shift       control     keycode 114 = VoidSymbol
+#|REPLACEME       altgr control     keycode 114 = VoidSymbol
+#|REPLACEME shift altgr control     keycode 114 = VoidSymbol
+#|REPLACEME                     alt keycode 114 = VoidSymbol
+#|REPLACEME shift               alt keycode 114 = VoidSymbol
+#|REPLACEME       altgr         alt keycode 114 = VoidSymbol
+#|REPLACEME             control alt keycode 114 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode 114 = VoidSymbol
+#|REPLACEME       altgr control alt keycode 114 = VoidSymbol
+#|REPLACEME shift       control alt keycode 114 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode 114 = VoidSymbol
+
+
+# Keycode 115 - Help
+#|replaceme                         keycode 115 = Help
+#|REPLACEME shift                   keycode 115 = VoidSymbol
+#|REPLACEME       altgr             keycode 115 = VoidSymbol
+#|REPLACEME shift altgr             keycode 115 = VoidSymbol
+#|REPLACEME             control     keycode 115 = VoidSymbol
+#|REPLACEME shift       control     keycode 115 = VoidSymbol
+#|REPLACEME       altgr control     keycode 115 = VoidSymbol
+#|REPLACEME shift altgr control     keycode 115 = VoidSymbol
+#|REPLACEME                     alt keycode 115 = VoidSymbol
+#|REPLACEME shift               alt keycode 115 = VoidSymbol
+#|REPLACEME       altgr         alt keycode 115 = VoidSymbol
+#|REPLACEME             control alt keycode 115 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode 115 = VoidSymbol
+#|REPLACEME       altgr control alt keycode 115 = VoidSymbol
+#|REPLACEME shift       control alt keycode 115 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode 115 = VoidSymbol
+
+
+# Keycode 116 - Do
+#|replaceme                         keycode 116 = Do
+#|REPLACEME shift                   keycode 116 = VoidSymbol
+#|REPLACEME       altgr             keycode 116 = VoidSymbol
+#|REPLACEME shift altgr             keycode 116 = VoidSymbol
+#|REPLACEME             control     keycode 116 = VoidSymbol
+#|REPLACEME shift       control     keycode 116 = VoidSymbol
+#|REPLACEME       altgr control     keycode 116 = VoidSymbol
+#|REPLACEME shift altgr control     keycode 116 = VoidSymbol
+#|REPLACEME                     alt keycode 116 = VoidSymbol
+#|REPLACEME shift               alt keycode 116 = VoidSymbol
+#|REPLACEME       altgr         alt keycode 116 = VoidSymbol
+#|REPLACEME             control alt keycode 116 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode 116 = VoidSymbol
+#|REPLACEME       altgr control alt keycode 116 = VoidSymbol
+#|REPLACEME shift       control alt keycode 116 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode 116 = VoidSymbol
+
+
+# Keycode 117 - F17
+#|replaceme                         keycode 117 = F17
+#|REPLACEME shift                   keycode 117 = VoidSymbol
+#|REPLACEME       altgr             keycode 117 = VoidSymbol
+#|REPLACEME shift altgr             keycode 117 = VoidSymbol
+#|REPLACEME             control     keycode 117 = VoidSymbol
+#|REPLACEME shift       control     keycode 117 = VoidSymbol
+#|REPLACEME       altgr control     keycode 117 = VoidSymbol
+#|REPLACEME shift altgr control     keycode 117 = VoidSymbol
+#|REPLACEME                     alt keycode 117 = VoidSymbol
+#|REPLACEME shift               alt keycode 117 = VoidSymbol
+#|REPLACEME       altgr         alt keycode 117 = VoidSymbol
+#|REPLACEME             control alt keycode 117 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode 117 = VoidSymbol
+#|REPLACEME       altgr control alt keycode 117 = VoidSymbol
+#|REPLACEME shift       control alt keycode 117 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode 117 = VoidSymbol
+
+
+# Keycode 118 - KP_MinPlus
+#|replaceme                         keycode 118 = KP_MinPlus
+#|REPLACEME shift                   keycode 118 = VoidSymbol
+#|REPLACEME       altgr             keycode 118 = VoidSymbol
+#|REPLACEME shift altgr             keycode 118 = VoidSymbol
+#|REPLACEME             control     keycode 118 = VoidSymbol
+#|REPLACEME shift       control     keycode 118 = VoidSymbol
+#|REPLACEME       altgr control     keycode 118 = VoidSymbol
+#|REPLACEME shift altgr control     keycode 118 = VoidSymbol
+#|REPLACEME                     alt keycode 118 = VoidSymbol
+#|REPLACEME shift               alt keycode 118 = VoidSymbol
+#|REPLACEME       altgr         alt keycode 118 = VoidSymbol
+#|REPLACEME             control alt keycode 118 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode 118 = VoidSymbol
+#|REPLACEME       altgr control alt keycode 118 = VoidSymbol
+#|REPLACEME shift       control alt keycode 118 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode 118 = VoidSymbol
+
+
+# Keycode 119 - Pause
+#|replaceme                         keycode 119 = Pause
+#|REPLACEME shift                   keycode 119 = VoidSymbol
+#|REPLACEME       altgr             keycode 119 = VoidSymbol
+#|REPLACEME shift altgr             keycode 119 = VoidSymbol
+#|REPLACEME             control     keycode 119 = VoidSymbol
+#|REPLACEME shift       control     keycode 119 = VoidSymbol
+#|REPLACEME       altgr control     keycode 119 = VoidSymbol
+#|REPLACEME shift altgr control     keycode 119 = VoidSymbol
+#|REPLACEME                     alt keycode 119 = VoidSymbol
+#|REPLACEME shift               alt keycode 119 = VoidSymbol
+#|REPLACEME       altgr         alt keycode 119 = VoidSymbol
+#|REPLACEME             control alt keycode 119 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode 119 = VoidSymbol
+#|REPLACEME       altgr control alt keycode 119 = VoidSymbol
+#|REPLACEME shift       control alt keycode 119 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode 119 = VoidSymbol
+
+
+# Keycode 121 - NOT_SPECIFIED
+#|replaceme                         keycode 120 = VoidSymbol
+#|REPLACEME shift                   keycode 120 = VoidSymbol
+#|REPLACEME       altgr             keycode 120 = VoidSymbol
+#|REPLACEME shift altgr             keycode 120 = VoidSymbol
+#|REPLACEME             control     keycode 120 = VoidSymbol
+#|REPLACEME shift       control     keycode 120 = VoidSymbol
+#|REPLACEME       altgr control     keycode 120 = VoidSymbol
+#|REPLACEME shift altgr control     keycode 120 = VoidSymbol
+#|REPLACEME                     alt keycode 120 = VoidSymbol
+#|REPLACEME shift               alt keycode 120 = VoidSymbol
+#|REPLACEME       altgr         alt keycode 120 = VoidSymbol
+#|REPLACEME             control alt keycode 120 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode 120 = VoidSymbol
+#|REPLACEME       altgr control alt keycode 120 = VoidSymbol
+#|REPLACEME shift       control alt keycode 120 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode 120 = VoidSymbol
+
+
+# Keycode 121 - NOT_SPECIFIED
+#|replaceme                         keycode 121 = VoidSymbol
+#|REPLACEME shift                   keycode 121 = VoidSymbol
+#|REPLACEME       altgr             keycode 121 = VoidSymbol
+#|REPLACEME shift altgr             keycode 121 = VoidSymbol
+#|REPLACEME             control     keycode 121 = VoidSymbol
+#|REPLACEME shift       control     keycode 121 = VoidSymbol
+#|REPLACEME       altgr control     keycode 121 = VoidSymbol
+#|REPLACEME shift altgr control     keycode 121 = VoidSymbol
+#|REPLACEME                     alt keycode 121 = VoidSymbol
+#|REPLACEME shift               alt keycode 121 = VoidSymbol
+#|REPLACEME       altgr         alt keycode 121 = VoidSymbol
+#|REPLACEME             control alt keycode 121 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode 121 = VoidSymbol
+#|REPLACEME       altgr control alt keycode 121 = VoidSymbol
+#|REPLACEME shift       control alt keycode 121 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode 121 = VoidSymbol
+
+
+# Keycode 122 - NOT_SPECIFIED
+#|replaceme                         keycode 122 = VoidSymbol
+#|REPLACEME shift                   keycode 122 = VoidSymbol
+#|REPLACEME       altgr             keycode 122 = VoidSymbol
+#|REPLACEME shift altgr             keycode 122 = VoidSymbol
+#|REPLACEME             control     keycode 122 = VoidSymbol
+#|REPLACEME shift       control     keycode 122 = VoidSymbol
+#|REPLACEME       altgr control     keycode 122 = VoidSymbol
+#|REPLACEME shift altgr control     keycode 122 = VoidSymbol
+#|REPLACEME                     alt keycode 122 = VoidSymbol
+#|REPLACEME shift               alt keycode 122 = VoidSymbol
+#|REPLACEME       altgr         alt keycode 122 = VoidSymbol
+#|REPLACEME             control alt keycode 122 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode 122 = VoidSymbol
+#|REPLACEME       altgr control alt keycode 122 = VoidSymbol
+#|REPLACEME shift       control alt keycode 122 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode 122 = VoidSymbol
+
+
+# Keycode 123 - NOT_SPECIFIED
+#|replaceme                         keycode 123 = VoidSymbol
+#|REPLACEME shift                   keycode 123 = VoidSymbol
+#|REPLACEME       altgr             keycode 123 = VoidSymbol
+#|REPLACEME shift altgr             keycode 123 = VoidSymbol
+#|REPLACEME             control     keycode 123 = VoidSymbol
+#|REPLACEME shift       control     keycode 123 = VoidSymbol
+#|REPLACEME       altgr control     keycode 123 = VoidSymbol
+#|REPLACEME shift altgr control     keycode 123 = VoidSymbol
+#|REPLACEME                     alt keycode 123 = VoidSymbol
+#|REPLACEME shift               alt keycode 123 = VoidSymbol
+#|REPLACEME       altgr         alt keycode 123 = VoidSymbol
+#|REPLACEME             control alt keycode 123 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode 123 = VoidSymbol
+#|REPLACEME       altgr control alt keycode 123 = VoidSymbol
+#|REPLACEME shift       control alt keycode 123 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode 123 = VoidSymbol
+
+
+# Keycode 124 - ¥ | (Japanese Keyboard, next to the Backspace)
+#|replaceme                         keycode 124 = VoidSymbol
+#|REPLACEME shift                   keycode 124 = VoidSymbol
+#|REPLACEME       altgr             keycode 124 = VoidSymbol
+#|REPLACEME shift altgr             keycode 124 = VoidSymbol
+#|REPLACEME             control     keycode 124 = VoidSymbol
+#|REPLACEME shift       control     keycode 124 = VoidSymbol
+#|REPLACEME       altgr control     keycode 124 = VoidSymbol
+#|REPLACEME shift altgr control     keycode 124 = VoidSymbol
+#|REPLACEME                     alt keycode 124 = VoidSymbol
+#|REPLACEME shift               alt keycode 124 = VoidSymbol
+#|REPLACEME       altgr         alt keycode 124 = VoidSymbol
+#|REPLACEME             control alt keycode 124 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode 124 = VoidSymbol
+#|REPLACEME       altgr control alt keycode 124 = VoidSymbol
+#|REPLACEME shift       control alt keycode 124 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode 124 = VoidSymbol
+
+
+# Keycode 125 - Decr_Console (This is the Left Super/Windows/Logo Key)
+#|replaceme                         keycode 125 = Decr_Console
+#|REPLACEME shift                   keycode 125 = Last_Console
+#|REPLACEME       altgr             keycode 125 = Incr_Console
+#|REPLACEME shift altgr             keycode 125 = Compose
+#|REPLACEME             control     keycode 125 = VoidSymbol
+#|REPLACEME shift       control     keycode 125 = VoidSymbol
+#|REPLACEME       altgr control     keycode 125 = VoidSymbol
+#|REPLACEME shift altgr control     keycode 125 = VoidSymbol
+#|REPLACEME                     alt keycode 125 = VoidSymbol
+#|REPLACEME shift               alt keycode 125 = VoidSymbol
+#|REPLACEME       altgr         alt keycode 125 = VoidSymbol
+#|REPLACEME             control alt keycode 125 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode 125 = VoidSymbol
+#|REPLACEME       altgr control alt keycode 125 = VoidSymbol
+#|REPLACEME shift       control alt keycode 125 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode 125 = VoidSymbol
+
+
+# Keycode 126 - Incr_Console (This is the Right Super/Windows/Logo Key)
+#|replaceme                         keycode 126 = Incr_Console
+#|REPLACEME shift                   keycode 126 = Last_Console
+#|REPLACEME       altgr             keycode 126 = Decr_Console
+#|REPLACEME shift altgr             keycode 126 = Compose
+#|REPLACEME             control     keycode 126 = VoidSymbol
+#|REPLACEME shift       control     keycode 126 = VoidSymbol
+#|REPLACEME       altgr control     keycode 126 = VoidSymbol
+#|REPLACEME shift altgr control     keycode 126 = VoidSymbol
+#|REPLACEME                     alt keycode 126 = VoidSymbol
+#|REPLACEME shift               alt keycode 126 = VoidSymbol
+#|REPLACEME       altgr         alt keycode 126 = VoidSymbol
+#|REPLACEME             control alt keycode 126 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode 126 = VoidSymbol
+#|REPLACEME       altgr control alt keycode 126 = VoidSymbol
+#|REPLACEME shift       control alt keycode 126 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode 126 = VoidSymbol
+
+
+# Keycode 127 - Compose (This is the "Menu" or Right Click Key on Windows Keyboards)
+#|replaceme                         keycode 127 = Compose
+#|REPLACEME shift                   keycode 127 = Decr_Console
+#|REPLACEME       altgr             keycode 127 = Incr_Console
+#|REPLACEME shift altgr             keycode 127 = Last_Console
+#|REPLACEME             control     keycode 127 = VoidSymbol
+#|REPLACEME shift       control     keycode 127 = VoidSymbol
+#|REPLACEME       altgr control     keycode 127 = VoidSymbol
+#|REPLACEME shift altgr control     keycode 127 = VoidSymbol
+#|REPLACEME                     alt keycode 127 = VoidSymbol
+#|REPLACEME shift               alt keycode 127 = VoidSymbol
+#|REPLACEME       altgr         alt keycode 127 = VoidSymbol
+#|REPLACEME             control alt keycode 127 = VoidSymbol
+#|REPLACEME shift altgr         alt keycode 127 = VoidSymbol
+#|REPLACEME       altgr control alt keycode 127 = VoidSymbol
+#|REPLACEME shift       control alt keycode 127 = VoidSymbol
+#|REPLACEME shift altgr control alt keycode 127 = VoidSymbol
+
+
+## Note: keycodes 128-255 are typically undefined, but do exist, and can be used if need be
+
+
+
+#####################
+##### Special #######
+#####################
+
+
+# Strings can be defined instead of keysyms
+
+#|string F1 = "\033[[A"
+#|string F2 = "\033[[B"
+#|string F3 = "\033[[C"
+#|string F4 = "\033[[D"
+#|string F5 = "\033[[E"
+#|string F6 = "\033[17~"
+#|string F7 = "\033[18~"
+#|string F8 = "\033[19~"
+#|string F9 = "\033[20~"
+#|string F10 = "\033[21~"
+#|string F11 = "\033[23~"
+#|string F12 = "\033[24~"
+#|string F13 = "\033[25~"
+#|string F14 = "\033[26~"
+#|string F15 = "\033[28~"
+#|string F16 = "\033[29~"
+#|string F17 = "\033[31~"
+#|string F18 = "\033[32~"
+#|string F19 = "\033[33~"
+#|string F20 = "\033[34~"
+#|string Find = "\033[1~"
+#|string Insert = "\033[2~"
+#|string Remove = "\033[3~"
+#|string Select = "\033[4~"
+#|string Prior = "\033[5~"
+#|string Next = "\033[6~"
+#|string Macro = "\033[M"
+#|string Pause = "\033[P"
+
+
+
+#####################
+##### Compose #######
+#####################
+
+
+# After the compose key is pressed, the specified two keys are converted into the result
+
+#|compose '`' 'A' to 'À'
+#|compose '`' 'a' to 'à'
+#|compose '\'' 'A' to 'Á'
+#|compose '\'' 'a' to 'á'
+#|compose '^' 'A' to 'Â'
+#|compose '^' 'a' to 'â'
+#|compose '~' 'A' to 'Ã'
+#|compose '~' 'a' to 'ã'
+#|compose '"' 'A' to 'Ä'
+#|compose '"' 'a' to 'ä'
+#|compose 'O' 'A' to 'Å'
+#|compose 'o' 'a' to 'å'
+#|compose '0' 'A' to 'Å'
+#|compose '0' 'a' to 'å'
+#|compose 'A' 'A' to 'Å'
+#|compose 'a' 'a' to 'å'
+#|compose 'A' 'E' to 'Æ'
+#|compose 'a' 'e' to 'æ'
+#|compose ',' 'C' to 'Ç'
+#|compose ',' 'c' to 'ç'
+#|compose '`' 'E' to 'È'
+#|compose '`' 'e' to 'è'
+#|compose '\'' 'E' to 'É'
+#|compose '\'' 'e' to 'é'
+#|compose '^' 'E' to 'Ê'
+#|compose '^' 'e' to 'ê'
+#|compose '"' 'E' to 'Ë'
+#|compose '"' 'e' to 'ë'
+#|compose '`' 'I' to 'Ì'
+#|compose '`' 'i' to 'ì'
+#|compose '\'' 'I' to 'Í'
+#|compose '\'' 'i' to 'í'
+#|compose '^' 'I' to 'Î'
+#|compose '^' 'i' to 'î'
+#|compose '"' 'I' to 'Ï'
+#|compose '"' 'i' to 'ï'
+#|compose '-' 'D' to 'Ð'
+#|compose '-' 'd' to 'ð'
+#|compose '~' 'N' to 'Ñ'
+#|compose '~' 'n' to 'ñ'
+#|compose '`' 'O' to 'Ò'
+#|compose '`' 'o' to 'ò'
+#|compose '\'' 'O' to 'Ó'
+#|compose '\'' 'o' to 'ó'
+#|compose '^' 'O' to 'Ô'
+#|compose '^' 'o' to 'ô'
+#|compose '~' 'O' to 'Õ'
+#|compose '~' 'o' to 'õ'
+#|compose '"' 'O' to 'Ö'
+#|compose '"' 'o' to 'ö'
+#|compose '/' 'O' to 'Ø'
+#|compose '/' 'o' to 'ø'
+#|compose '`' 'U' to 'Ù'
+#|compose '`' 'u' to 'ù'
+#|compose '\'' 'U' to 'Ú'
+#|compose '\'' 'u' to 'ú'
+#|compose '^' 'U' to 'Û'
+#|compose '^' 'u' to 'û'
+#|compose '"' 'U' to 'Ü'
+#|compose '"' 'u' to 'ü'
+#|compose '\'' 'Y' to 'Ý'
+#|compose '\'' 'y' to 'ý'
+#|compose 'T' 'H' to 'Þ'
+#|compose 't' 'h' to 'þ'
+#|compose 's' 's' to 'ß'
+#|compose '"' 'y' to 'ÿ'
+#|compose 's' 'z' to 'ß'
+#|compose 'i' 'j' to 'ÿ'
+
