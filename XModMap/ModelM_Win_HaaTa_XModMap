@@ -1,0 +1,827 @@
+! HaaTa's Exhaustive XModMap for a Unicomp Model M with Windows Keys - Shai Coleman's Colemak is used as the base
+!  Keycode comment lists the default ANSI QWERTY value or known value
+
+! Unlike loadkeys, modifiers are completely separate from the actual keysym defns
+!  Shift is a notable exception though
+!
+! Example keycode:
+!                | Group 1 | Group 2 | Group 3 | Group 5 |
+!  keycode  24 =     q W       d D       b B       v V
+!
+! Note: Don't ask me where Group 4 is, cause it doesn't exist. Why? Dunno, go complain to the xkb guys
+!
+! Each group has a plain and shifted keysym, by default Group 1 is always selected.
+! The following keysyms can switch between the different ISO Groups:
+!
+!  | Group 2 Keysyms |
+! ISO_Level2_Latch
+!
+!  | Group 3 Keysyms |
+! ISO_Level3_Shift
+! ISO_Level3_Latch
+! ISO_Level3_Lock
+! 
+!  | Group 5 Keysyms |
+! ISO_Level5_Shift
+! ISO_Level5_Latch
+! ISO_Level5_Lock
+!
+!  | Generic Keysyms |
+! ISO_Group_Shift
+! ISO_Group_Latch
+! ISO_Group_Lock
+! ISO_Next_Group
+! ISO_Next_Group_Lock
+! ISO_Prev_Group
+! ISO_Prev_Group_Lock
+! ISO_First_Group
+! ISO_First_Group_Lock
+! ISO_Last_Group
+! ISO_Last_Group_Lock
+
+
+! XModMap allows for up to 8 modifiers to be specified, the first 4 which are in standard use:
+! shift   - Shift    Modifier (Common use)
+! lock    - CapsLock Modifier (Common use)
+! control - Ctrl     Modifier (Common use)
+! mod1    - Alt/Meta Modifier (Common use)
+! mod2    - NOT_SPECIFIED
+! mod3    - NOT_SPECIFIED
+! mod4    - Super    Modifier (Common use with the Windows/Logo key)
+! mod5    - NOT_SPECIFIED     (Often AltGr though)
+
+
+! Clean-up all of the modifiers
+clear Shift
+clear Lock
+clear Control
+clear Mod1
+clear Mod2
+clear Mod3
+clear Mod4
+clear Mod5
+
+
+! XModMap keycodes start at 8 and go up to 255
+! Even though the syntax is quite similar to loadkeys, functionally XModMap is completely different...
+
+! A reletively full list of keysyms can be found in: include/X11/keysymdef.h
+! Custom keysyms can be added, documentation exists for this however
+
+
+!# Keycode   8 - NOT_SPECIFIED
+   keycode   8 =
+
+!# Keycode   9 - Escape (MODIFIED: Changed with ~)
+   keycode   9 = grave asciitilde grave asciitilde dead_tilde asciitilde
+
+!# Keycode  10 - 1 !
+   keycode  10 = 1 exclam 1 exclam exclamdown onesuperior
+
+!# Keycode  11 - 2 @
+   keycode  11 = 2 at 2 at masculine twosuperior
+
+!# Keycode  12 - 3 #
+   keycode  12 = 3 numbersign 3 numbersign ordfeminine threesuperior
+
+!# Keycode  13 - 4 $
+   keycode  13 = 4 dollar 4 dollar cent sterling
+
+!# Keycode  14 - 5 %
+   keycode  14 = 5 percent 5 percent EuroSign yen
+
+!# Keycode  15 - 6 ^
+   keycode  15 = 6 asciicircum 6 asciicircum hstroke Hstroke
+
+!# Keycode  16 - 7 &
+   keycode  16 = 7 ampersand 7 ampersand eth ETH
+
+!# Keycode  17 - 8 *
+   keycode  17 = 8 asterisk 8 asterisk thorn THORN
+
+!# Keycode  18 - 9 (
+   keycode  18 = 9 parenleft 9 parenleft leftsinglequotemark leftdoublequotemark
+
+!# Keycode  19 - 0 )
+   keycode  19 = 0 parenright 0 parenright rightsinglequotemark rightdoublequotemark
+
+!# Keycode  20 - - _
+   keycode  20 = minus underscore minus underscore endash emdash
+
+!# Keycode  21 - + =
+   keycode  21 = equal plus equal plus multiply division
+
+!# Keycode  22 - Backspace
+   keycode  22 = BackSpace NoSymbol BackSpace
+
+!# Keycode  23 - Tab
+   keycode  23 = Tab ISO_Left_Tab Tab ISO_Left_Tab
+
+!# Keycode  24 - q Q
+   keycode  24 = q Q q Q adiaeresis Adiaeresis
+
+!# Keycode  25 - w W
+   keycode  25 = w W w W aring Aring
+
+!# Keycode  26 - e E
+   keycode  26 = f F f F atilde Atilde
+
+!# Keycode  27 - r R
+   keycode  27 = p P p P oslash Oslash
+
+!# Keycode  28 - t T
+   keycode  28 = g G g G dead_ogonek asciitilde
+
+!# Keycode  29 - y Y
+   keycode  29 = j J j J dstroke Dstroke
+
+!# Keycode  30 - u U
+   keycode  30 = l L l L lstroke Lstroke
+
+!# Keycode  31 - i I
+   keycode  31 = u U u U uacute Uacute
+
+!# Keycode  32 - o O
+   keycode  32 = y Y y Y udiaeresis Udiaeresis
+
+!# Keycode  33 - p P
+   keycode  33 = semicolon colon semicolon colon odiaeresis Odiaeresis
+
+!# Keycode  34 - [ {
+   keycode  34 = bracketleft braceleft bracketleft braceleft guillemotleft U2039
+
+!# Keycode  35 - ] }
+   keycode  35 = bracketright braceright bracketright braceright guillemotright U203A
+
+!# Keycode  36 - Enter
+   keycode  36 = Return NoSymbol Return
+
+!# Keycode  37 - Ctrl (Left)
+   keycode  37 = Control_L NoSymbol Control_L
+
+!# Keycode  38 - a A
+   keycode  38 = a A a A aacute Aacute
+
+!# Keycode  39 - s S 
+   keycode  39 = r R r R dead_grave asciitilde
+
+!# Keycode  40 - d D
+   keycode  40 = s S s S ssharp asciitilde
+
+!# Keycode  41 - f F
+   keycode  41 = t T t T dead_acute dead_doubleacute
+
+!# Keycode  42 - g G
+   keycode  42 = d D d D dead_diaeresis asciitilde
+
+!# Keycode  43 - h H
+   keycode  43 = h H h H dead_caron asciitilde
+
+!# Keycode  44 - j J
+   keycode  44 = n N n N ntilde Ntilde
+
+!# Keycode  45 - k K
+   keycode  45 = e E e E eacute Eacute
+
+!# Keycode  46 - l L
+   keycode  46 = i I i I iacute Iacute
+
+!# Keycode  47 - ; :
+   keycode  47 = o O o O oacute Oacute
+
+!# Keycode  48 - ' "
+   keycode  48 = apostrophe quotedbl apostrophe quotedbl otilde Otilde
+
+!# Keycode  49 - ` ~ (MODIFIED: Change to ESC)
+   keycode  49 = Escape NoSymbol Escape
+
+!# Keycode  50 - Shift (Left)
+   keycode  50 = Shift_L NoSymbol Shift_L
+
+!# Keycode  51 - \ |
+   keycode  51 = backslash bar backslash bar asciitilde asciitilde
+
+!# Keycode  52 - z Z
+   keycode  52 = z Z z Z ae AE
+
+!# Keycode  53 - x X
+   keycode  53 = x X x X dead_circumflex asciitilde
+
+!# Keycode  54 - c C
+   keycode  54 = c C c C ccedilla Ccedilla
+
+!# Keycode  55 - v V
+   keycode  55 = v V v V oe OE
+
+!# Keycode  56 - b B
+   keycode  56 = b B b B dead_breve asciitilde
+
+!# Keycode  57 - n N
+   keycode  57 = k K k K dead_abovering asciitilde
+
+!# Keycode  58 - m M
+   keycode  58 = m M m M dead_macron asciitilde
+
+!# Keycode  59 - , <
+   keycode  59 = comma less comma less dead_cedilla asciitilde
+
+!# Keycode  60 - . >
+   keycode  60 = period greater period greater dead_abovedot asciitilde
+
+!# Keycode  61 - / ?
+   keycode  61 = slash question slash question questiondown asciitilde
+
+!# Keycode  62 - Shift (Right)
+   keycode  62 = Shift_R NoSymbol Shift_R
+
+!# Keycode  63 - * (Keypad)
+   keycode  63 = KP_Multiply XF86_ClearGrab KP_Multiply XF86_ClearGrab
+
+!# Keycode  64 - Alt (Left)
+   keycode  64 = Alt_L Meta_L Alt_L Meta_L
+
+!# Keycode  65 - Space
+   keycode  65 = space space space space space nobreakspace
+
+!# Keycode  66 - Caps_Lock
+   keycode  66 = BackSpace BackSpace BackSpace BackSpace BackSpace BackSpace
+
+!# Keycode  67 - F1
+   keycode  67 = F1 XF86_Switch_VT_1 F1 XF86_Switch_VT_1
+
+!# Keycode  68 - F2
+   keycode  68 = F2 XF86_Switch_VT_2 F2 XF86_Switch_VT_2
+
+!# Keycode  69 - F3
+   keycode  69 = F3 XF86_Switch_VT_3 F3 XF86_Switch_VT_3
+
+!# Keycode  70 - F4
+   keycode  70 = F4 XF86_Switch_VT_4 F4 XF86_Switch_VT_4
+
+!# Keycode  71 - F5
+   keycode  71 = F5 XF86_Switch_VT_5 F5 XF86_Switch_VT_5
+
+!# Keycode  72 - F6
+   keycode  72 = F6 XF86_Switch_VT_6 F6 XF86_Switch_VT_6
+
+!# Keycode  73 - F7
+   keycode  73 = F7 XF86_Switch_VT_7 F7 XF86_Switch_VT_7
+
+!# Keycode  74 - F8
+   keycode  74 = F8 XF86_Switch_VT_8 F8 XF86_Switch_VT_8
+
+!# Keycode  75 - F9
+   keycode  75 = F9 XF86_Switch_VT_9 F9 XF86_Switch_VT_9
+
+!# Keycode  76 - F10
+   keycode  76 = F10 XF86_Switch_VT_10 F10 XF86_Switch_VT_10
+
+!# Keycode  77 - Num Lock
+   keycode  77 = Num_Lock Pointer_EnableKeys Num_Lock Pointer_EnableKeys
+
+!# Keycode  78 - Scroll Lock
+   keycode  78 = Scroll_Lock NoSymbol Scroll_Lock
+
+!# Keycode  79 - Home 7 (Keypad)
+   keycode  79 = Home KP_7 Home KP_7
+
+!# Keycode  80 - Up 8 (Keypad)
+   keycode  80 = Up KP_8 Up KP_8
+
+!# Keycode  81 - PgUp 9 (Keypad)
+   keycode  81 = Prior KP_9 Prior KP_9
+
+!# Keycode  82 - - (Keypad)
+   keycode  82 = KP_Subtract XF86_Prev_VMode KP_Subtract XF86_Prev_VMode
+
+!# Keycode  83 - Left 4 (Keypad)
+   keycode  83 = Left KP_4 Left KP_4
+
+!# Keycode  84 - Down 5 (Keypad)
+   keycode  84 = Down KP_5 Down KP_5
+
+!# Keycode  85 - Right 6 (Keypad)
+   keycode  85 = Right KP_6 Right KP_6
+
+!# Keycode  86 - + (Keypad)
+   keycode  86 = KP_Add XF86_Next_VMode KP_Add XF86_Next_VMode
+
+!# Keycode  87 - End 1 (Keypad)
+   keycode  87 = End KP_1 End KP_1
+
+!# Keycode  88 - Down 2 (Keypad)
+   keycode  88 = Down KP_2 Down KP_2
+
+!# Keycode  89 - PgDn 3 (Keypad)
+   keycode  89 = Next KP_3 Next KP_3
+
+!# Keycode  90 - Insert 0 (Keypad)
+   keycode  90 = Insert KP_0 Insert KP_0
+
+!# Keycode  91 - Delete . (Keypad)
+   keycode  91 = Delete KP_Decimal Delete KP_Decimal
+
+!# Keycode  92 - Alt (Right)
+   keycode  92 = ISO_Level3_Shift NoSymbol ISO_Level3_Shift
+
+!# Keycode  93 - NOT_SPECIFIED
+   keycode  93 =
+
+!# Keycode  94 - NOT_SPECIFIED (At least not on QWERTY ANSI or Japanese)
+   keycode  94 = minus underscore minus underscore endash emdash
+
+!# Keycode  95 - F11
+   keycode  95 = F11 XF86_Switch_VT_11 F11 XF86_Switch_VT_11
+
+!# Keycode  96 - F12
+   keycode  96 = F12 XF86_Switch_VT_12 F12 XF86_Switch_VT_12
+
+!# Keycode  97 - \ (Japanese)
+   keycode  97 =
+
+!# Keycode  98 - Katakana (Japanese, not common)
+   keycode  98 = Katakana NoSymbol Katakana
+
+!# Keycode  99 - Hiragana (Japanese, not common)
+   keycode  99 = Hiragana NoSymbol Hiragana
+
+!# Keycode 100 - Henkan (Japanese)
+   keycode 100 = Henkan_Mode NoSymbol Henkan_Mode
+
+!# Keycode 101 - KANA (Japanese)
+   keycode 101 = Hiragana_Katakana NoSymbol Hiragana_Katakana
+
+!# Keycode 102 - Muhenkan (Japanese)
+   keycode 102 = Muhenkan NoSymbol Muhenkan
+
+!# Keycode 103 - NOT_SPECIFIED
+   keycode 103 =
+
+!# Keycode 104 - Enter (Keypad)
+   keycode 104 = KP_Enter NoSymbol KP_Enter
+
+!# Keycode 105 - Ctrl (Right)
+   keycode 105 = Control_R NoSymbol Control_R
+
+!# Keycode 106 - / (Keypad)
+   keycode 106 = KP_Divide XF86_Ungrab KP_Divide XF86_Ungrab
+
+!# Keycode 107 - PrintScreen SysReq
+   keycode 107 = Print Sys_Req Print Sys_Req
+
+!# Keycode 108 - Alt (Right)
+   keycode 108 = ISO_Level3_Shift NoSymbol ISO_Level3_Shift
+
+!# Keycode 109 - NOT_SPECIFIED
+   keycode 109 = Linefeed NoSymbol Linefeed
+
+!# Keycode 110 - Home
+   keycode 110 = Home NoSymbol Home
+
+!# Keycode 111 - Up
+   keycode 111 = Up NoSymbol Up
+
+!# Keycode 112 - PageUp
+   keycode 112 = Prior NoSymbol Prior
+
+!# Keycode 113 - Left
+   keycode 113 = Left NoSymbol Left
+
+!# Keycode 114 - Right
+   keycode 114 = Right NoSymbol Right
+
+!# Keycode 115 - End
+   keycode 115 = End NoSymbol End
+
+!# Keycode 116 - Down
+   keycode 116 = Down NoSymbol Down
+
+!# Keycode 117 - PageDn
+   keycode 117 = Next NoSymbol Next
+
+!# Keycode 118 - Insert
+   keycode 118 = Insert NoSymbol Insert
+
+!# Keycode 119 - Delete
+   keycode 119 = Delete NoSymbol Delete
+
+!# Keycode 120 - NOT_SPECIFIED
+   keycode 120 =
+
+!# Keycode 121 - Mute (Media Key)
+   keycode 121 = XF86AudioMute NoSymbol XF86AudioMute
+
+!# Keycode 122 - Lower Volume (Media Key)
+   keycode 122 = XF86AudioLowerVolume NoSymbol XF86AudioLowerVolume
+
+!# Keycode 123 - Raise Volume (Media Key)
+   keycode 123 = XF86AudioRaiseVolume NoSymbol XF86AudioRaiseVolume
+
+!# Keycode 124 - Power Off (Media Key)
+   keycode 124 = XF86PowerOff NoSymbol XF86PowerOff
+
+!# Keycode 125 - = (Keypad, not common)
+   keycode 125 = KP_Equal NoSymbol KP_Equal
+
+!# Keycode 126 - PlusMinus (not common)
+   keycode 126 = plusminus NoSymbol plusminus
+
+!# Keycode 127 - Pause Break
+   keycode 127 = Pause Break Pause Break
+
+!# Keycode 128 - NOT_SPECIFIED
+   keycode 128 =
+
+!# Keycode 129 - Decimal (Keypad, not common)
+   keycode 129 = KP_Decimal NoSymbol KP_Decimal
+
+!# Keycode 130 - Hangul (Korean)
+   keycode 130 = Hangul NoSymbol Hangul
+
+!# Keycode 131 - Hangul_Hanja (Korean)
+   keycode 131 = Hangul_Hanja NoSymbol Hangul_Hanja
+
+!# Keycode 132 - NOT_SPECIFIED
+   keycode 132 =
+
+!# Keycode 133 - Windows/Logo Key (Left)
+   keycode 133 = Super_L NoSymbol Super_L
+
+!# Keycode 134 - Windows/Logo Key (Right)
+   keycode 134 = Super_R NoSymbol Super_R
+
+!# Keycode 135 - Menu Key (Common, useless :P)
+   keycode 135 = Menu NoSymbol Menu
+
+!# Keycode 136 - Cancel (More common on remotes)
+   keycode 136 = Cancel NoSymbol Cancel
+
+!# Keycode 137 - Redo (Not common on typical layouts)
+   keycode 137 = Redo NoSymbol Redo
+
+!# Keycode 138 - Sun Shortcut
+   keycode 138 = SunProps NoSymbol SunProps
+
+!# Keycode 139 - Undo (Not common on typical layouts)
+   keycode 139 = Undo NoSymbol Undo
+
+!# Keycode 140 - Sun Shortcut
+   keycode 140 = SunFront NoSymbol SunFront
+
+!# Keycode 141 - Copy (Media Key)
+   keycode 141 = XF86Copy NoSymbol XF86Copy
+
+!# Keycode 142 - Sun Shortcut
+   keycode 142 = SunOpen NoSymbol SunOpen
+
+!# Keycode 143 - Paste (Media Key)
+   keycode 143 = XF86Paste NoSymbol XF86Paste
+
+!# Keycode 144 - Find (Media Key)
+   keycode 144 = Find NoSymbol Find
+
+!# Keycode 145 - Cut (Media Key)
+   keycode 145 = XF86Cut NoSymbol XF86Cut
+
+!# Keycode 146 - Help (Media Key)
+   keycode 146 = Help NoSymbol Help
+
+!# Keycode 147 - Menu Keyboard? (Media Key)
+   keycode 147 = XF86MenuKB NoSymbol XF86MenuKB
+
+!# Keycode 148 - Calculator (Media Key)
+   keycode 148 = XF86Calculator NoSymbol XF86Calculator
+
+!# Keycode 149 - NOT_SPECIFIED
+   keycode 149 =
+
+!# Keycode 150 - Sleep (Media Key)
+   keycode 150 = XF86Sleep NoSymbol XF86Sleep
+
+!# Keycode 151 - Wake Up (Media Key)
+   keycode 151 = XF86WakeUp NoSymbol XF86WakeUp
+
+!# Keycode 152 - Explorer (eww, Windows :P) (Media Key)
+   keycode 152 = XF86Explorer NoSymbol XF86Explorer
+
+!# Keycode 153 - Send (Probably compose email) (Media Key)
+   keycode 153 = XF86Send NoSymbol XF86Send
+
+!# Keycode 154 - NOT_SPECIFIED
+   keycode 154 =
+
+!# Keycode 155 - Transfer (Media Key)
+   keycode 155 = XF86Xfer NoSymbol XF86Xfer
+
+!# Keycode 156 - Shortcut1 (Media Key)
+   keycode 156 = XF86Launch1 NoSymbol XF86Launch1
+
+!# Keycode 157 - Shortcut2 (Media Key)
+   keycode 157 = XF86Launch2 NoSymbol XF86Launch2
+
+!# Keycode 158 - Browser (Media Key)
+   keycode 158 = XF86WWW NoSymbol XF86WWW
+
+!# Keycode 159 - Dos (huh? whatever :P) (Media Key)
+   keycode 159 = XF86DOS NoSymbol XF86DOS
+
+!# Keycode 160 - Screen Saver (Media Key)
+   keycode 160 = XF86ScreenSaver NoSymbol XF86ScreenSaver
+
+!# Keycode 161 - NOT_SPECIFIED
+   keycode 161 =
+
+!# Keycode 162 - Rotate Windows (Media Key)
+   keycode 162 = XF86RotateWindows NoSymbol XF86RotateWindows
+
+!# Keycode 163 - EMail Client (Media Key)
+   keycode 163 = XF86Mail NoSymbol XF86Mail
+
+!# Keycode 164 - Favorites List (Media Key)
+   keycode 164 = XF86Favorites NoSymbol XF86Favorites
+
+!# Keycode 165 - MyComputer (eww, more Windows :P) (Media Key)
+   keycode 165 = XF86MyComputer NoSymbol XF86MyComputer
+
+!# Keycode 166 - Back (Media Key)
+   keycode 166 = XF86Back NoSymbol XF86Back
+
+!# Keycode 167 - Forward (Media Key)
+   keycode 167 = XF86Forward NoSymbol XF86Forward
+
+!# Keycode 168 - NOT_SPECIFIED
+   keycode 168 =
+
+!# Keycode 169 - Eject (Media Key)
+   keycode 169 = XF86Eject NoSymbol XF86Eject
+
+!# Keycode 170 - Eject (Media Key) (Yay, 2 eject keys :P)
+   keycode 170 = XF86Eject XF86Eject XF86Eject XF86Eject
+
+!# Keycode 171 - Next Song (Media Key)
+   keycode 171 = XF86AudioNext NoSymbol XF86AudioNext
+
+!# Keycode 172 - Play Song (Media Key)
+   keycode 172 = XF86AudioPlay XF86AudioPause XF86AudioPlay XF86AudioPause
+
+!# Keycode 173 - Previous Song (Media Key)
+   keycode 173 = XF86AudioPrev NoSymbol XF86AudioPrev
+
+!# Keycode 174 - Stop Song (Media Key)
+   keycode 174 = XF86AudioStop XF86Eject XF86AudioStop XF86Eject
+
+!# Keycode 175 - Record (Media Key)
+   keycode 175 = XF86AudioRecord NoSymbol XF86AudioRecord
+
+!# Keycode 176 - Rewind (Media Key)
+   keycode 176 = XF86AudioRewind NoSymbol XF86AudioRewind
+
+!# Keycode 177 - Phone (Media Key)
+   keycode 177 = XF86Phone NoSymbol XF86Phone
+
+!# Keycode 178 - NOT_SPECIFIED
+   keycode 178 =
+
+!# Keycode 179 - Tools (Media Key)
+   keycode 179 = XF86Tools NoSymbol XF86Tools
+
+!# Keycode 180 - Home Page (Media Key)
+   keycode 180 = XF86HomePage NoSymbol XF86HomePage
+
+!# Keycode 181 - Refresh [Webpage] (Media Key)
+   keycode 181 = XF86Reload NoSymbol XF86Reload
+
+!# Keycode 182 - Close (Media Key)
+   keycode 182 = XF86Close NoSymbol XF86Close
+
+!# Keycode 183 - NOT_SPECIFIED
+   keycode 183 =
+
+!# Keycode 184 - NOT_SPECIFIED
+   keycode 184 =
+
+!# Keycode 185 - Scroll Up (Media Key)
+   keycode 185 = XF86ScrollUp NoSymbol XF86ScrollUp
+
+!# Keycode 186 - Scroll Down (Media Key)
+   keycode 186 = XF86ScrollDown NoSymbol XF86ScrollDown
+
+!# Keycode 187 - ( (Dedicated, not common)
+   keycode 187 = parenleft NoSymbol parenleft
+
+!# Keycode 188 - ) (Dedicated, not common)
+   keycode 188 = parenright NoSymbol parenright
+
+!# Keycode 189 - New File (of what :P) (Media Key)
+   keycode 189 = XF86New NoSymbol XF86New
+
+!# Keycode 190 - Redo (Dedicated, probably Media Key)
+   keycode 190 = Redo NoSymbol Redo
+
+!# Keycode 191 - NOT_SPECIFIED
+   keycode 191 =
+
+!# Keycode 192 - NOT_SPECIFIED
+   keycode 192 =
+
+!# Keycode 193 - NOT_SPECIFIED
+   keycode 193 =
+
+!# Keycode 194 - NOT_SPECIFIED
+   keycode 194 =
+
+!# Keycode 195 - NOT_SPECIFIED
+   keycode 195 =
+
+!# Keycode 196 - NOT_SPECIFIED
+   keycode 196 =
+
+!# Keycode 197 - NOT_SPECIFIED
+   keycode 197 =
+
+!# Keycode 198 - NOT_SPECIFIED
+   keycode 198 =
+
+!# Keycode 199 - NOT_SPECIFIED
+   keycode 199 =
+
+!# Keycode 200 - Toggle Touchpad (Probably laptop Fn key combo)
+   keycode 200 = XF86TouchpadToggle NoSymbol XF86TouchpadToggle
+
+!# Keycode 201 - NOT_SPECIFIED
+   keycode 201 =
+
+!# Keycode 202 - NOT_SPECIFIED
+   keycode 202 =
+
+!# Keycode 203 - Swap Keyboard Layouts (Perhaps with languages that require multiple char sets)
+   keycode 203 = Mode_switch NoSymbol Mode_switch
+
+!# Keycode 204 - Shift Only Alt (Left)
+   keycode 204 = NoSymbol Alt_L NoSymbol Alt_L
+
+!# Keycode 205 - Shift Only Meta (Left)
+   keycode 205 = NoSymbol Meta_L NoSymbol Meta_L
+
+!# Keycode 206 - Shift Only Windows/Super (Left)
+   keycode 206 = NoSymbol Super_L NoSymbol Super_L
+
+!# Keycode 207 - Shift Only Hyper (Left)
+   keycode 207 = NoSymbol Hyper_L NoSymbol Hyper_L
+
+!# Keycode 208 - Play Song (Media Key)
+   keycode 208 = XF86AudioPlay NoSymbol XF86AudioPlay
+
+!# Keycode 209 - Pause Song (Media Key)
+   keycode 209 = XF86AudioPause NoSymbol XF86AudioPause
+
+!# Keycode 210 - Shortcut3 (Media Key)
+   keycode 210 = XF86Launch3 NoSymbol XF86Launch3
+
+!# Keycode 211 - Shortcut3 (Media Key)
+   keycode 211 = XF86Launch4 NoSymbol XF86Launch4
+
+!# Keycode 212 - NOT_SPECIFIED
+   keycode 212 =
+
+!# Keycode 213 - Suspend (Media Key)
+   keycode 213 = XF86Suspend NoSymbol XF86Suspend
+
+!# Keycode 214 - Close (Media Key)
+   keycode 214 = XF86Close NoSymbol XF86Close
+
+!# Keycode 215 - Play Song (Media Key)
+   keycode 215 = XF86AudioPlay NoSymbol XF86AudioPlay
+
+!# Keycode 216 - Fast Forward (Media Key)
+   keycode 216 = XF86AudioForward NoSymbol XF86AudioForward
+
+!# Keycode 217 - NOT_SPECIFIED
+   keycode 217 =
+
+!# Keycode 218 - Dedicated PrintScr
+   keycode 218 = Print NoSymbol Print
+
+!# Keycode 219 - NOT_SPECIFIED
+   keycode 219 =
+
+!# Keycode 220 - Web Camera (MediaKey)
+   keycode 220 = XF86WebCam NoSymbol XF86WebCam
+
+!# Keycode 221 - NOT_SPECIFIED
+   keycode 221 =
+
+!# Keycode 222 - NOT_SPECIFIED
+   keycode 222 =
+
+!# Keycode 223 - EMail Client (Media Key)
+   keycode 223 = XF86Mail NoSymbol XF86Mail
+
+!# Keycode 224 - NOT_SPECIFIED
+   keycode 224 =
+
+!# Keycode 225 - Search (Media Key)
+   keycode 225 = XF86Search NoSymbol XF86Search
+
+!# Keycode 226 - NOT_SPECIFIED
+   keycode 226 =
+
+!# Keycode 227 - Finance Application (Media Key)
+   keycode 227 = XF86Finance NoSymbol XF86Finance
+
+!# Keycode 228 - NOT_SPECIFIED
+   keycode 228 =
+
+!# Keycode 229 - Shop (Media Key)
+   keycode 229 = XF86Shop NoSymbol XF86Shop
+
+!# Keycode 230 - NOT_SPECIFIED
+   keycode 230 =
+
+!# Keycode 231 - Dedicated Cancel Key
+   keycode 231 = Cancel NoSymbol Cancel
+
+!# Keycode 232 - Lower Monitor Brightness
+   keycode 232 = XF86MonBrightnessDown NoSymbol XF86MonBrightnessDown
+
+!# Keycode 233 - Raise Monitor Brightness
+   keycode 233 = XF86MonBrightnessUp NoSymbol XF86MonBrightnessUp
+
+!# Keycode 234 - Music Application (Media Key)
+   keycode 234 = XF86AudioMedia NoSymbol XF86AudioMedia
+
+!# Keycode 235 - Display [ON/OFF? or Projector?] (Probably Fn combo on a laptop)
+   keycode 235 = XF86Display NoSymbol XF86Display
+
+!# Keycode 236 - Keyboard Light Toggle
+   keycode 236 = XF86KbdLightOnOff NoSymbol XF86KbdLightOnOff
+
+!# Keycode 237 - Lower Keyboard Light Brightness
+   keycode 237 = XF86KbdBrightnessDown NoSymbol XF86KbdBrightnessDown
+
+!# Keycode 238 - Raise Keyboard Light Brightness
+   keycode 238 = XF86KbdBrightnessUp NoSymbol XF86KbdBrightnessUp
+
+!# Keycode 239 - Send [Email?] (Media Key)
+   keycode 239 = XF86Send NoSymbol XF86Send
+
+!# Keycode 240 - Reply Email (Media Key)
+   keycode 240 = XF86Reply NoSymbol XF86Reply
+
+!# Keycode 241 - Forward Email (Media Key)
+   keycode 241 = XF86MailForward NoSymbol XF86MailForward
+
+!# Keycode 242 - Save Document (Media Key)
+   keycode 242 = XF86Save NoSymbol XF86Save
+
+!# Keycode 243 - Documents Folder (Media Key)
+   keycode 243 = XF86Documents NoSymbol XF86Documents
+
+!# Keycode 244 - Battery Status (Media Key)
+   keycode 244 = XF86Battery NoSymbol XF86Battery
+
+!# Keycode 245 - Toggle Bluetooth (Probably Fn combo on a laptop)
+   keycode 245 = XF86Bluetooth NoSymbol XF86Bluetooth
+
+!# Keycode 246 - Toggle Wireless LAN (Probably Fn combo on a laptop)
+   keycode 246 = XF86WLAN NoSymbol XF86WLAN
+
+!# Keycode 247 - NOT_SPECIFIED
+   keycode 247 =
+
+!# Keycode 248 - NOT_SPECIFIED
+   keycode 248 =
+
+!# Keycode 249 - NOT_SPECIFIED
+   keycode 249 =
+
+!# Keycode 250 - NOT_SPECIFIED
+   keycode 250 =
+
+!# Keycode 251 - NOT_SPECIFIED
+   keycode 251 =
+
+!# Keycode 252 - NOT_SPECIFIED
+   keycode 252 =
+
+!# Keycode 253 - NOT_SPECIFIED
+   keycode 253 =
+
+!# Keycode 254 - NOT_SPECIFIED
+   keycode 254 =
+
+!# Keycode 255 - NOT_SPECIFIED
+   keycode 255 =
+
+
+! Add Modifiers
+
+ add shift   = Shift_L Shift_R
+!add lock    = Caps_Lock
+ add control = Control_L Control_R
+ add mod1    = Alt_L Meta_L
+ add mod2    = Num_Lock
+!add mod3    = 
+ add mod4    = Super_L Super_R Hyper_L
+ add mod5    = ISO_Level3_Shift Mode_switch
+
