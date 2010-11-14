@@ -72,8 +72,8 @@ clear Mod5
 !# Keycode   8 - NOT_SPECIFIED
    keycode   8 =
 
-!# Keycode   9 - Escape
-   keycode   9 = Escape NoSymbol Escape
+!# Keycode   9 - Escape MODIFIED: Use ` ~ instead
+   keycode   9 = grave asciitilde grave asciitilde dead_tilde asciitilde
 
 !# Keycode  10 - 1 !
    keycode  10 = 1 exclam 1 exclam exclamdown onesuperior
@@ -192,8 +192,8 @@ clear Mod5
 !# Keycode  48 - ' "
    keycode  48 = apostrophe quotedbl apostrophe quotedbl otilde Otilde
 
-!# Keycode  49 - ` ~
-   keycode  49 = grave asciitilde grave asciitilde dead_tilde asciitilde
+!# Keycode  49 - ` ~ MODIFIED: Better place for Esc
+   keycode  49 = Escape NoSymbol Escape
 
 !# Keycode  50 - Shift (Left)
    keycode  50 = Shift_L NoSymbol Shift_L
