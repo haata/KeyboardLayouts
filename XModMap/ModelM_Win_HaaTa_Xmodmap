@@ -112,7 +112,7 @@ clear Mod5
    keycode  21 = equal plus equal plus multiply division
 
 !# Keycode  22 - Backspace
-   keycode  22 = BackSpace NoSymbol BackSpace
+   keycode  22 = BackSpace BackSpace BackSpace BackSpace BackSpace BackSpace
 
 !# Keycode  23 - Tab
    keycode  23 = Tab ISO_Left_Tab Tab ISO_Left_Tab
@@ -156,8 +156,8 @@ clear Mod5
 !# Keycode  36 - Enter
    keycode  36 = Return NoSymbol Return
 
-!# Keycode  37 - Ctrl (Left)
-   keycode  37 = Control_L NoSymbol Control_L
+!# Keycode  37 - Ctrl (Left) (MODIFIED: To Alt as per Model F)
+   keycode  37 = Alt_L Meta_L Alt_L Meta_L
 
 !# Keycode  38 - a A
    keycode  38 = a A a A aacute Aacute
@@ -231,20 +231,20 @@ clear Mod5
 !# Keycode  61 - / ?
    keycode  61 = slash question slash question questiondown asciitilde
 
-!# Keycode  62 - Shift (Right)
-   keycode  62 = Shift_R NoSymbol Shift_R
+!# Keycode  62 - Shift (Right) (MODIFIED: To ISO_LEVEL5_Shift)
+   keycode  62 = ISO_Level5_Shift NoSymbol ISO_Level5_Shift
 
 !# Keycode  63 - * (Keypad)
    keycode  63 = KP_Multiply XF86_ClearGrab KP_Multiply XF86_ClearGrab
 
-!# Keycode  64 - Alt (Left)
-   keycode  64 = Alt_L Meta_L Alt_L Meta_L
+!# Keycode  64 - Alt (Left) (MODIFIED: To Super_L)
+   keycode  64 = Super_L NoSymbol Super_L
 
 !# Keycode  65 - Space
    keycode  65 = space space space space space nobreakspace
 
-!# Keycode  66 - Caps_Lock
-   keycode  66 = BackSpace BackSpace BackSpace BackSpace BackSpace BackSpace
+!# Keycode  66 - Caps_Lock (MODIFIED: Ctrl_L)
+   keycode  66 = Control_L NoSymbol Control_L
 
 !# Keycode  67 - F1
    keycode  67 = F1 XF86_Switch_VT_1 F1 XF86_Switch_VT_1
@@ -444,8 +444,8 @@ clear Mod5
 !# Keycode 132 - NOT_SPECIFIED
    keycode 132 =
 
-!# Keycode 133 - Windows/Logo Key (Left)
-   keycode 133 = Super_L NoSymbol Super_L
+!# Keycode 133 - Windows/Logo Key (Left) (MODIFIED: To AltGr)
+   keycode 133 = ISO_Level3_Shift NoSymbol ISO_Level3_Shift
 
 !# Keycode 134 - Windows/Logo Key (Right)
    keycode 134 = Super_R NoSymbol Super_R

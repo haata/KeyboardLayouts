@@ -441,8 +441,8 @@ clear Mod5
 !# Keycode 131 - Hangul_Hanja (Korean)
    keycode 131 = Hangul_Hanja NoSymbol Hangul_Hanja
 
-!# Keycode 132 - NOT_SPECIFIED (MODIFY: This is the break key on the uTron)
-   keycode 132 =
+!# Keycode 132 - NOT_SPECIFIED (MODIFY: This is the break key on the uTron) to \ |
+   keycode 132 = backslash bar backslash bar asciitilde asciitilde
 
 !# Keycode 133 - Windows/Logo Key (Left)
    keycode 133 = Super_L NoSymbol Super_L
