@@ -1,0 +1,334 @@
+#!/bin/bash
+#| Jacob Alexander (2010)
+#| Script controlling the keyboard leds based upon the modifiers pressed
+
+
+#| Commands
+setLed='setleds -L'
+
+
+#| Defines
+scroll[0]='-scroll'
+scroll[1]='+scroll'
+   num[0]='-num'
+   num[1]='+num'
+  caps[0]='-caps'
+  caps[1]='+caps'
+declare -i maxLEDs=3
+declare -i floatMathDecimal=4
+declare -i debugMode=0
+
+
+#| Default Variables
+maxCycle=0.5     # Time for each cycle (in seconds)
+declare -i liltMode=0
+declare -i totalStates=216  # Total number of light states (8, 27, 64, 125, 216, 343, etc.  e.g. 111 base 2, 222, base 3, 333 base 4, etc.)
+
+
+#| General Variables
+declare -i inputState=0
+declare -i quit=-1
+
+
+#| Event Loop Variables
+napTime=0
+sleepCycleCurrent=0
+runtimeTotal=0
+declare -a ledStatus
+ledStatus[0]=0
+ledStatus[1]=0
+ledStatus[2]=0
+
+
+#| Error Handling
+error() {
+	echo "Bug or invalid input"
+	exit 1
+}
+
+
+#| Debug Info
+debug() {
+	if (( debugMode )); then
+		parm1=$1
+		case "$parm1" in
+		1)
+			echo "       States: $states"
+			echo "     New Base: ${newBase[@]}"
+			echo "State Periods: ${statePeriod[@]}"
+			echo "  Sleep Count: $minSleepState"
+			;;
+		2)
+			echo " Set LED Args: $toSet"
+			;;
+		3)
+			echo "Current Place: ${tmpCount[@]}"
+			echo "Current Cycle: $sleepCycleCurrent"
+			;;
+		4)
+			echo "   Total Time: $runtimeTotal"
+		esac
+	fi
+}
+
+
+#| Floating Point Math
+floatMath() {
+	echo "scale=$floatMathDecimal; $1" | bc
+}
+
+
+#| Blank LEDs
+blankLEDs() {
+	$setLed ${num[0]} ${caps[0]} ${scroll[0]}
+	ledStatus[0]=0
+	ledStatus[1]=0
+	ledStatus[2]=0
+}
+
+
+#| Inverse LED
+#| 
+#| Parameter 1: LED to Invert
+#|              0:    NumLock
+#|              1:   CapsLock
+#|              2: ScrollLock
+inverseLEDStatus() {
+	parm=$1
+	if (( ledStatus[$parm] == 0 )); then
+		ledStatus[$parm]=1
+	else
+		ledStatus[$parm]=0
+	fi
+
+	return ${ledStatus[$parm]}
+}
+
+
+#| Event Loop
+eventLoop() {
+	#| Copy the array (TODO: Find a better way to do this, if there is one)
+	for (( c = 0; c < minSleepState + 1; c++ )); do
+		tmpCount[c]=${statePeriod[c]}
+	done
+
+
+	#| Get highest possible sleep time
+	napTime=${statePeriod[$minSleepState]}
+	sleepCycleCurrent=0
+
+
+	#| If state 0 0 0, a 0 second sleep will be requested
+	#| Changing to cycle sleep amount
+	if (( `floatMath "$napTime == 0"` )); then
+		napTime=${statePeriod[1]}
+	fi
+
+
+	#| Set first state of the LEDs
+	for (( c = 0; c < maxLEDs; c++ )); do
+		off=0
+		if (( newBase[c] != 0 )); then
+			off=1
+		fi
+
+		case "$c" in
+		0)
+			toSet="${num[$off]}"
+			;;
+		1)
+			toSet="$toSet ${caps[$off]}"
+			;;
+		2)
+			toSet="$toSet ${scroll[$off]}"
+			;;
+		esac
+
+		ledStatus[$c]=$off
+	done
+	$setLed $toSet # Set initial LED state
+
+
+	#| Run pattern until cycle completes
+	while (( `floatMath "$sleepCycleCurrent < $maxCycle"` )); do
+		#| Update status variables
+		sleepCycleCurrent=`floatMath "$sleepCycleCurrent + $napTime"`
+		runtimeTotal=`floatMath "$runtimeTotal + $napTime"`
+
+		sleep $napTime
+
+		toSet=""
+		#| Determine which LEDs to change (starts at 1, as 0 is the off LEDs)
+		for (( c = 1; c < minSleepState + 1; c++ )); do
+			tmpCount[$c]=`floatMath "${tmpCount[$c]} - $napTime"`
+			if (( `floatMath "${tmpCount[$c]} == 0"` && `floatMath "${statePeriod[$c]} != 1"` )); then
+				if [[ "$c" == ${newBase[0]} ]]; then
+					inverseLEDStatus 0
+					toSet="$toSet ${num[$?]}"
+				fi
+				if [[ "$c" == ${newBase[1]} ]]; then
+					inverseLEDStatus 1
+					toSet="$toSet ${caps[$?]}"
+				fi
+				if [[ "$c" == ${newBase[2]} ]]; then
+					inverseLEDStatus 2
+					toSet="$toSet ${scroll[$?]}"
+				fi
+
+				# Reset Value
+				tmpCount[c]=${statePeriod[c]}
+			fi
+		done
+
+		debug 3
+
+		# Set LED
+		if [[ "$toSet" != "" ]]; then
+			$setLed $toSet # Set new LED state
+			debug 2
+		fi
+	done
+
+	debug 4
+
+	return 0
+}
+
+
+#| Process Cmd Line Args
+cmdLineArgs() {
+	displayText=""
+
+	#| Loop through args
+	while (( $# > 0 )); do
+		#| Match Args
+		# Display Help
+		if [[ "$1" == "-h" || "$1" == "--help" ]]; then
+			echo "Help!"
+
+			quit=0; shift 1; continue
+		fi
+
+		# Display Version
+		if [[ "$1" == "-v" || "$1" == "--version" ]]; then
+			echo "Version!"
+
+			quit=0; shift 1; continue
+		fi
+
+		# Debug Mode
+		if [[ "$1" == "-d" || "$1" == "--debug" ]]; then
+			echo "Debug Mode"
+			debugMode=1
+
+			shift 1; continue
+		fi
+
+		# Cycle Length
+		if [[ "$1" == "-c" || "$1" == "--cycle" ]]; then
+			# TODO Check
+			maxCycle=$2
+
+			shift 2; continue
+		fi
+
+
+		# State
+		if [[ "$1" == "-s" || "$1" == "--state" ]]; then
+
+			# TODO Test if integer between 0 and totalStates
+			inputState=$2
+			#| Error if state is too high
+			if (( inputState >= totalStates )); then
+				error 1 $inputState
+			fi
+
+			shift 2; continue
+		fi
+
+		# Max States
+		if [[ "$1" == "-m" || "$1" == "--max" ]]; then
+			# TODO Check
+			totalStates=$2
+
+			shift 2; continue
+		fi
+
+
+		#| Invalid Argument
+		displayText="$displayText Invalid Argument: $1\n"
+		quit=1
+
+		shift 1
+	done
+
+
+	#| Display Info
+	if [[ "$displayText" != "" ]]; then
+		quit=1
+		echo -e "$displayText"
+	fi
+	
+
+	#| Quit if invalid arg
+	if [[ $quit -ne -1 ]]; then
+		exit $quit
+	fi
+
+
+	return 0
+}
+
+
+#| Initial Entry Point
+main() {
+	#| Determine States per Keyboard LED (e.g. 2, 3, 4, etc.)
+	for (( states = maxLEDs - 1; totalStates > states ** maxLEDs; states++ )); do
+		continue
+	done
+
+
+	#| Convert to base $states (e.g. 010 base 2)
+	remainder=$inputState
+	for (( digit = maxLEDs - 1; digit >= 0; digit-- )); do
+		(( base           = states ** digit ))
+		(( newBase[digit] = remainder / base ))
+		(( remainder      = remainder - newBase[digit] * base ))
+	done
+
+
+	#| Determine Used Light States (e.g. No light, Solid, 1/2 second flash; No light, Solid, 1/2 second flash, 1/4 second flash)
+	statePeriod[0]=0
+	for (( c = 1; c < states; c++ )); do
+		statePeriod[c]=`floatMath "$maxCycle / 2^($c-1)"`
+	done
+
+
+	#| Min Sleep Amount
+	minSleepState=0
+	for (( c = 0; c < maxLEDs; c++ )); do
+		if (( newBase[c] > minSleepState )); then
+			minSleepState=${newBase[c]}
+		fi
+	done
+
+
+	#| Debug Information
+	debug 1
+
+
+	#| Reset All LEDs
+	blankLEDs
+
+
+	#| Run Event Loop
+	while eventLoop; do
+		continue
+	done
+}
+
+cmdLineArgs $@
+main
+
+exit 0
+
