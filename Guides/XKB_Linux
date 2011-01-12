@@ -1,0 +1,31 @@
+Copyright HaaTa 2011
+
+This document was a long time coming. It's part 3 of 3 of my Keyboard Mappings Series in Linux (and compatibles).
+After a lot of research and procrastination I've finally done completed it :P.
+
+In Linux there are 3 types of keyboard layout types (each more powerful and complicated than the next...):
+
+* LoadKeys
+* XModMap
+* XKB (2 isn't complete yet, unfortunately)
+
+*Disclamier*
+
+I am not an authority on XKB. This document is a compilation of the available documentation, plus additions by me for use with very complicated layouts.
+
+Also, in comparison to parts 1 and 2, this one is very very long. You'll need a few days to digest the information here. So I recommend you start reading this guide with a goal in mind, as you'll be able to skip over the parts that are not relevant to you.
+
+You may just decide to skip to the ending sections and read my recommended usage and hints sections.
+
+
+
+SECTION - What is XKB?
+
+
+
+
+SECTION - Useful Documents
+
+* Spec
+* Web page (TODO)
+

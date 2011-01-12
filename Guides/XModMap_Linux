@@ -1,0 +1,30 @@
+Copyright HaaTa 2011
+
+This document was a long time coming. It's part 2 of 3 of my Keyboard Mappings Series in Linux (and compatibles).
+After a lot of research and procrastination I've finally done completed it :P.
+
+In Linux there are 3 types of keyboard layout types (each more powerful and complicated than the next...):
+
+* LoadKeys
+* XModMap
+* XKB (2 isn't complete yet, unfortunately)
+
+
+
+SECTION - What is XModMap?
+
+XModMap is a utility for modifying X Server keymaps and pointer (mouse) button mappings. It can also be used as a tool to display the current keymaps and mouse button mappings as functional within the X Server.
+An important thing to keep in mind, XModMap "modifies" the current layout. Due to it's design, it cannot completely replace XKB as the ultimate way to set keyboard layouts for X. Adding alternate layers is not possible with XModMap unless they are previously set with XKB. Nevertheless, I'll be going into the limitations later.
+
+Now, before you think "if XModMap is inferior to XKB, what's the point?", XModMap is considerably easier to understand and use. XKB is very overwhelming as it has a lot of feature bloat. But I'll save that for part 3.
+
+Like loadkeys, XModMap works with a configuration file that specifies all of the keysyms that are to be changed. As well, only the keys that are specified to be changed, are changed. The rest are left as per the previous configuration.
+
+
+SECTION - Basic Intro to XKB
+
+Since XModMap modifies the current XKB layout, a brief introduction to XKB is somewhat necessary (unfortunately, XKB is quite different and more complicated than the loadkeys keysym implementation).
+
+
+
+
